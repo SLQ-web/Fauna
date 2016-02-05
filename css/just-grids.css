@@ -1,0 +1,64 @@
+* { box-sizing: border-box; }
+
+/* force scroll bar */
+html { overflow-y: scroll; }
+
+body { }
+/*.container-wrapper { max-width: 970px; margin: 0 auto;}*/
+.content { width: 960px; /*background: #ff1*/ }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+/* 12 columns, percentage width */
+/*.grid-item {
+  width: 8.33333%;
+}*/
+
+.stamp {  border-color: aquamarine; }
+.stamp1 { left: 0%; top: 0; }
+
+.grid-item {
+  float: left;
+  min-height: 290px;
+  background: #C09;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item:hover {
+  border-color: hsla(0, 0%, 100%, 0.5);
+  cursor: move;
+}
+
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+  background: #C90;
+  z-index: 2;
+}
+
+.gutter-sizer { width: 1%; }
+
+.padding10 { padding: 10px }
+
+/*Various text sizes */
+.text-xs { font-size: 1rem }
+.text-sm { font-size: 1.2rem }
+.text-md { font-size: 1.3rem; }
+
+/*overrides for the skeleteon columns */
+.set-thirds { min-height: 220px; }
+
+.slq-header { background-image: url(../img/header.png); min-height: 190px; background-size: cover; }
+.slq-footer { background-image: url(../img/footer.png); background-size: cover; min-height: 250px;  }
