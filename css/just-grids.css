@@ -29,6 +29,7 @@ body { }
 
 .stamp {  border-color: aquamarine; }
 .stamp1 { left: 0%; top: 0; }
+.stamp2 { right: 0%; top: 200; }
 
 .grid-item {
   float: left;
