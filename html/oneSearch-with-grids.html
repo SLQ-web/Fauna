@@ -7,9 +7,14 @@
     <script type="application/javascript" src="https://npmcdn.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
 
    <style>
+/*
       .grid-item.third { max-width: 33%; min-width: 280px; }
       .grid-item.twoThirds .grid-content, .grid-item.half .grid-content { height: auto; }
-      .grid-item:hover { cursor: move; }
+*/
+       .grid-item:hover {
+          cursor: move;
+        }
+       .twelve.columns { padding: 5px; }
    </style>
    
     </head>
@@ -19,11 +24,18 @@
 <div class="container">
 
 <h1 class="header">SLQ Packery Homepage mockup</h1>
-<div class="grid">
-  <!--<div class="gutter-sizer"></div>-->
-   <div class="row">
-    <div class="twelve columns slq-header stamp stamp1"></div>
-  </div>
+<div class="row">
+    <div class="twelve columns slq-header"></div>
+</div>
+<div class="row">
+    <div class="twelve columns">
+        <div class="grid-content yellow">
+            <h3>One search catalogue</h3>
+            <p>Insert search forms below</p>
+        </div>
+    </div>
+</div>
+<div class="grid">  
 <div class="row">
     <div class="grid-item third">
         <div class="grid-content blue">

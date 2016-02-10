@@ -7,7 +7,8 @@
     <!--<script type="application/javascript" src="https://npmcdn.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>-->
 
    <style>
-       .h2x { min-height: 590px; }
+       .row .grid-item .grid-content.h2x { min-height: 590px; }
+       .row .grid-item .grid-content { height: 285px; }
    </style>
    
     </head>
@@ -23,35 +24,68 @@
     <div class="grid-item twelve columns slq-header stamp stamp1"></div>
   </div>
   <div class="row">
-    <div class="grid-item four columns" style="background: #008fb7; display: block">one search</div>
-    <div class="grid-item four columns" style="background: #c0416e; display: block; float: left;">opening hours</div>
-    <div class="grid-item eight columns h2x stamp stamp2" style="background: #81cd24; float: right">Feature item</div>
+    <div class="grid-item third" style="float: left">
+        <div class="grid-content pink">
+           <h3>What's on</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, tatum.</p>
+        </div>
+    </div>
+    <div class="grid-item third" style="float:left">
+        <div class="grid-content blue">
+           <h3>One Search</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur .</p>
+        </div>
+    </div>
+    <div class="grid-item twoThirds stamp stamp2">
+        <div class="grid-content pink h2x">
+           <h3>John Oxley</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
   </div>
   <div class="row">
-    <div class="grid-item four columns" style="background: #e0003f">our data</div>
-    <div class="grid-item eight columns" style="background: #00a4a1">Resources</div>
+    <div class="grid-item third">
+        <div class="grid-content purple">
+           <h3>APDL</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="grid-item twoThirds">
+        <div class="grid-content watermelon">
+           <h3>Services</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
   </div>
   <div class="row">
-    <div class="grid-item eight columns" style="background: #f9a900">Donate to the foundation</div>
-    <div class="grid-item four columns" style="background: #c0416e">First 5 Forever</div>
+    <div class="grid-item twoThirds">
+        <div class="grid-content lime">
+           <h3>Opening hours</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+    <div class="grid-item third">
+        <div class="grid-content yellow">
+           <h3>Donate to the foundation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
   </div>
   <div class="row">
-    <div class="grid-item twelve columns" style="background: #81cd24"></div>
+    <div class="grid-item twelve columns">
+        <div class="grid-content pink">
+           <h3>Other sites</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam nobis ullam dolores totam aut nesciunt, consequatur adipisci voluptatum.</p><button onclick="window.location.reload();">Oh I messed up</button>
+        </div>
+    </div>
   </div>
   <div class="row">
     <div class="grid-item twelve columns slq-footer"></div>
   </div>
 </div>
 </div>
-<!--stuff to commit -->
 
 <script>
-/*$('.grid').packery({
-  itemSelector: '.grid-item',
-  gutter: '.gutter-sizer',
-  percentPosition: true,
-  stamp: '.stamp',
-});*/
     
 var $grid = $('.grid').packery({
   itemSelector: '.grid-item',

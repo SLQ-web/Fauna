@@ -10,7 +10,7 @@ body { }
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+/*  background: #DDD;*/
 }
 
 /* clear fix */
@@ -33,15 +33,31 @@ body { }
 
 .grid-item {
   float: left;
-  min-height: 290px;
-  background: #C09;
-  border: 2px solid hsla(0, 0%, 0%, 0.5);
+/*  min-height: 290px;*/
+  /*background: #C09;*/
+  padding: 5px;
+/*  border: 2px solid hsla(0, 0%, 0%, 0.5);*/
 }
 
-.grid-item:hover {
-  border-color: hsla(0, 0%, 100%, 0.5);
-  cursor: move;
+.grid-item.third { width: 320px; }
+.grid-item.half { width: 480px; }
+.grid-item.twoThirds { width: 640px; }
+.grid-item.twoThirds .grid-content, .grid-item.half .grid-content { height: 237px; }
+
+.grid-content.blue { background: #008fb7; }
+.grid-content.pink { background: #c0416e; }
+.grid-content.purple { background: #6c62ab; }
+.grid-content.watermelon { background: #e0003f; }
+.grid-content.lime { background: #81cd24; }
+.grid-content.yellow { background: #f9a900; }
+.grid-content.turquoise { background: #00a4a1; }
+.grid-content.orange { background: #ec6915; }
+
+.grid-content {
+    padding: 15px; 
+    background: #eee;
 }
+.grid-item:hover { background: #ccc; }
 
 .grid-item.is-dragging,
 .grid-item.is-positioning-post-drag {
@@ -57,9 +73,12 @@ body { }
 .text-xs { font-size: 1rem }
 .text-sm { font-size: 1.2rem }
 .text-md { font-size: 1.3rem; }
+.text-lge { font-size: 2rem; }
+
+.aRight { float: right; }
 
 /*overrides for the skeleteon columns */
 .set-thirds { min-height: 220px; }
 
-.slq-header { background-image: url(../img/header.png); min-height: 190px; background-size: cover; }
-.slq-footer { background-image: url(../img/footer.png); background-size: cover; min-height: 250px;  }
+.slq-header { background-image: url(../img/header.png); min-height: 190px; background-size: cover; margin: 5px; }
+.slq-footer { background-image: url(../img/footer.png); background-size: cover; min-height: 250px; margin: 5px;  }
