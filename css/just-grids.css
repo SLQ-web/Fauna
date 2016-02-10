@@ -82,3 +82,20 @@ body { }
 
 .slq-header { background-image: url(../img/header.png); min-height: 190px; background-size: cover; margin: 5px; }
 .slq-footer { background-image: url(../img/footer.png); background-size: cover; min-height: 250px; margin: 5px;  }
+
+
+/* Breakpoints for mobile devices */
+
+/* Smartphones style adjustments (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .grid-item.twoThirds { width: 100%; }
+    .grid-item.third, .grid-item.half { width: 50%; }
+    .row .grid-item .grid-content.otherSites {min-height: 500px;}
+}
+
+/* Tablet style adjustments (portrait) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    .grid-item.twoThirds { width: 100%; }
+    .grid-item.third, .grid-item.half { width: 50%; }
+    .row .grid-item .grid-content.otherSites {min-height: 340px;}
+}
