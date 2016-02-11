@@ -74,13 +74,15 @@ body { }
 .text-lge { font-size: 2rem; }
 
 .aRight { float: right; }
+img.clock { width: 13%; margin-right: 5px; vertical-align: text-top; }
+.wiggles { color: #4f94e2; background-image: url(../img/wavy-underline.svg); background-repeat: repeat-x; background-position: bottom; padding-bottom: 5px;  }
 
 /*overrides for the skeleteon columns */
 .set-thirds { min-height: 220px; }
 
 .slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
 .slq-logo { display: inline-block; float: left; margin-left: -40px; } /*offset the slq logo so its out of the page flow*/ 
-.slq-footer { background-image: url(../img/footer.png); background-size: cover; min-height: 250px; margin: 5px;  }
+.slq-footer { background-image: url(../img/footer.svg); background-size: cover; min-height: 250px; margin: 5px; width: 100%;  }
 
 
 /* Breakpoints for mobile devices */
