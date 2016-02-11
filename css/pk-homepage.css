@@ -1,0 +1,49 @@
+/* CSS Styles for Packery inspired Homepage */
+
+{ box-sizing: border-box; }
+
+/* force scroll bar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+  border:solid gold;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+/* 5 columns, percentage width */
+.grid-item {
+  width: 20%;
+}
+
+.grid-item {
+  float: left;
+  height: 100px;
+  background: #C09;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.blue { background: blue; }
+.green { background: green; }
+.red { background: red; }
+
+.gutter-sizer { width: 1%; }
+
+.grid-item--fullwidth { width: 99%; }
+.grid-item--third { width: 32.18%; }
+.grid-item--half { width: 48.9%; }
+.grid-item--twoThird { width: 65.7% }
+.grid-item--height2 { height: 220px; }
+/*Ryan's empty update*/
