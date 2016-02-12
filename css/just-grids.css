@@ -78,6 +78,9 @@ img.clock { width: 13%; margin-right: 5px; vertical-align: text-top; }
 #countdown { color: #4f94e2; background-image: url(../img/wavy-underline.svg); background-repeat: repeat-x; background-position: bottom; padding-bottom: 5px;  }
 .info { text-align: right; cursor: pointer; }
 .info img { width: 3.5%; margin-right: 5px; vertical-align: text-top; }
+form.oneSearch input[type=text] { width: 60%; }
+form.oneSearch select { width: 20%; }
+.searchBtn { background: pink; vertical-align: middle; }
 
 /*overrides for the skeleteon columns */
 .set-thirds { min-height: 220px; }
