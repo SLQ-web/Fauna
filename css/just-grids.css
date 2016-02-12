@@ -82,6 +82,8 @@ form.oneSearch input[type=text] { width: 60%; }
 form.oneSearch select { width: 20%; }
 .searchBtn { background: pink; vertical-align: middle; }
 
+iframe body { margin: 0; padding: 0; }
+
 /*overrides for the skeleteon columns */
 .set-thirds { min-height: 220px; }
 
