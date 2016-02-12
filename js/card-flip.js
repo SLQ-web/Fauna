@@ -35,7 +35,7 @@ Element.prototype.toggleClassName = function (a) {
 var init = function() {
 var card = document.getElementById('card');
 
-document.getElementById('flip').addEventListener( 'click', function(){
+document.getElementById('card').addEventListener( 'click', function(){
 card.toggleClassName('flipped');
 }, false);
 };
