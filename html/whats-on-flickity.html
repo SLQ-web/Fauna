@@ -3,8 +3,10 @@
     <link rel="stylesheet" href="../css/just-grids.css">
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/card-flip.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css" media="screen">
     <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script type="application/javascript" src="../js/packery.pkgd.min.js"></script>
+    <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
     
 <script type="text/javascript">
 function ShowTime() {
@@ -12,7 +14,7 @@ function ShowTime() {
   var hrs = 19-now.getHours();
   var mins = 60-now.getMinutes();
   var secs = 60-now.getSeconds();
-      timeLeft = "" +hrs+' hours '+mins+' minutes '+secs+' seconds';
+      timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
   $("#countdown").html(timeLeft);
 }
 
@@ -32,6 +34,40 @@ setInterval(ShowTime ,1000);
        h3 { margin-bottom: 1rem; }
        a:link, a:visited { color: navy; }
        .grid-content.flip-container { padding: 0; height: 300px; }
+       
+       /* Styles for the flickity slider */
+        * {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        body { font-family: sans-serif; }
+
+        .flickity-viewport { width: 100%; }
+
+        .main-gallery {
+          background: #EEE;
+        /*  width: 100%;*/
+            overflow: hidden;
+        }
+
+        .gallery-cell {
+          width: 100%;
+          height: 200px;
+          margin-right: 10px;
+          background: #8C8;
+        /*  counter-increment: gallery-cell;*/
+        }
+
+        /* cell number */
+        .gallery-cell:before {
+          display: block;
+          text-align: center;
+        /*  content: counter(gallery-cell);*/
+          line-height: 200px;
+          font-size: 80px;
+          color: white;
+        }
    </style>
    
     </head>
@@ -73,6 +109,7 @@ setInterval(ShowTime ,1000);
     <div class="grid-item twoThirds">
         <div class="grid-content">
             <h3>Resources</h3>
+<!--
             <p>A brief description of the breadth of our resources &amp; what they might offer to the people of Queensland.</p>
             <div class="four columns">
                 <ul>
@@ -96,6 +133,15 @@ setInterval(ShowTime ,1000);
                 </ul>
             </div>
             <p><a href="#">Read more...</a></p>
+-->
+            <div class="flickity-viewport" style="height: 200px;">
+            <div class="main-gallery">
+                <div class="gallery-cell">eResources stuff</div>
+                <div class="gallery-cell">Lynda.com tutorials and libraries</div>
+                <div class="gallery-cell">Check out all our lovely ebooks and stuff</div>
+                <div class="gallery-cell">I was just born to be digital baby</div>
+            </div>
+            </div>
         </div>
     </div>
     <div class="grid-item third">
@@ -113,7 +159,7 @@ setInterval(ShowTime ,1000);
             <h3><img src="../img/time-icon.svg" class="clock" />Opening hours</h3>
             <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
              Fri-Sun <strong>10am - 5pm</strong></p>
-            <p>SLQ is open for <br /><strong id="countdown">3hrs &amp; 24mins</strong> more today.</p>
+            <p>SLQ is open for <br /><strong id="countdown"></strong> more today.</p>
             <p><a href="#">Special areas &amp; public holidays</a></p>
         </div>
     </div>
@@ -121,8 +167,11 @@ setInterval(ShowTime ,1000);
         <div class="grid-content">
             <h3>Instagram</h3>
 <!--            <img src="https://instagram.com/p/BA3eoPtJ_zp/media/?size=l" width="100%" height="190" alt="Instagram Feed" />-->
+            <img src="../img/instagram.png" width="100%" height="200" />
+<!--
             <div id="s297443289"></div>
             <script src="https://flickrit.com/js/embedder.js.php?data=PGlmcmFtZSBpZD0naWZyYW1lJyBzcmM9Jy8vZmxpY2tyaXQuY29tL3NsaWRlc2hvd2hvbGRlcmluc3RhZ3JhbS5waHA/aGVpZ2h0PTIyMCZ3aWR0aD0yNzAmc2l6ZT1tZWRpdW0mc3BlZWQ9OCZ0YWdzPWxpYnJhcmllc29maW5zdGFncmFtJmNsaWNrPXRydWUmY3JlZGl0PTImdHJhbnM9MSZ0aGVtZT0xJnRodW1ibmFpbHM9MCZ0cmFuc2l0aW9uPTAmbGF5b3V0VHlwZT1maXhlZCZzb3J0PTAnIHNjcm9sbGluZz0nbm8nIGZyYW1lYm9yZGVyPScwJyB3aWR0aD0nMjcwJyBoZWlnaHQ9JzIzMCc[|]PC9pZnJhbWU[|]&id=s297443289"></script>
+-->
         </div>
     </div>
     <div class="grid-item third">
@@ -142,7 +191,7 @@ setInterval(ShowTime ,1000);
     <div class="grid-item half">
         <div class="grid-content">
             <h3>Embedded video</h3>
-            <iframe width="100%" height="200" src="https://www.youtube.com/embed/-v2n_cMXjYQ" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="200" src="https://www.youtube.com/embed/-X6mRTv8-eY" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
     <div class="grid-item half">
@@ -154,12 +203,13 @@ setInterval(ShowTime ,1000);
                         <h4><i>What is the oldest item in the State Library's collections?</i></h4>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
-                        <p class="info"><img src="../img/info-icon-outline.svg" />Check your answer</p>
+                        <p id="info"><img src="../img/info-icon-outline.svg" />Check your answer</p>
                     </div>
                     <div class="back">
                         <h3>Question of the Day:<br />Answer</h3>
                         <p><i><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item"><img src="../img/cuneiform-tn.png" alt="Cuneiform tablet" width="53" height="80" style="float: left;"></a>Our oldest collection item is a <b>cuneiform tablet</b> from ancient Iraq, dating to about 1850 B.C.</i></p>
                         <p><i><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">Find out more</a></i></p>
+                        <p id="info"><img src="../img/info-icon-outline.svg" />Check your answer</p>
                     </div>
                    </div>
                 </div>
@@ -228,9 +278,16 @@ var $grid = $('.grid').packery({
   stamp: '.stamp',
 })
 
-//var myBox = $('.flipped');
+$('.main-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: 6000,
+  prevNextButtons: false,
+  wrapAround: true
+});
 
-$("#card.flipped").one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+$('div').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
     function(e) { alert('animation over baby') });
     
 </script>
