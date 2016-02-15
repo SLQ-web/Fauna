@@ -42,7 +42,7 @@ card.toggleClassName('flipped');
 
 //Addition of function to remove flipped class
 document.getElementById('resolveInfo').addEventListener( 'click', function(){
-    $(" card ").removeClass("flipped")
+    $(" #card ").removeClass("flipped")
 });
 
 window.addEventListener('DOMContentLoaded', init, false);
