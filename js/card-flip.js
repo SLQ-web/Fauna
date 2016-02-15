@@ -40,4 +40,9 @@ card.toggleClassName('flipped');
 }, false);
 };
 
+//Addition of function to remove flipped class
+document.getElementById('resolveInfo').addEventListener( 'click', function(){
+    $(" card ").removeClass("flipped")
+});
+
 window.addEventListener('DOMContentLoaded', init, false);
