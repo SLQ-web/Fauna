@@ -45,4 +45,24 @@ document.getElementById('resolveInfo').addEventListener( 'click', function(){
     $(" #card ").removeClass("flipped")
 });
 
+
+
+
+document.getElementById('slide1-info').addEventListener( 'click', function(){
+    $("#slideCard1").addClass("flipped")
+});
+
+//Addition of function to remove flipped class
+document.getElementById('resolve-slide1').addEventListener( 'click', function(){
+    $("#slideCard1").removeClass("flipped");
+    $('.main-gallery').flickity({
+      // options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: 6000,
+      prevNextButtons: false,
+      wrapAround: true
+    });
+});
+
 window.addEventListener('DOMContentLoaded', init, false);
