@@ -8,7 +8,29 @@ body { }
 .content { width: 960px; /*background: #ff1*/ }
 
 
-/*---- typography ---- */
+/*----  typography ---- */
+
+
+/* ---- composition ---- */
+
+.symmetrical{
+  text-align:center;
+  position: relative;
+  top: 50%;
+  transform:      translateY(-50%);
+}
+.symmetrical:first-child{
+  /*margin-top:100px;*/
+
+}
+
+/*---- colour ----*/
+
+.dark-elements{}
+
+.light-elements{
+  color:#fff;
+}
 
 
 /* ---- grid ---- */
@@ -79,7 +101,8 @@ body { }
 .text-lge { font-size: 2rem; }
 
 .aRight { float: right; }
-img.clock { width: 30px; margin-right: 5px;  }
+img.clock { }
+.tile-title-icon{width: 30px; margin-right: 5px;  }
 #countdown { color: #4f94e2; background-image: url(../img/wavy-underline.svg); background-repeat: repeat-x; background-position: bottom; padding-bottom: 5px;  }
 #info, #resolveInfo, #slide1-info, #resolve-slide1 { text-align: right; cursor: pointer; }
 #info img, #resolveInfo img, #slide1-info img, #resolve-slide1 img { width: 3.5%; margin-right: 5px; vertical-align: text-top; }
