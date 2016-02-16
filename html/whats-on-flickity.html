@@ -34,43 +34,52 @@ setInterval(ShowTime ,1000);
        .grid-item:hover { background: none; }
        h3 { margin-bottom: 1rem; }
        a:link, a:visited { color: navy; }
-       .grid-content.flip-container { padding: 0; height: 300px; }
+/*       .grid-content.flip-container { padding: 0; height: 300px; }*/
        
-       /* Styles for the flickity slider */
+       /* Global page styles for the flickity slider */
         * {
           -webkit-box-sizing: border-box;
           box-sizing: border-box;
         }
-
-        body { font-family: sans-serif; }
-
+       
         .flickity-viewport { width: 100%; }
 
-        .main-gallery {
+    /* eresources slider styles with Flickity lib */
+        #slideCard1 .main-gallery {
             background:deeppink;
             overflow: hidden;
         }
 
-        .gallery-cell {
+        #slideCard1 .gallery-cell {
           width: 100%;
-          height: 100px;
+          height: 150px;
           margin-right: 10px;
           padding: 10px;
           background: #8C8;
-          padding: 10px; 
-        }
-
-        /* cell number */
-        .gallery-cell:before {
-          display: block;
-          text-align: center;
-        /*  content: counter(gallery-cell);*/
-          line-height: 200px;
-          font-size: 80px;
-          color: white;
         }
        
        #slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
+       
+       
+    /* WHAT'S ON slider styles with Flickity lib */
+
+        #whatsOn .main-gallery {
+            background:deeppink;
+            overflow: hidden;
+        }
+
+        #whatsOn .gallery-cell {
+          width: 100%;
+/*          height: 150px;*/
+          margin-right: 10px;
+/*          padding: 10px;*/
+/*          background: #8C8;*/
+        }
+       
+       #whatsOn .gallery-cell img {
+           width: 100%;
+           height: 220px;
+       }
        
    </style>
    
@@ -135,9 +144,40 @@ setInterval(ShowTime ,1000);
     <div class="grid-item third">
         <div class="grid-content">
             <h3>What's on</h3>
-            <img src="http://placehold.it/280x100"/>
-            <p class="text-sm">This is an extended description that increases the limited sash character length &amp; provides better scope for fich text content.</p>
-            <p><a href="#">Link to Event 1</a></p>
+            <div id="whatsOn">
+                <div class="main-gallery">
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/state-of-war.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/manuel-hornibrook.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/uq-architecture.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/research-fellowships.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/asia-pacific-architecture.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/black-adn-write.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/one-search.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/lynda-com.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/queenslandfaces.png" />
+                    </div>
+                    <div class="gallery-cell">
+                        <img src="../img/tiles/eresources.png" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
