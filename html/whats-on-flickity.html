@@ -79,6 +79,16 @@ setInterval(ShowTime ,1000);
            height: 300px;
        }
        
+/* CSS styles for the Other sites section */
+       .otherSites .links { display: inline; padding: 0.5em; }
+       #qanzac100 { color: navy; border: solid 1px navy; }
+       #join { color: #6c62ab; border: solid 1px #6c62ab; }
+       #businessStudio { color: #333; border: solid 1px #333;  }
+       #subscribe { color: #81cd24; border: solid 1px #81cd24; }
+       
+       .first { cursor: pointer; }
+       .hide { display: block; padding: 10px; background: #eee; }
+       
    </style>
    
     </head>
@@ -242,34 +252,15 @@ setInterval(ShowTime ,1000);
         <div class="grid-content otherSites">
             <h3>Other sites</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-       <div class="three columns">
-         <ul>
-          <li><a href="#">Lorem ipsum dolor</a></li>
-          <li><a href="#">Sed ut ligula</a></li>
-          <li><a href="#">Phasellus quis eros</a></li>
-         </ul>
-       </div>
-       <div class="three columns">
-         <ul>
-          <li><a href="#">Pellentesque dictum</a></li>
-          <li><a href="#">Donec consequat</a></li>
-          <li><a href="#">Vestibulum ac enim</a></li>
-         </ul>
-       </div>
-       <div class="three columns">
-         <ul>
-          <li><a href="#">Pellentesque dictum</a></li>
-          <li><a href="#">Zolan consequat</a></li>
-          <li><a href="#">Pastaron ac enim</a></li>
-         </ul>
-       </div>
-       <div class="three columns">
-         <ul>
-          <li><a href="#">Pellentesque dictum</a></li>
-          <li><a href="#">Donec consequat</a></li>
-             <li><a href="#">Pastaron ac enim</a></li>
-         </ul>
-       </div>
+            <div class="links" id="qanzac100">Q ANZAC 100 <a class="first">+</a></div>
+              <div class="hide">This is a description for Q ANZAC 100</div>
+            <div class="links" id="join">Join <a class="first">+</a></div>
+              <div class="hide">This is a description for JOIN button</div>
+            <div class="links" id="businessStudio">Business Studio <a class="first">+</a></div>
+              <div class="hide">This is a description for Business Studio</div>
+            <div class="links" id="subscribe">Subscribe <a class="first">+</a>
+            </div>
+              <div class="hide">This is a description for the subscription</div>
         </div>
     </div>
 </div>
@@ -308,8 +299,14 @@ $('.main-gallery').flickity({
   wrapAround: true
 });
 
-//$('div').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
-//    function(e) { alert('animation over baby') });
+// jQuery toggle for other sites buttons
+    $(".hide").hide();
+$( ".first" ).click(function() {
+//    alert('clicked')
+  $(this.parentNode).next('.hide').slideToggle('fast')
+  .siblings('.hide:visible').slideUp('fast');
+    // Animation complete.
+  });
     
 </script>
    
