@@ -3,10 +3,10 @@
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/just-grids.css">
     <link rel="stylesheet" href="../css/card-flip.css">
-    <link rel="stylesheet" href="https://npmcdn.com/flickity@1.1/dist/flickity.min.css" media="screen">
+    <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
     <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="application/javascript" src="../js/packery.pkgd.min.js"></script>
-    <script src="https://npmcdn.com/flickity@1.1/dist/flickity.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
     <!-- Modified the card flip script -->
     
 <script type="text/javascript">
@@ -47,19 +47,18 @@ setInterval(ShowTime ,1000);
         .flickity-viewport { width: 100%; }
 
         .main-gallery {
-          background: #EEE;
+          background: #8C8;
         /*  width: 100%;*/
             overflow: hidden;
         }
 
         .gallery-cell {
           width: 100%;
-          height: 200px;
+/*          height: 200px;*/
           margin-right: 10px;
           padding: 10px;
           background: #8C8;
-          padding: 10px; /* testing the git repo branch again */
-        /*  counter-increment: gallery-cell;*/
+          padding: 10px; 
         }
 
         /* cell number */
@@ -71,6 +70,9 @@ setInterval(ShowTime ,1000);
           font-size: 80px;
           color: white;
         }
+       
+       #slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
+       
    </style>
    
     </head>
@@ -112,48 +114,23 @@ setInterval(ShowTime ,1000);
     <div class="grid-item twoThirds">
         <div class="grid-content">
             <h3>Resources</h3>
-
-            <p>A brief description of the breadth of our resources &amp; what they might offer to the people of Queensland.</p>
-           <!--  <div class="four columns">
-                <ul>
-                  <li><a href="http://www.slq.qld.gov.au/resources/eresources">eResources</a></li>
-                  <li><a href="#">Databases</a></li>
-                  <li><a href="#">Newly digitised</a></li>
-                </ul>
-            </div>
-            <div class="four columns">
-                <ul>
-                    <li><a href="#">Original content</a></li>
-                    <li><a href="#">Born digital</a></li>
-                    <li><a href="#">New aquisitions</a></li>
-                </ul>
-            </div>
-            <div class="four columns">
-                <ul>
-                  <li><a href="http://www.slq.qld.gov.au/search/eresources/lynda.com">Lynda.com</a></li>
-                  <li><a href="http://www.slq.qld.gov.au/search/eresources/ebooks">eBooks</a></li>
-                  <li><a href="#">Archived websites</a></li>
-                </ul>
-            </div>
-            <p><a href="#">Read more...</a></p>
- -->
-         <div class="flip-container">
-           <div id="slideCard1">
-           <div class="front">
-            <div class="main-gallery" style="padding: 0;">
-                <div class="gallery-cell">eResources stuff
-                <p id="slide1-info"><img src="../img/info-icon-outline.svg" />See more info</p>
-                </div>
-                <div class="gallery-cell">Lynda.com tutorials and libraries</div>
-                <div class="gallery-cell">Check out all our lovely ebooks and stuff</div>
-                <div class="gallery-cell">I was just born to be digital baby</div>
-            </div>
-            </div>
-            <div class="back">This is the back of the object
-            <p id="resolve-slide1"><img src="../img/info-icon-outline.svg" />Flip it back yo</p>
-            </div>
-           </div>
-          </div>
+            <div class="flip-container">
+              <div id="slideCard1">
+                <div class="front">
+                    <div class="main-gallery">
+                        <div class="gallery-cell">eResources stuff
+                        <p id="slide1-info"><img src="../img/info-icon-outline.svg" />See more info</p>
+                        </div>
+                        <div class="gallery-cell">Lynda.com tutorials and libraries</div>
+                        <div class="gallery-cell">Check out all our lovely ebooks and stuff</div>
+                        <div class="gallery-cell">I was just born to be digital baby</div>
+                    </div>
+                    </div>
+                    <div class="back">This is the back of the object
+                    <p id="resolve-slide1"><img src="../img/info-icon-outline.svg" />Flip it back yo</p>
+                    </div>
+                   </div>
+              </div>
         </div>
     </div>
     <div class="grid-item third">
@@ -294,13 +271,14 @@ $('.main-gallery').flickity({
   // options
   cellAlign: 'left',
   contain: true,
-  autoPlay: 6000,
+  autoPlay: 2000,
   prevNextButtons: false,
+  pageDots: false,
   wrapAround: true
 });
 
-$('div').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
-    function(e) { alert('animation over baby') });
+//$('div').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',   
+//    function(e) { alert('animation over baby') });
     
 </script>
    
