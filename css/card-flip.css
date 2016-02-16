@@ -42,8 +42,6 @@
 		  display: block;
 		  height: 100%;
 		  width: 100%;
-		  text-align: center;
-		  font-weight: bold;
 		  font-size: 1em;
 		  position: absolute;
 		  -webkit-backface-visibility: hidden;
@@ -52,6 +50,9 @@
 				  backface-visibility: hidden;
 		  padding: 0% 5%;
 		}
+
+#slideCard1 figure, #slideCard1 div { padding: 0; }
+
 		#card figure h3, #card div h3 { line-height: 1; }
 		#card figure p, #card div p { font-weight: normal; }
 		
@@ -60,6 +61,8 @@
           padding: 10px;
             height: 285px;
 		}
+
+#slideCard1 .front { padding: 0; height: 210px; background: #eee; }
 		
 		#card .back, #slideCard1 .back {
 		  background: #CCC;
@@ -70,3 +73,5 @@
             padding: 10px;
             height: 285px;
 		}
+
+#slideCard1 .back { padding: 0; height: 210px; }

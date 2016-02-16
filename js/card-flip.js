@@ -55,14 +55,9 @@ document.getElementById('slide1-info').addEventListener( 'click', function(){
 //Addition of function to remove flipped class
 document.getElementById('resolve-slide1').addEventListener( 'click', function(){
     $("#slideCard1").removeClass("flipped");
-    $('.main-gallery').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true,
-      autoPlay: 6000,
-      prevNextButtons: false,
-      wrapAround: true
-    });
+
+//    $gallery.flickity('stopPlayer');
+    $('.main-gallery').flickity('startPlayer');
 });
 
 window.addEventListener('DOMContentLoaded', init, false);
