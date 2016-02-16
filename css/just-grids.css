@@ -3,7 +3,7 @@
 /* force scroll bar */
 html { overflow-y: scroll; }
 
-body { }
+body { margin:0;padding:0;}
 /*.container-wrapper { max-width: 970px; margin: 0 auto;}*/
 .content { width: 960px; /*background: #ff1*/ }
 
@@ -116,7 +116,8 @@ iframe body { margin: 0; padding: 0; }
 .set-thirds { min-height: 220px; }
 
 .slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
-.slq-logo { display: inline-block; float: left; margin-left: -40px; } /*offset the slq logo so its out of the page flow*/ 
+.slq-logo { display: inline-block; float: left; margin-left: -40px; margin-top:5px;} /*offset the slq logo so its out of the page flow*/ 
+.slq-logo img{width:35px;}
 .slq-footer { background-image: url(../img/footer.svg); background-size: cover; min-height: 250px; margin: 5px; width: 100%;  }
 
 
