@@ -49,7 +49,7 @@ setInterval(ShowTime ,1000);
 
       .eresources-description{
           height:110px;
-          background:cyan;
+/*          background:cyan;*/
       }
 
     /* eresources slider styles with Flickity lib */
@@ -60,8 +60,11 @@ setInterval(ShowTime ,1000);
 
         #slideCard1 .gallery-cell {
           height: 170px;
-          background:yellow;
+/*          background:yellow;*/
+            padding: 15px;
         }
+       
+       #slideCard1 .gallery-cell img { float: right; padding: 1em; }
        
        #slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
        
@@ -147,11 +150,15 @@ setInterval(ShowTime ,1000);
              <div id="slideCard1">
               <div class="main-gallery" style="padding: 0;">
                   <div class="gallery-cell" style="background:">
-                    <h4>ANZ content</h4>
-                    <p>some information goes here but i haven't written it yet...</p>
-                    <img src="../img/newsagent.png" style="float:right;"/>
+                    <img src="../img/newsagent.png"/>
+                    <h5><a href="#">ANZ Newstand</a></h5>
+                    <p>Australia New Zealand Newsstand is a collection of over 400 newspapers and news services covering AUstralia and New Zealand.</p>
                   </div>
-                  <div class="gallery-cell">Lynda.com tutorials and libraries</div>
+                  <div class="gallery-cell">
+                    <img src="../img/lynda@2x.png" width="180" />
+                    <h5><a href="http://lynda.com">Lynda.com</a></h5>
+                    <p>Courses for all levels cover technical skills, creative techniques, business strategies, and more. Find what you need in our growing library. New courses added weekly.</p>
+                  </div>
                   <div class="gallery-cell">Check out all our lovely ebooks and stuff</div>
                   <div class="gallery-cell">I was just born to be digital baby</div>
               </div>
