@@ -7,12 +7,12 @@
 			height : "30",
 			backgroundColor : "#E0E0E0",
 			barColor : "#F97352",
-			targetBarColor : "#CCC",
+//			targetBarColor : "#CCC",
 			percentage : true,
 			shadow : false,
 			border : false,
-			animation : false,
-			animateTarget : true,
+			animation : true,
+			animateTarget : false,
 		};
 
 		var settings = $.extend( {}, defaults, options );
@@ -35,7 +35,7 @@
 		if ( settings.animation ) { animation_class = ' animate'; }
 
 		var overlay = '<div class="sonny_progressbar' + animation_class + '" data-width="' + progress + '">';
-//		overlay += '<p class="title">' + skill + '</p>';
+		overlay += '<p class="marker">ProgressBar</p>';
 		overlay += '<div class="bar-container' + bar_classes + '" style="' + bar_styles;
 
 		// Render the progress bar background
@@ -56,7 +56,7 @@
 			overlay += '<span class="bar" style="background-color:' + settings.barColor + ';"><p class="title">' + skill + '</p></span>';
 		}
 		else {
-			overlay += '<span class="bar" style="width:' + progress + '%;background-color:' + settings.barColor + ';"></span>';
+			overlay += '<span class="bar" style="width:' + progress + '%;background-color:' + settings.barColor + ';"><p class="title">' + skill + '</p></span>';
 		}
 
 		// Render the percentage if enabled

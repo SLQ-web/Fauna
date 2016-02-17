@@ -40,43 +40,33 @@
             <li class='progressbar2'   data-width='60' data-target='80'>MySQL</li>
             <li class='progressbar2'   data-width='50' data-target='90'>WordPress</li>
             <li class='progressbarGit' data-width='70' data-target='85'>Git</li>
-            <li class='progressbar3'   data-width='30' data-target='50'>Photoshop</li>
+            <li class='photoshop' data-width='30' data-target='85'>Photoshop</li>
         </ul>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="../js/progressbar.js"></script>
     <script>
     // Display the progress bar calling progressbar.js
 	$('.progressbar1').progressBar({
-			shadow : true,
-			percentage : true,
-			animation : true,
+        shadow : false,
+        animation : true,
 	});
 	$('.progressbar2').progressBar({
 		shadow : true,
 		percentage : true,
-		animation : true,
 		barColor : "#527AF9",
 	});
 	$('.progressbarPhp').progressBar({
 		shadow : true,
-		percentage : true,
-		animation : true,
-		animateTarget : true,
 		barColor : "#52ADF9",
 	});
 	$('.progressbarGit').progressBar({
 		shadow : true,
-		percentage : true,
-		animation : true,
 		barColor : "#52ADF9",
 	});
-	$('.progressbar3').progressBar({
+	$('.photoshop').progressBar({
 		shadow : true,
-		percentage : true,
-		animation : true,
-		animateTarget : true,
 		barColor : "#C3B238",
 	});
 

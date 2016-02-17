@@ -39,12 +39,14 @@
 	-moz-animation: Animation 2s infinite ease-in-out;
 	animation: Animation 2s infinite ease-in-out;
 }
+/*
 .sonny_progressbar .targetBar.loader {
 	-webkit-animation: AnimationB 4s infinite ease-in-out;
 	-moz-animation: AnimationB 4s infinite ease-in-out;
 	animation: AnimationB 4s infinite ease-in-out;
 	background-image: url('animated-overlay.gif');
 }
+*/
 .sonny_progressbar .bar-container.border .bar, .sonny_progressbar .bar-container.border .targetBar, .sonny_progressbar .bar-container.border .backgroundBar {
 	border-bottom: 3px solid rgba(0,0,0,.2);
 }
@@ -85,3 +87,6 @@
   50%   { opacity:.1; }
   100% { opacity:.01; }
 }
+
+/* Because the core JS has been edited, need to add this bug fix css */
+p.marker { opacity: 0; }
