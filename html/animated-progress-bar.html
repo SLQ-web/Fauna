@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sonny ProgressBar</title>
+	<link type="text/css" rel="stylesheet" href="../css/progressbar.css">
+    <style>
+        .hero {
+            height: 700px;
+            margin-top:150px;
+        }
+        h1 {
+            font-size: 72px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+    <div class="hero">
+        <h1>Scroll down to see the progress bars in action</h1>
+    </div>
+    <div class="container">
+        <ul class='skills'>
+            <li class='progressbar1'   data-width='90' data-target='95'>HTML4</li>
+            <li class='progressbar1'   data-width='70' data-target='90'>HTML5</li>
+            <li class='progressbar1'   data-width='90' data-target='95'>CSS2</li>
+            <li class='progressbar1'   data-width='70' data-target='80'>CSS3</li>
+            <li class='progressbarPhp' data-width='20' data-target='70'>PHP</li>
+            <li class='progressbar2'   data-width='30' data-target='90'>JavaScript</li>
+            <li class='progressbar2'   data-width='60' data-target='80'>MySQL</li>
+            <li class='progressbar2'   data-width='50' data-target='90'>WordPress</li>
+            <li class='progressbarGit' data-width='70' data-target='85'>Git</li>
+            <li class='progressbar3'   data-width='30' data-target='50'>Photoshop</li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/progressbar.js"></script>
+    <script>
+    // Display the progress bar calling progressbar.js
+	$('.progressbar1').progressBar({
+			shadow : true,
+			percentage : true,
+			animation : true,
+	});
+	$('.progressbar2').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		barColor : "#527AF9",
+	});
+	$('.progressbarPhp').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		animateTarget : true,
+		barColor : "#52ADF9",
+	});
+	$('.progressbarGit').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		barColor : "#52ADF9",
+	});
+	$('.progressbar3').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		animateTarget : true,
+		barColor : "#C3B238",
+	});
+
+	//Menu
+	$(".spinDown").click(function() {
+		var target = $(this).data("target");
+		var scrollFix = -80;
+		target = "#" + target;
+		$("html,body").animate({
+			scrollTop : $(target).offset().top + scrollFix
+		}, 1000);
+		return false;
+	});
+    </script>
+</body>
