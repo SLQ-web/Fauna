@@ -12,7 +12,7 @@
 			shadow : false,
 			border : false,
 			animation : false,
-			animateTarget : false,
+			animateTarget : true,
 		};
 
 		var settings = $.extend( {}, defaults, options );
@@ -35,8 +35,8 @@
 		if ( settings.animation ) { animation_class = ' animate'; }
 
 		var overlay = '<div class="sonny_progressbar' + animation_class + '" data-width="' + progress + '">';
-		overlay += '<p class="title">' + skill + '</p>';
-		overlay += '<div class="bar-container' + bar_classes + '" style="' + bar_styles + '">';
+//		overlay += '<p class="title">' + skill + '</p>';
+		overlay += '<div class="bar-container' + bar_classes + '" style="' + bar_styles;
 
 		// Render the progress bar background
 		overlay += '<span class="backgroundBar"></span>';
@@ -53,7 +53,7 @@
 
 		// Render the progress bar
 		if ( settings.animation ) {
-			overlay += '<span class="bar" style="background-color:' + settings.barColor + ';"></span>';
+			overlay += '<span class="bar" style="background-color:' + settings.barColor + ';"><p class="title">' + skill + '</p></span>';
 		}
 		else {
 			overlay += '<span class="bar" style="width:' + progress + '%;background-color:' + settings.barColor + ';"></span>';
