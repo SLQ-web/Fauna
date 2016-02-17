@@ -35,9 +35,9 @@
 	top: 0;
 	left: 0;
 	height: 100%;
-	-webkit-animation: Animation 2s infinite ease-in-out;
-	-moz-animation: Animation 2s infinite ease-in-out;
-	animation: Animation 2s infinite ease-in-out;
+	-webkit-animation: Animation 10s infinite ease-in-out;
+	-moz-animation: Animation 10s infinite ease-in-out;
+	animation: Animation 10s infinite ease-in-out;
 }
 /*
 .sonny_progressbar .targetBar.loader {

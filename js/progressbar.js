@@ -1,3 +1,5 @@
+//Credits to http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html
+
 (function($) {
 
 	jQuery.fn.progressBar = function( options ) {
@@ -88,7 +90,7 @@
 				$( this ).find( '.bar' ).animate({
 					width : progress,
 					opacity : 1
-				}, 1000 );
+				}, 2000, "easeOutBounce" );
 			}
 
 		});

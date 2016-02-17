@@ -273,7 +273,7 @@ setInterval(ShowTime ,1000);
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="links" id="qanzac100">Q ANZAC 100 <a class="first">+</a><div class="hide"> brings our shared history to life and creates a renewed legacy for future generations.</div></div>
             <div class="links" id="join">Join <a class="first">+</a><div class="hide">Join online for immediate access to State Library's collections and services.</div></div>
-            <div class="links" id="businessStudio">Business Studio <a class="first">+</a><div class="hide">SLQ’s Business Studio is a useful resource to support entrepreneurs and start-ups to make their innovative business ideas a reality.</div></div>
+            <div class="links" id="businessStudio">Business Studio <a class="first">+</a><div class="hide">SLQ&rsquo;s Business Studio is a useful resource to support entrepreneurs and start-ups to make their innovative business ideas a reality.</div></div>
             <div class="links" id="subscribe">Subscribe <a class="first">+</a><div class="hide">Keep up to date with State Library news, events, and initiatives by subscribing to one of our email or printed publications.</div></div>
         </div>
     </div>
@@ -289,6 +289,7 @@ setInterval(ShowTime ,1000);
 
 
 <script type="text/javascript" src="../js/card-flip.js"></script>
+<!--<script type="application/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>-->
 
 <script type="text/javascript">
     
@@ -314,13 +315,24 @@ $('.main-gallery').flickity({
 });
 
 // jQuery toggle for other sites buttons
+$( document ).ready(function() {
     $(".hide").hide();
+    var plusMinus = $(this);
+    
 $( ".first" ).click(function() {
-//    alert('clicked')
-  $(this).next('.hide').slideToggle('slow')
-  .siblings('.hide:visible').slideUp('fast');
+
+    if ($(this).html()=='+') {
+        $(this).html('-')
+
+    }else if ($(this).html()=='-') {
+        $(this).html('+')
+    }
+    
+  $(this).next('.hide').toggle("slow");
+//  .siblings('.hide:visible').slideIn('fast');
     // Animation complete.
   });
+});
     
 </script>
    
