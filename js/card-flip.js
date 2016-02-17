@@ -45,19 +45,4 @@ document.getElementById('resolveInfo').addEventListener( 'click', function(){
     $(" #card ").removeClass("flipped")
 });
 
-
-
-
-document.getElementById('slide1-info').addEventListener( 'click', function(){
-    $("#slideCard1").addClass("flipped")
-});
-
-//Addition of function to remove flipped class
-document.getElementById('resolve-slide1').addEventListener( 'click', function(){
-    $("#slideCard1").removeClass("flipped");
-
-//    $gallery.flickity('stopPlayer');
-    $('.main-gallery').flickity('startPlayer');
-});
-
 window.addEventListener('DOMContentLoaded', init, false);
