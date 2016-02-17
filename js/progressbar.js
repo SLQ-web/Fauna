@@ -83,12 +83,12 @@
 				var progress = $( this ).data( 'width' ) + "%";
 
 				$( this ).removeClass( 'animate' );
-				$( this ).find( '.bar' ).css('opacity', '0.1');
+				$( this ).find( '.bar' ).css('opacity', '1');
 
 				$( this ).find( '.bar' ).animate({
 					width : progress,
 					opacity : 1
-				}, 3000 );
+				}, 1000 );
 			}
 
 		});
