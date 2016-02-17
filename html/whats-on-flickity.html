@@ -85,14 +85,21 @@ setInterval(ShowTime ,1000);
        }
        
 /* CSS styles for the Other sites section */
-       .otherSites .links { display: inline; padding: 0.5em; }
-       #qanzac100 { color: navy; border: solid 1px navy; }
-       #join { color: #6c62ab; border: solid 1px #6c62ab; }
-       #businessStudio { color: #333; border: solid 1px #333;  }
-       #subscribe { color: #81cd24; border: solid 1px #81cd24; }
+
+       .otherSites .links { display: inline; padding: 0.5em;line-height:3em; border:1px;}
+       .otherSites .links a{color:#000;}
+       #qanzac100{ border:solid 1px red;color:red;}
+       #qanzac100 a{ color:red;}
+       #join{ border:solid 1px purple;color:purple;}
+       #join a{ color:purple;}
+       #businessStudio{ border:solid 1px dodgerblue;color:dodgerblue;}
+       #businessStudio a{ color:dodgerblue;}
+       #subscribe{ border:solid 1px mediumseagreen;color:mediumseagreen;}
+       #subscribe a{ color:mediumseagreen;}
+
        
        .first { cursor: pointer; }
-       .hide { display: inline; padding: 10px; background: #eee; }
+       .hide { display: inline;margin-left:1em; color:#000;}
        
    </style>
    
@@ -257,15 +264,10 @@ setInterval(ShowTime ,1000);
         <div class="grid-content otherSites">
             <h3>Other sites</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div class="links" id="qanzac100">Q ANZAC 100 <a class="first">+</a></div>
-              <div class="hide">TQ ANZAC 100 brings our shared history to life and creates a renewed legacy for future generations.</div>
-            <div class="links" id="join">Join <a class="first">+</a></div>
-              <div class="hide">Join online for immediate access to State Library's collections and services.</div>
-            <div class="links" id="businessStudio">Business Studio <a class="first">+</a></div>
-              <div class="hide">SLQ’s Business Studio is a useful resource to support entrepreneurs and start-ups to make their innovative business ideas a reality.</div>
-            <div class="links" id="subscribe">Subscribe <a class="first">+</a>
-            </div>
-              <div class="hide">Keep up to date with State Library news, events, and initiatives by subscribing to one of our email or printed publications.</div>
+            <div class="links" id="qanzac100">Q ANZAC 100 <a class="first">+</a><div class="hide"> brings our shared history to life and creates a renewed legacy for future generations.</div></div>
+            <div class="links" id="join">Join <a class="first">+</a><div class="hide">Join online for immediate access to State Library's collections and services.</div></div>
+            <div class="links" id="businessStudio">Business Studio <a class="first">+</a><div class="hide">SLQ’s Business Studio is a useful resource to support entrepreneurs and start-ups to make their innovative business ideas a reality.</div></div>
+            <div class="links" id="subscribe">Subscribe <a class="first">+</a><div class="hide">Keep up to date with State Library news, events, and initiatives by subscribing to one of our email or printed publications.</div></div>
         </div>
     </div>
 </div>
@@ -308,7 +310,7 @@ $('.main-gallery').flickity({
     $(".hide").hide();
 $( ".first" ).click(function() {
 //    alert('clicked')
-  $(this.parentNode).next('.hide').slideToggle('fast')
+  $(this).next('.hide').slideToggle('slow')
   .siblings('.hide:visible').slideUp('fast');
     // Animation complete.
   });
