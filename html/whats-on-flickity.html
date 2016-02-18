@@ -89,7 +89,7 @@ setInterval(ShowTime ,1000);
        
 /* CSS styles for the Other sites section */
 
-       .otherSites .links { display: inline; padding: 0.5em;line-height:3em;}
+       .otherSites .links { display: inline-block; padding: 0.2em;margin:0.2em;}
        .otherSites .links a{color:#000;}
        #qanzac100{ border:solid 1px red;color:red;}
        #qanzac100 a{ color:red;}
@@ -121,7 +121,7 @@ setInterval(ShowTime ,1000);
        #creativeCommons a { color: #00a4a1; }
        
        .first { cursor: pointer; }
-       .hide { display: inline; margin-left:1em; color:#000; background: #ccc; height: 2em; }
+       .hide { display: inline; margin-left:1em;  }
        
    </style>
    
@@ -360,7 +360,8 @@ $( ".first" ).click(function() {
         $(this).html('+')
     }
     
-  $(this).next('.hide').toggle("slide", "right", 500);
+  $(this).next('.hide').toggle();
+  //"slide","right","1000"
 //  .siblings('.hide:visible').slideIn('fast');
     // Above code is probably no longer needed as we are using jQuery UI lib
     // Animation complete.
