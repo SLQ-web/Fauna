@@ -102,7 +102,7 @@ setInterval(ShowTime ,1000);
 
        
        .first { cursor: pointer; }
-       .hide { display: inline;margin-left:1em; color:#000;}
+       .hide { display: inline; margin-left:1em; color:#000; background: #ccc; height: 2em; }
        
    </style>
    
@@ -289,7 +289,7 @@ setInterval(ShowTime ,1000);
 
 
 <script type="text/javascript" src="../js/card-flip.js"></script>
-<!--<script type="application/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>-->
+<script type="application/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
 
 <script type="text/javascript">
     
@@ -328,7 +328,7 @@ $( ".first" ).click(function() {
         $(this).html('+')
     }
     
-  $(this).next('.hide').toggle("slow");
+  $(this).next('.hide').toggle("slide", "right", 500);
 //  .siblings('.hide:visible').slideIn('fast');
     // Animation complete.
   });
