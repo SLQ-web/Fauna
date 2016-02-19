@@ -1,0 +1,18 @@
+  .eresources-description {
+      height:110px;
+}
+
+/* eresources slider styles with Flickity lib */
+#slideCard1 .main-gallery {
+    overflow: hidden;
+    height:170px;
+}
+
+#slideCard1 .gallery-cell {
+  height: 170px;
+    padding: 15px;
+}
+
+#slideCard1 .gallery-cell img { float: right; padding: 1em; }
+
+#slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
