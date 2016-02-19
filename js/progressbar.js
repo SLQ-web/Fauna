@@ -81,7 +81,7 @@
 		$( '.sonny_progressbar.animate' ).each( function() {
 			var position = $( this ).offset().top;
 
-			if ( ( $(window).scrollTop() + doc_height - 60 ) > position ) {
+			if ( ( $(window).scrollTop() + doc_height - 30 ) > position ) {
 				var progress = $( this ).data( 'width' ) + "%";
 
 				$( this ).removeClass( 'animate' );
@@ -90,7 +90,7 @@
 				$( this ).find( '.bar' ).animate({
 					width : progress,
 					opacity : 1
-				}, 2000, "easeOutBounce" );
+				}, 5000, "easeOutQuad" );
 			}
 
 		});

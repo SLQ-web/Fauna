@@ -5,7 +5,10 @@
     <link rel="stylesheet" href="../css/card-flip.css">
     <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
     <link rel="stylesheet" href="../css/os-wo.css">
+    <link rel="stylesheet" href="../css/progressbar.css">
     <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="application/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/progressbar.js"></script>
     <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
     <!-- Modified the card flip script -->
@@ -86,6 +89,12 @@ setInterval(ShowTime ,1000);
            height: 300px;
            height: 285px; /* Added 2016/02/18 SAS */
        }
+       
+       /* Blogs tile */
+       .soldierPortrait { background-image:  url(../img/demo-SLQ%20Blogs@3x.png); background-size: 320px 285px; }
+       
+       /* For foundation donation bar */
+       ul.progressBar { margin: 0; padding: 0 }
        
        /* CSS styles for the Other sites section */
 
@@ -247,8 +256,13 @@ setInterval(ShowTime ,1000);
                             <h5><a href="http://lynda.com">Lynda.com</a></h5>
                             <p>Courses for all levels cover technical skills, creative techniques, business strategies, and more. Find what you need in our growing library. New courses added weekly.</p>
                           </div>
-                          <div class="gallery-cell">Check out all our lovely ebooks and stuff</div>
-                          <div class="gallery-cell">I was just born to be digital baby</div>
+                          <div class="gallery-cell">
+                            <h5><a href="http://www.slq.qld.gov.au/search/eresources/ebooks">ebooks and digital publications</a></h5>
+                            <p>State Library provides access to thousands of ebooks through One Search, the library catalogue. These include ebooks from the Electronic Book Library (EBL), free ebooks from the Hathi Trust and Project Gutenberg, and digitised books and 'virtual books' from our collections.</p>
+                          </div>
+                          <div class="gallery-cell">
+                            <h5><a href="">RLQ for kids</a></h5>
+                          </div>
                       </div>
                      </div>
                 </div>
@@ -256,35 +270,35 @@ setInterval(ShowTime ,1000);
 
         </div>
         <div class="row">
-              <div class="grid-item third">
-                <div class="grid-content" style="padding: 0; background:none">
-                       <div class="flip-container">
-                        <div id="card">
-                            <div class="front">
-                                <h3>Question of the day</h3>
-                                <h4><i>What is the oldest item in the State Library's collections?</i></h4>
-                                <p>&nbsp;</p>
-                                <p>&nbsp;</p>
-                                <p id="info"><img src="../img/info-icon-outline.svg" />Check your answer</p>
-                            </div>
-                            <div class="back">
-                                <h3>Question of the Day:<br />Answer</h3>
-                                <p><i><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item"><img src="../img/cuneiform-tn.png" alt="Cuneiform tablet" width="53" height="80" style="float: left;"></a>Our oldest collection item is a <b>cuneiform tablet</b> from ancient Iraq, dating to about 1850 B.C.</i></p>
-                                <p><i><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">Find out more</a></i></p>
-                                <p id="resolveInfo"><img src="../img/info-icon-outline.svg" />Check your answer</p>
-                            </div>
-                           </div>
-                        </div>
+      <div class="grid-item third">
+        <div class="grid-content" style="padding: 0; background:none">
+               <div class="flip-container">
+                <div id="card">
+                    <div class="front" style="">
+                        <h3>What is the oldest item in SLQ's collections?</h3>
+                        <svg id="info" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/></svg>
+                    </div>
+                    <div class="back" style="">
+                       <p>Our oldest collection item is a <b><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">cuneiform tablet</a></b> from ancient Iraq, dating to about 1850 B.C.</i></p>
+                      <svg id="resolveInfo" xmlns="http://www.w3.org/2000/svg" width="64" height="64
+                          " fill="#fff" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.222 18.917c5.666-5.905-.629-10.828-5.011-7.706l1.789 1.789h-6v-6l1.832 1.832c7.846-6.07 16.212 4.479 7.39 10.085z"/></svg>
+                    </div>
+                   </div>
                 </div>
-            </div>
+        </div>
+    </div>
             <div class="grid-item third">
-                <div class="grid-content " style="background:red">
-                    <h3>blog</h3>
+                <div class="grid-content soldierPortrait">
+                    
                 </div>
             </div>    
             <div class="grid-item third">
-                <div class="grid-content " style="background:yellow">
-                    <h3>foundation</h3>
+                <div class="grid-content">
+                    <h3>Foundation</h3>
+                    <p>Lorem ipsum something to show that the progress bar is down below this text.</p>
+                    <ul class="progressBar">
+                      <li class='donations' data-width='80' data-target='100'>Funding</li>
+                    </ul>
                 </div>
             </div> 
         </div>   
@@ -308,7 +322,6 @@ setInterval(ShowTime ,1000);
             </div>
             </div>
 
-        </div>
         <div class="row"> 
             <div class="grid-item">
                 <div class="grid-content otherSites">
@@ -345,7 +358,8 @@ setInterval(ShowTime ,1000);
         <script type="text/javascript" src="../js/card-flip.js"></script>
 
         <script type="text/javascript">
-
+            
+        // initialise the page in packery layout
         var $grid = $('.grid').packery({
           itemSelector: '.grid-item',
           gutter: 0,
@@ -357,6 +371,7 @@ setInterval(ShowTime ,1000);
           stamp: '.stamp',
         })
 
+        // initialise the flickity sliders on page
         $('.main-gallery').flickity({
           // options
           cellAlign: 'left',
@@ -365,6 +380,15 @@ setInterval(ShowTime ,1000);
           prevNextButtons: false,
           pageDots: false,
           wrapAround: true
+        });
+            
+        // attach progress bar animation to object
+        $('.donations').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		animateTarget : true,
+		barColor : "pink",
         });
 
         // jQuery toggle for other sites buttons
