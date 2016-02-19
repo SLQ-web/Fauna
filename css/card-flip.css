@@ -1,77 +1,82 @@
-		figure {
-		  margin: 0;
-		}
-		
-		.flip-container {
-		  width: 100%;
-		  height: 200px;
-		  position: relative;
-		  margin: 0 auto 10px 0;
-		  -webkit-perspective: 800px;
-			 -moz-perspective: 800px;
-			   -o-perspective: 800px;
-				  perspective: 800px;
-		}
-		
-		#card, #slideCard1 {
-		  width: 100%;
-		  height: 100%;
-		  position: absolute;
-		  -webkit-transition: -webkit-transform 1s;
-			 -moz-transition: -moz-transform 1s;
-			   -o-transition: -o-transform 1s;
-				  transition: transform 1s;
-		  -webkit-transform-style: preserve-3d;
-			 -moz-transform-style: preserve-3d;
-			   -o-transform-style: preserve-3d;
-				  transform-style: preserve-3d;
-		  -webkit-transform-origin: right center;
-			 -moz-transform-origin: right center;
-			   -o-transform-origin: right center;
-				  transform-origin: right center;
-		}
-		
-		#card.flipped, #slideCard1.flipped {
-		  -webkit-transform: translateX( -100% ) rotateY( -180deg );
-			 -moz-transform: translateX( -100% ) rotateY( -180deg );
-			   -o-transform: translateX( -100% ) rotateY( -180deg );
-				  transform: translateX( -100% ) rotateY( -180deg );
-		}
-		
-		#card figure, #slideCard1 figure, #card div, #slideCard1 div {
-		  display: block;
-		  height: 100%;
-		  width: 100%;
-		  font-size: 1em;
-		  position: absolute;
-		  -webkit-backface-visibility: hidden;
-			 -moz-backface-visibility: hidden;
-			   -o-backface-visibility: hidden;
-				  backface-visibility: hidden;
-		  padding: 0% 5%;
-		}
+figure { margin: 0; }
 
-#slideCard1 figure, #slideCard1 div { padding: 0; }
+.flip-container {
+	margin: 0 auto 10px 0;
+	perspective: 900px;
+	position: relative;
+	width: 100%;
+}
 
-		#card figure h3, #card div h3 { line-height: 1; }
-		#card figure p, #card div p { font-weight: normal; }
-		
-		#card .front, #slideCard1 .front {
-		  background: #EEE;
-          padding: 10px;
-            height: 285px;
-		}
+#card, #slideCard1 {
+	height: 100%;
+	position: absolute;
+	transform-origin: right center;
+	transform-style: preserve-3d;
+	transition: transform 0.4s;
+	width: 100%;
+}
 
-#slideCard1 .front { padding: 0; height: 210px; background: #eee; }
-		
-		#card .back, #slideCard1 .back {
-		  background: #CCC;
-		  -webkit-transform: rotateY( 180deg );
-			 -moz-transform: rotateY( 180deg );
-			   -o-transform: rotateY( 180deg );
-				  transform: rotateY( 180deg );
-            padding: 10px;
-            height: 285px;
-		}
+#card.flipped, #slideCard1.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
-#slideCard1 .back { padding: 0; height: 210px; }
+#card figure, #slideCard1 figure, #card div, #slideCard1 div {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	display: block;
+	font-size: 1em;
+	position: absolute;
+	width: 100%;
+}
+
+#slideCard1 figure, #slideCard1 div { /*padding: 0; */}
+
+#card figure h3, #card div h3 { line-height: 1; }
+#card figure p, #card div p { font-weight: normal; }
+
+#card .front, #slideCard1 .front {
+	  }
+
+#slideCard1 .front { 
+	
+}
+
+#card .back, #slideCard1 .back {
+	height: 285px;
+	transform: rotateY( 180deg );
+}
+
+#slideCard1 .back {  padding: 0; }
+
+
+.front, .back{
+	
+	text-align:center;
+	padding:1em;
+	background:#333;
+	color:#fff;
+	height: 285px; 
+}
+
+.back a:link, .back a:visited{
+	color:#fff;	
+}
+.front{
+	background:teal;
+
+	}
+.back{
+	background-color:teal;
+	background-image:url(../img/cuneiform-tablet.png);
+	background-repeat:no-repeat;
+	background-size:80%;
+	background-position:30px 90px;
+
+}
+#info{
+	padding:0;
+	margin:2em 0 0 0;
+}
+
+#resolveInfo{
+	padding:0;
+	margin:4em 0 0 0;
+}
