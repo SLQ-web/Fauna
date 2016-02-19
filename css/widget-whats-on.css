@@ -1,19 +1,18 @@
-    /* WHAT'S ON slider styles with Flickity lib */
+/* WHAT'S ON slider styles with Flickity lib */
+    #whatsOn .main-gallery {
+        overflow: hidden;
 
-        #whatsOn .main-gallery {
-            overflow: hidden;
-
-        }
-        #whatsOn .gallery-cell {
-          margin:0;
-          padding:0;
-           width: 300px;
-           height: 300px;
-           height: 285px; /* Added 2016/02/18 SAS */
-                   }
-       
-       #whatsOn .gallery-cell img {
-           width: 300px;
-           height: 300px;
-           height: 285px; /* Added 2016/02/18 SAS */
-       }
+    }
+    #whatsOn .gallery-cell {
+      margin:0;
+      padding:0;
+       width: 300px;
+       height: 300px;
+       height: 285px; /* Added 2016/02/18 SAS */
+               }
+   
+   #whatsOn .gallery-cell img {
+       width: 300px;
+       height: 300px;
+       height: 285px; /* Added 2016/02/18 SAS */
+   }
