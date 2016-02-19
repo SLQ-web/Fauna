@@ -27,24 +27,25 @@
     
     <!-- Modified the card flip script -->
     <!-- PERHAPS THIS SHOULD BE EXTERNAL TOO? -->
-<script type="text/javascript">
-function ShowTime() {
-  var now = new Date();
-  var hrs = 19-now.getHours();
-  var mins = 60-now.getMinutes();
-  var secs = 60-now.getSeconds();
-      timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
-  $("#countdown").html(timeLeft);
-}
+    <script type="text/javascript">
+    function ShowTime() {
+      var now = new Date();
+      var hrs = 19-now.getHours();
+      var mins = 60-now.getMinutes();
+      var secs = 60-now.getSeconds();
+          timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
+      $("#countdown").html(timeLeft);
+    }
 
-var countdown;
-function StopTime() {
-	clearInterval(countdown);
-	
-}
+    var countdown;
+    function StopTime() {
+    	clearInterval(countdown);
+    	
+    }
 
-setInterval(ShowTime ,1000);      
-</script>
+    setInterval(ShowTime ,1000);      
+    </script>
+
     </head>
 
     <body>
