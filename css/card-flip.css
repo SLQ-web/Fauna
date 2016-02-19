@@ -60,7 +60,7 @@ figure { margin: 0; }
 	color:#fff;	
 }
 .front{
-	background:teal;
+	background:teal; /*change the css */
 
 	}
 .back{
