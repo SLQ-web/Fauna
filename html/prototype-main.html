@@ -1,0 +1,314 @@
+<html>
+  <head>
+
+  <title>Base Prototype</title>
+
+    <!-- Frameworks styles-->
+    <link rel="stylesheet" href="../css/skeleton.css">
+    <link rel="stylesheet" href="../css/just-grids.css">
+    <link rel="stylesheet" href="../css/card-flip.css">
+    <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
+
+    <!-- Widgets  styles-->
+    <link rel="stylesheet" href="../css/widget-catalogue.css">
+    <link rel="stylesheet" href="../css/widget-progress-bar.css">
+    <link rel="stylesheet" href="../css/widget-other-sites.css">
+    <link rel="stylesheet" href="../css/widget-whats-on.css">
+    <link rel="stylesheet" href="../css/widget-eresources.css">
+
+    <!-- Main Prototype styles -->
+    <link rel="stylesheet" href="../css/prototype-base.css">
+
+    <script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="application/javascript" src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/progressbar.js"></script>
+    <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
+    <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
+    
+    <!-- Modified the card flip script -->
+    <!-- PERHAPS THIS SHOULD BE EXTERNAL TOO? -->
+    <script type="text/javascript">
+
+    </script>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+        <div class="row">
+           <a class="slq-logo"><img src="../img/Prototype%20device.svg" /></a>
+            <div class="twelve columns" style="margin-top:0;padding-top:0;">
+                <img src="../img/Prototype%20header.svg" width="100%" />
+            </div>
+        </div>
+        <div class="grid">  
+        <div class="row">
+            <div class="grid-item twoThirds">
+                <div class="grid-content" style="margin:0;padding:0;">
+                    <div id="whatsOn" style="/* background:cyan; Removed 2016/02/18 SAS */">
+                        <div class="main-gallery" style="/* opacity:0.3; Removed 2016/02/18 SAS  */">
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/state-of-war.png" />-->
+                                <div id="sow">
+                                    <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
+                                    <p>Explore Queensland's First World War Stories</p>
+                                    <p style="font-size:0.8em">Interactive display at SLQ</p>
+                                </div> <!-- /#sow -->
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/manuel-hornibrook.png" />-->
+                                <div id="mr">                                     
+                                    <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">The William Jolly Bridge Showcase</a></h3>
+                                    <p>Legacy of Sir Manuel Hornibrook</p>                                    
+                                </div> <!-- /#mr -->
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/uq-architecture.png" />-->                                
+                                <div id="uqarch">
+                                    <h3><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/talks/apdl/uq-architecture-lecture-series-2016">UQ Architecture Lecture Series</a></h3>
+                                    <p>Free weekly lectures | 1 Mar - 26 Apr</p>
+                                </div> <!-- /#uqarch -->
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/research-fellowships.png" />-->
+                                <div id="qrf">
+                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/qmawards">Queensland Research Fellowships</a></h2>
+                                    <p>Apply Now!!!!!</p>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/asia-pacific-architecture.png" />-->
+                                <div id="aparch">
+                                    <h2><a href="http://aparchitectureforum.com/">Asia Pacific Architecture forum</a></h2>
+                                    <p>Events, exhibitions &amp; more | 1 -14 Mar</p>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/black-adn-write.png" />-->
+                                <div id="bw">
+                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/blackwrite/fellowships">black&amp;write!</a></h2>
+                                    <p>Indigenous Writing Fellowships</p>
+                                    <p>Applications close Fri 26 Feb</p>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
+                                <!--<img src="../img/tiles/queenslandfaces.png" />-->
+                                <div id="qldfaces">
+                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/exhibitions/queensland-faces"># queensland faces</a></h2>
+                                    <p>Free exhibition | Until 8 May</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item third">
+                <div class="grid-content">
+                    <h3><img src="../img/time-icon.svg" class="clock tile-title-icon" />Opening hours</h3>
+                    <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
+                     Fri-Sun <strong>10am - 5pm</strong></p>
+                    <p>SLQ is open for <br /><strong id="countdown"></strong> more today.</p>
+                    <p><a href="#">Special areas &amp; public holidays</a></p>
+                </div>
+            </div>
+        </div>
+            
+        <!-- One Search form -->
+        <div class="row">
+            <div class="grid-item full">
+                <div id="onesearch" class="grid-content" style="background:gold">
+                    <!-- Added id #onesearch to facilitate individual styles - 2016/02/18 SAS -->
+                    <h3>One search catalogue</h3>
+                    <p><img src="../img/One%20Search-formelements.svg"  /></p>
+                    <p>An extended description of the One search catalogue and its various offerings to the people of Queensland.</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="row">
+                <div class="grid-item third">
+                <div class="grid-content " style="background:url(../img/instagram.png);background-size:cover">
+                    <div class="symmetrical light-elements">
+                      <h3 >&#9825;</h3>
+                      <h4 style="font-weight:bold;">Socialise</h4>
+                  </div>
+                </div>
+            </div>
+                <div class="grid-item twoThirds">
+                <div class="grid-content" style="margin:0;padding:0;">
+                  <div class="eresources-description">
+                    <h3>E'resources</h3>
+                    <p>A brief description of the breadth of our resources &amp; what they might offer to the people of Queensland.</p>
+                  </div>
+                     <div id="slideCard1">
+                      <div class="main-gallery" style="padding: 0;">
+                          <div class="gallery-cell" style="background:">
+                            <img src="../img/newsagent.png"/>
+                            <h5><a href="#">ANZ Newstand</a></h5>
+                            <p>Australia New Zealand Newsstand is a collection of over 400 newspapers and news services covering AUstralia and New Zealand.</p>
+                          </div>
+                          <div class="gallery-cell">
+                            <img src="../img/lynda@2x.png" width="180" />
+                            <h5><a href="http://lynda.com">Lynda.com</a></h5>
+                            <p>Courses for all levels cover technical skills, creative techniques, business strategies, and more. Find what you need in our growing library. New courses added weekly.</p>
+                          </div>
+                          <div class="gallery-cell">
+                            <h5><a href="http://www.slq.qld.gov.au/search/eresources/ebooks">ebooks and digital publications</a></h5>
+                            <p>State Library provides access to thousands of ebooks through One Search, the library catalogue. These include ebooks from the Electronic Book Library (EBL), free ebooks from the Hathi Trust and Project Gutenberg, and digitised books and 'virtual books' from our collections.</p>
+                          </div>
+                          <div class="gallery-cell">
+                            <h5><a href="">RLQ for kids</a></h5>
+                          </div>
+                      </div>
+                     </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+      <div class="grid-item third">
+        <div class="grid-content" style="padding: 0; background:none">
+               <div class="flip-container">
+                <div id="card">
+                    <div class="front" style="">
+                        <h3>What is the oldest item in SLQ's collections?</h3>
+                        <svg id="info" xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#fff" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 18.25c-.69 0-1.25-.56-1.25-1.25s.56-1.25 1.25-1.25c.691 0 1.25.56 1.25 1.25s-.559 1.25-1.25 1.25zm1.961-5.928c-.904.975-.947 1.514-.935 2.178h-2.005c-.007-1.475.02-2.125 1.431-3.468.573-.544 1.025-.975.962-1.821-.058-.805-.73-1.226-1.365-1.226-.709 0-1.538.527-1.538 2.013h-2.01c0-2.4 1.409-3.95 3.59-3.95 1.036 0 1.942.339 2.55.955.57.578.865 1.372.854 2.298-.016 1.383-.857 2.291-1.534 3.021z"/></svg>
+                    </div>
+                    <div class="back" style="">
+                       <p>Our oldest collection item is a <b><a href="http://onesearch.slq.qld.gov.au/SLQ:SLQ_PCI_EBSCO:slq_alma21127022090002061" target="_blank" title="View One Search catalogue record for this item">cuneiform tablet</a></b> from ancient Iraq, dating to about 1850 B.C.</i></p>
+                      <svg id="resolveInfo" xmlns="http://www.w3.org/2000/svg" width="64" height="64
+                          " fill="#fff" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3.222 18.917c5.666-5.905-.629-10.828-5.011-7.706l1.789 1.789h-6v-6l1.832 1.832c7.846-6.07 16.212 4.479 7.39 10.085z"/></svg>
+                    </div>
+                   </div>
+                </div>
+        </div>
+    </div>
+            <div class="grid-item third">
+                <div class="grid-content soldierPortrait">
+                    
+                </div>
+            </div>    
+            <div class="grid-item third">
+                <div class="grid-content">
+                    <h3>Foundation</h3>
+                    <p>Lorem ipsum something to show that the progress bar is down below this text.</p>
+                    <ul class="progressBar">
+                      <li class='donations' data-width='80' data-target='100'>Funding</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>   
+        <div class="row">
+            <div class="grid-item twoThirds">
+                <div class="grid-content">
+                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/-X6mRTv8-eY" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+                <div class="grid-item third">
+                <div class="grid-content">
+                    <h3>kuril dhagun</h3>
+                    <p>Located on Level 1 of our South Bank building, kuril dhagun is an indigenous space.</p>
+                    <ul>
+                      <li><a href="#">Lilla Watson artwork</a></li>
+                        <li><a href="#">Possum skin cloak workshops</a></li>
+                        <li><a href="#">Talking circle</a></li>
+                    </ul>
+                    <p class="aRight"><a href="#">Read more...</a></p>
+                </div>
+            </div>
+            </div>
+
+        <div class="row"> 
+            <div class="grid-item">
+                <div class="grid-content otherSites">
+                    <h3>Other sites</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="links" id="qanzac100">Q ANZAC 100 <a class="first">+</a><span class="hide">brings our shared history to life and creates a renewed legacy for future generations.</span></div>
+            <div class="links" id="join">Join <a class="first">+</a><span class="hide">Join online for immediate access to State Library's collections and services.</span></div>
+            <div class="links" id="businessStudio">Business Studio <a class="first">+</a><span class="hide">SLQ&rsquo;s Business Studio is a useful resource to support entrepreneurs and start-ups to make their innovative business ideas a reality.</span></div>
+            <div class="links" id="subscribe">Subscribe <a class="first">+</a><span class="hide">Keep up to date with State Library news, events, and initiatives by subscribing to one of our email or printed publications.</span></div>
+            <div class="links" id="support">Support us <a class="first">+</a><span class="hide">The Queensland Library Foundation seeks donations on behalf of the State Library of Queensland.</span></div>
+            <div class="links" id="shop">Shop <a class="first">+</a><span class="hide">Visit the SLQ book shop to splurge on a delightful selection of reading materials and thoughtful gifts for your special someone.</span></div>
+            <div class="links" id="twitter">Twitter <a class="first">+</a><span class="hide">Conversations about Queensland&rsquo;s memory and the latest news, opportunities, and events from SLQ</span></div>
+            <div class="links" id="facebook">Facebook <a class="first">+</a><span class="hide">Queensland railway enthusiasts will be excited to discover that SLQ has digitised an 8 volume set called <em>Notes on Queensland railways</em>.</span></div>
+            <div class="links" id="corner">The Corner <a class="first">+</a><span class="hide">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span></div>
+           <div class="links" id="read4life">Read4Life <a class="first">+</a><span class="hide">Read4Life is a community-based program to build awareness and understanding of the importance of language and words to children under the age of five.</span></div>
+           <div class="links" id="blogs">SlqBlogs <a class="first">+</a><span class="hide">We are thrilled to have South Korean architect Moon Hoon as our guest speaker at the first UQ Architecture Lecture in 2016. </span></div>
+           <div class="links" id="edge">The Edge <a class="first">+</a><span class="hide">Our creative short courses, workshops and inductions are now live, and ready to book. For a full list, visit our What’s On calendar.</span></div>
+           <div class="links" id="design">Design Online <a class="first">+</a><span class="hide">Design Online uses the idea of an ‘article’ as the vehicle for expanding knowledge on subjects related to design in the Asia Pacific.</span></div>
+           <div class="links" id="plc">Public Libraries Connect <a class="first">+</a><span class="hide">Showcase your library’s digital inclusion projects at the 5th annual Broadband for the Bush Forum, to be held at State Library from 7 to 9 June, 2016.</span></div>
+           <div class="links" id="creativeCommons">Creative Commons <a class="first">+</a><span class="hide">Showcase your library’s digital inclusion projects at the 5th annual Broadband for the Bush Forum, to be held at State Library from 7 to 9 June, 2016.</span></div>
+                </div>
+            </div>
+        </div>
+        </div>
+          <div class="row">
+            <div class="twelve columns">
+                <img src="../img/footer.svg" width="100%" />
+            </div>
+          </div>
+
+          <button onclick="window.location.reload();">Oh I messed up</button>
+
+
+        <script type="text/javascript" src="../js/card-flip.js"></script>
+
+        <script type="text/javascript">
+            
+        // initialise the page in packery layout
+        var $grid = $('.grid').packery({
+          itemSelector: '.grid-item',
+          gutter: 0,
+          columnWidth: 0,
+          rowHeight: 0,
+          isOriginTop: true,
+          isHorizontal: false,
+          percentPosition: true,
+          stamp: '.stamp',
+        })
+
+        // initialise the flickity sliders on page
+        $('.main-gallery').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          autoPlay: 2000,
+          prevNextButtons: false,
+          pageDots: false,
+          wrapAround: true
+        });
+            
+        // attach progress bar animation to object
+        $('.donations').progressBar({
+		shadow : true,
+		percentage : true,
+		animation : true,
+		animateTarget : true,
+		barColor : "pink",
+        });
+
+        // jQuery toggle for other sites buttons
+        $( document ).ready(function() { //supposed to stop FOUC
+            $(".hide").hide();
+            var plusMinus = $(this);
+
+        $( ".first" ).click(function() {
+
+            if ($(this).html()=='+') {
+                $(this).html('-')
+
+            }else if ($(this).html()=='-') {
+                $(this).html('+')
+            }
+
+          $(this).next('.hide').toggle('fast');
+            // Animation complete.
+          });
+        });
+
+        </script>
+   
+    </body>    
+
+</html>
