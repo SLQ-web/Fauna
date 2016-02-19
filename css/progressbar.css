@@ -83,3 +83,8 @@
 
 /* Because the core JS has been edited, need to add this bug fix css */
 p.marker { opacity: 0; }
+
+
+/*removed from internal stylesheet*/
+/* For foundation donation bar */
+ul.progressBar { margin: 0; padding: 0 }
