@@ -1,0 +1,14 @@
+/* Styles for One Search and What's On tiles in new home page layout */
+
+.grid-item.full { width: 960px; }
+#onesearch { padding: 10px 15px; }
+/* What's on gallery tiles */
+.gallery-cell > div {  height: 100%; margin-right:5px; padding: 15px; }
+.gallery-cell a {  text-decoration:none; }
+#sow { background: lightgreen; border: 2px solid green; }
+#mr { background: lightblue; border: 2px solid blue; }
+#uqarch { background:gold; border: 2px solid #963;}
+#qrf { background:#fcf; border: 2px solid #903; }
+#aparch { background: #fff2e6; border: 2px solid #c30; }
+#bw { background:#f5e6ff; border: 2px solid #3d0066; }
+#qldfaces { background:#cff; border: 2px solid #066; }
