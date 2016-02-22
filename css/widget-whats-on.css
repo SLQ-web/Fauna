@@ -27,3 +27,37 @@
 #aparch { background: #fff2e6; background-image: url('../img/whats-on/asia-pacific-architecture.jpg');background-size:cover;}
 #bw { background:#f5e6ff;  }
 #qldfaces { background:#cff;  }
+
+/*Belonging*/
+
+.hero{
+      background-color:#fff;
+      text-align:center;
+}
+
+.hero svg{
+  margin-top:80px;
+}
+
+.hero p{
+ margin-top:20px;
+}
+
+#XMLID_2_ {
+    animation: breathing 2s ease-out infinite normal;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 50% 50%;
+}
+
+    @keyframes breathing {
+  0% {
+    transform: scale(1,1);
+}
+  25% {
+    transform: scale(0.9,0.9);
+  }
+  100% {
+    transform: scale(1,1);
+  }
+}
+
