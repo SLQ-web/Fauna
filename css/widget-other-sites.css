@@ -37,7 +37,9 @@
        .hide { display: inline; margin-left:1em; color:#000; height: 2em;  }
 */
 
-.accordion-toggle {cursor: pointer; background-image: url(../img/plus-icon.png); background-position: right center; background-repeat: no-repeat; width: 80%; }
+.accordion-toggle {cursor: pointer; width: 80%; }
+.activeState { background-image: url(../img/minus-icon.png)!important; background-position: right center; background-repeat: no-repeat; }
+.dormantState { background-image: url(../img/plus-icon.png); background-position: right center; background-repeat: no-repeat; }
 .accordion-content {display: none; border: 1px solid: #ccc; width: 70%; }
 .accordion-content p { font-size: 1.2rem; }
 .accordion-content.default {display: block;}

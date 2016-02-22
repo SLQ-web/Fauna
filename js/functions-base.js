@@ -55,10 +55,10 @@
           $(document).ready(function($) {
             $('.otherSites').find('.accordion-toggle').click(function(){
 
-            $(this).toggleClass('activeState');
-
-              // Remove active state from other panels not selected
-              $("#accordian").not($(this)).removeClass('activeState');
+            $('.accordion-toggle').removeClass('activeState');
+            if($(this).parent().find('.accordion-content').css('display')=='none'){
+               $(this).addClass('activeState');
+            }
 
               //Expand or collapse this panel
               $(this).next().slideToggle('fast');
