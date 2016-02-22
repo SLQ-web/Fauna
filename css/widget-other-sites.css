@@ -39,7 +39,7 @@
 
 /*.otherSites { min-height: 285px!important; }*/
 .accordion-toggle {cursor: pointer; background-image: url(../img/plus-icon.png); background-position: right center; background-repeat: no-repeat; width: 80%; }
-.accordion-content {display: none; border: 1px solid: #ccc; }
+.accordion-content {display: none; border: 1px solid: #ccc; width: 70%; }
 .accordion-content p { font-size: 1.2rem; }
 .accordion-content.default {display: block;}
 .otherSites ul { list-style-type: none; margin: 0; padding: 0; }
