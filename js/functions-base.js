@@ -1,18 +1,71 @@
-   //countdown timer
+     //countdown timer
 
-    function ShowTime() {
-      var now = new Date();
-      var hrs = 19-now.getHours();
-      var mins = 60-now.getMinutes();
-      var secs = 60-now.getSeconds();
-          timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
-      $("#countdown").html(timeLeft);
-    }
+      function ShowTime() {
+        var now = new Date();
+        var hrs = 19-now.getHours();
+        var mins = 60-now.getMinutes();
+        var secs = 60-now.getSeconds();
+            timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
+        $("#countdown").html(timeLeft);
+      }
 
-    var countdown;
-    function StopTime() {
-    	clearInterval(countdown);
-    	
-    }
+      var countdown;
+      function StopTime() {
+      	clearInterval(countdown);
+      	
+      }
 
-    setInterval(ShowTime ,1000);      
+      setInterval(ShowTime ,1000);      
+
+        // initialise the page in packery layout
+        var $grid = $('.grid').packery({
+          itemSelector: '.grid-item',
+          gutter: 0,
+          columnWidth: 0,
+          rowHeight: 0,
+          isOriginTop: true,
+          isHorizontal: false,
+          percentPosition: true,
+          stamp: '.stamp',
+        })
+
+        // initialise the flickity sliders on page
+        $('.main-gallery').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          autoPlay: 2000,
+          prevNextButtons: false,
+          pageDots: false,
+          wrapAround: true
+        });
+            
+        // attach progress bar animation to object
+        //Credits to http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html
+
+        $('.donations').progressBar({
+              shadow : false,
+              percentage : true,
+              animation : true,
+              animateTarget : true,
+              barColor : "deeppink",
+         });
+
+        // jQuery toggle for other sites buttons
+        $( document ).ready(function() { //supposed to stop FOUC
+            $(".hide").hide();
+            var plusMinus = $(this);
+
+        $( ".first" ).click(function() {
+
+            if ($(this).html()=='+') {
+                $(this).html('-')
+
+            }else if ($(this).html()=='-') {
+                $(this).html('+')
+            }
+
+          $(this).next('.hide').toggle('fast');
+            // Animation complete.
+          });
+        });

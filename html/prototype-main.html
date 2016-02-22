@@ -195,7 +195,7 @@
                     <h3>Foundation</h3>
                     <p>Lorem ipsum something to show that the progress bar is down below this text.</p>
                     <ul class="progressBar">
-                      <li class='donations' data-width='80' data-target='100'>Funding</li>
+                      <li class='donations' data-width='76' data-target='100'>Funding</li>
                     </ul>
                 </div>
             </div> 
@@ -254,59 +254,8 @@
 
 
         <script type="text/javascript" src="../js/card-flip.js"></script>
+        <script type="text/javascript" src="../js/functions-base.js"></script>
 
-        <script type="text/javascript">
-            
-        // initialise the page in packery layout
-        var $grid = $('.grid').packery({
-          itemSelector: '.grid-item',
-          gutter: 0,
-          columnWidth: 0,
-          rowHeight: 0,
-          isOriginTop: true,
-          isHorizontal: false,
-          percentPosition: true,
-          stamp: '.stamp',
-        })
-
-        // initialise the flickity sliders on page
-        $('.main-gallery').flickity({
-          // options
-          cellAlign: 'left',
-          contain: true,
-          autoPlay: 2000,
-          prevNextButtons: false,
-          pageDots: false,
-          wrapAround: true
-        });
-            
-        // attach progress bar animation to object
-        $('.donations').progressBar({
-		shadow : true,
-		percentage : true,
-		animation : true,
-		animateTarget : true,
-		barColor : "pink",
-        });
-
-        // jQuery toggle for other sites buttons
-        $( document ).ready(function() { //supposed to stop FOUC
-            $(".hide").hide();
-            var plusMinus = $(this);
-
-        $( ".first" ).click(function() {
-
-            if ($(this).html()=='+') {
-                $(this).html('-')
-
-            }else if ($(this).html()=='-') {
-                $(this).html('+')
-            }
-
-          $(this).next('.hide').toggle('fast');
-            // Animation complete.
-          });
-        });
 
         </script>
    

@@ -90,7 +90,7 @@
 				$( this ).find( '.bar' ).animate({
 					width : progress,
 					opacity : 1
-				}, 5000, "easeOutQuad" );
+				}, 2000, "easeInQuad" );
 			}
 
 		});
