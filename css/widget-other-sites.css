@@ -1,7 +1,8 @@
 
        /* CSS styles for the Other sites section */
 
-       .otherSites .links { display: inline; padding: 0.5em; line-height: 3em; border: 1px; margin-right: 0.5em; }
+       /*
+        .otherSites .links { display: inline; padding: 0.5em; line-height: 3em; border: 1px; margin-right: 0.5em; }
        .otherSites .links a{color:#000;}
        #qanzac100{ border:solid 1px red;color:red;}
        #qanzac100 a{ color:red;}
@@ -34,3 +35,11 @@
        
        .first { cursor: pointer; }
        .hide { display: inline; margin-left:1em; color:#000; height: 2em;  }
+*/
+
+/*.otherSites { min-height: 285px!important; }*/
+.accordion-toggle {cursor: pointer; background-image: url(../img/plus-icon.png); background-position: right center; background-repeat: no-repeat; width: 80%; }
+.accordion-content {display: none; border: 1px solid: #ccc; }
+.accordion-content p { font-size: 1.2rem; }
+.accordion-content.default {display: block;}
+.otherSites ul { list-style-type: none; margin: 0; padding: 0; }

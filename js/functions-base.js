@@ -52,20 +52,19 @@
          });
 
         // jQuery toggle for other sites buttons
-        $( document ).ready(function() { //supposed to stop FOUC
-            $(".hide").hide();
-            var plusMinus = $(this);
+          $(document).ready(function($) {
+            $('.otherSites').find('.accordion-toggle').click(function(){
 
-        $( ".first" ).click(function() {
+            $(this).toggleClass('activeState');
 
-            if ($(this).html()=='+') {
-                $(this).html('-')
+              // Remove active state from other panels not selected
+              $("#accordian").not($(this)).removeClass('activeState');
 
-            }else if ($(this).html()=='-') {
-                $(this).html('+')
-            }
+              //Expand or collapse this panel
+              $(this).next().slideToggle('fast');
 
-          $(this).next('.hide').toggle('fast');
-            // Animation complete.
+              //Hide the other panels
+              $(".accordion-content").not($(this).next()).slideUp('fast');
+
+            });
           });
-        });
