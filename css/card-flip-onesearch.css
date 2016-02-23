@@ -32,14 +32,13 @@
 #onesearch .back-search {
 	height: 285px;
     padding: 10px;
-    background: teal;
+    background: #C7FFF9;
 	transform: rotateX( 180deg );
-    color: white;
 }
 
 
 #onesearch .front-search { 
     height: 285px;
-    background:gold;
+    background:#FFF8B9;
     padding: 10px;
 }
