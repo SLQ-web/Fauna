@@ -16,7 +16,7 @@ figure { margin: 0; }
 	width: 100%;
 }
 
-#card.flipped, #slideCard1.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
+#card.flipped, #onesearch.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
 #card figure, #slideCard1 figure, #card div, #slideCard1 div {
 	-webkit-backface-visibility: hidden;
@@ -27,25 +27,17 @@ figure { margin: 0; }
 	width: 100%;
 }
 
-#slideCard1 figure, #slideCard1 div { /*padding: 0; */}
-
 #card figure h3, #card div h3 { line-height: 1; }
 #card figure p, #card div p { font-weight: normal; }
 
-#card .front, #slideCard1 .front {
-	  }
+#card .front, #slideCard1 .front { }
 
-#slideCard1 .front { 
-	
-}
+#slideCard1 .front { }
 
-#card .back, #slideCard1 .back {
+#card .back, #onesearch .back-search {
 	height: 285px;
 	transform: rotateY( 180deg );
 }
-
-#slideCard1 .back {  padding: 0; }
-
 
 .front, .back{
 	
@@ -61,8 +53,10 @@ figure { margin: 0; }
 }
 .front{
 	background:teal; /*change the css */
-
 	}
+
+.front-search{  }
+
 .back{
 	background-color:teal;
 	background-image:url(../img/cuneiform-tablet.png);
@@ -71,6 +65,9 @@ figure { margin: 0; }
 	background-position:30px 90px;
 
 }
+
+.back-search{  }
+
 #info{
 	padding:0;
 	margin:2em 0 0 0;
