@@ -80,7 +80,7 @@ body { margin:0;padding:0;}
 .grid-content {
     padding: 15px 30px 15px 0;
     background: #fff;
-    border-top:solid 1px #eee;
+    /*border-top:solid 1px #eee;*/
 }
 .grid-item:hover { background: #ccc; }
 

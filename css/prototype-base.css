@@ -7,7 +7,7 @@ a:link, a:visited { color: navy; }
 /*checking borders*/
 
 .container{
-	box-shadow: 0 0 10px rgba(100,0,255,0.2)
+	/*box-shadow: 0 0 0px rgba(100,0,255,0.2)*/
 }
 
 .grid-content{
