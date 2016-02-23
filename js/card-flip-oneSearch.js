@@ -33,7 +33,7 @@ Element.prototype.toggleClassName = function (a) {
 // ======================= Card Flip =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
 var init = function() {
-var oneSearch = document.getElementById('oneSearch');
+var oneSearch = document.getElementById('onesearch');
 
 // Assign click action to button on OneSearch panel
 document.getElementById('search-lib').addEventListener( 'click', function(){
@@ -43,7 +43,7 @@ oneSearch.toggleClassName('flipped');
 
 //Addition of function to remove flipped class on OneSearch panel
 document.getElementById('search-web').addEventListener( 'click', function(){
-    $(" #oneSearch").removeClass("flipped")
+    $(" #onesearch").removeClass("flipped")
 });
 
 window.addEventListener('DOMContentLoaded', init, false);
