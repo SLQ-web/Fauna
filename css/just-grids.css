@@ -126,8 +126,8 @@ iframe body { margin: 0; padding: 0; }
 .slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
 .slq-logo { display: inline-block; float: left; margin-left: -40px; margin-top:5px;} /*offset the slq logo so its out of the page flow*/ 
 .slq-logo img{width:35px;}
-.footer { position: relative; }
-.slq-footer { background-image: url(../img/footer.svg); background-size: cover; min-height: 250px; margin: 5px; width: 100%;  }
+.slq-footer { min-height: 250px; width: 100%; background: #333; padding-top: 0; color: #333;  }
+.slq-footer img { width: 100%; }
 
 
 /* Breakpoints for mobile devices */

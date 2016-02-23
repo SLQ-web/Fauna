@@ -105,20 +105,20 @@ var $grid = $('.grid').packery({
   stamp: '.stamp',
 })
     
-/*$grid.find('.grid-item').each( function( i, itemElem ) {
+$grid.find('.grid-item').each( function( i, itemElem ) {
   // make element draggable with Draggabilly
   var draggie = new Draggabilly( itemElem );
   // bind Draggabilly events to Packery
   $grid.packery( 'bindDraggabillyEvents', draggie );
-});*/
+});
     
-/*$grid.on( 'dragItemPositioned', function( event, draggedItem ) {
+$grid.on( 'dragItemPositioned', function( event, draggedItem ) {
     // Need a setTimeout for packery to actually reflow the items
   setTimeout(function(){
     $grid.packery('layout');
       console.log('content dragged')
   },100); 
-});*/
+});
     
 </script>
    
