@@ -4,6 +4,10 @@
 
   .eresources-description {
       height:110px;
+}  
+
+.eresources-description p{
+      padding-left:15px;
 }
 
 /* eresources slider styles with Flickity lib */
@@ -14,10 +18,20 @@
 
 #slideCard1 .gallery-cell {
   height: 170px;
-    /*padding: 15px;*/
-    background:yellow;
+    padding: 15px;
 }
 
-#slideCard1 .gallery-cell img { float: right; padding: 1em; }
+#slideCard1 .gallery-cell img {float:right;padding-top:20px;}
 
 #slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
+
+.gallery-cell.lynda{
+	background:gold;
+}
+.gallery-cell.anz{
+	background:powderblue;
+}
+
+.gallery-cell.proquest{
+	background:mediumseagreen;
+}
