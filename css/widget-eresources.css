@@ -1,3 +1,7 @@
+#slideCard1{
+	width:620px;
+}
+
   .eresources-description {
       height:110px;
 }
@@ -10,7 +14,8 @@
 
 #slideCard1 .gallery-cell {
   height: 170px;
-    padding: 15px;
+    /*padding: 15px;*/
+    background:yellow;
 }
 
 #slideCard1 .gallery-cell img { float: right; padding: 1em; }
