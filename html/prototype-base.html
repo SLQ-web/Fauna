@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/just-grids.css">
     <link rel="stylesheet" href="../css/card-flip.css">
+    <link rel="stylesheet" href="../css/card-flip-onesearch.css">
     <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
 
     <!-- Widgets  styles-->
@@ -105,11 +106,22 @@
         <!-- One Search form -->
         <div class="row">
             <div class="grid-item full">
-                <div id="onesearch" class="grid-content" style="background:gold">
-                    <!-- Added id #onesearch to facilitate individual styles - 2016/02/18 SAS -->
-                    <h3>One search catalogue</h3>
-                    <p><img src="../img/One%20Search-formelements.svg"  /></p>
-                    <p>An extended description of the One search catalogue and its various offerings to the people of Queensland.</p>
+                <div class="grid-content">
+                  <div class="flip-onesearch-container">
+                   <div id="onesearch">
+                      <div class="front-search" style="">
+                        <h3>One search catalogue</h3>
+                        <p><img src="../img/One%20Search-formelements.svg"  /></p>
+                        <p>An extended description of the One search catalogue and its various offerings to the people of Queensland.</p>
+                        <p><a id="search-lib" href="javascript: return false();">Flip me</a></p>
+                      </div>
+                      <div class="back-search" style="">
+                        <h3>Search the web</h3>
+                        <p>This is some text to show that the OneSearch has been flipped.</p>
+                        <p><a id="search-web" href="javascript: return false();">Flip back to lib</a></p>
+                      </div>
+                   </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -191,11 +203,11 @@
    
             <div class="grid-item third">
                 <div class="grid-content">
-                    <h3>Foundation</h3>
-                    <p>Lorem ipsum something to show that the progress bar is down below this text.</p>
+                    <h3>QLF campaign</h3>
                     <ul class="progressBar">
-                      <li class='donations' data-width='76' data-target='100'>Funding</li>
+                      <li class='donations' data-width='60' data-target='100'>Funding</li>
                     </ul>
+                     <p>All donations received by QLF between 2 February and 29 May 2016 to support SLQ will be matched by Creative Partnerships Australia once the total fundraising target is achieved.</p>
                 </div>
             </div> 
         </div>  
@@ -343,6 +355,7 @@
 <!--          <button onclick="window.location.reload();">Reset flow</button>-->
 
         <script type="text/javascript" src="../js/card-flip.js"></script>
+        <script type="text/javascript" src="../js/card-flip-oneSearch.js"></script>
         <script type="text/javascript" src="../js/functions-base.js"></script>
    
     </body>    
