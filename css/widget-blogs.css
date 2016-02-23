@@ -1,3 +1,16 @@
-       /* Blogs tile */
-       .soldierPortrait { background-image:  url(../img/demo-SLQ%20Blogs@3x.png); background-size: cover; background-position: bottom }
-       
+/* Blogs tile */
+.soldierPortrait { 
+	background-image:  url(../img/SLQ-Blogs-background@2x.png); 
+	background-size: cover; 
+	background-position: bottom;
+	padding:15px; 
+	color:#6c634b;
+	/*text-shadow:1px -1px 0 rgba(255,255,255,0.5);*/
+}
+
+
+.soldierPortrait h2{
+	margin-top:80px;
+	padding-bottom:0;
+	margin-bottom:10px;
+}
