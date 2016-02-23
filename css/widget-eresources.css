@@ -14,11 +14,11 @@
 /* eresources slider styles with Flickity lib */
 #slideCard1 .main-gallery {
     overflow: hidden;
-    height:170px;
+    height:174px;
 }
 
 #slideCard1 .gallery-cell {
-  height: 170px;
+  height: 174px;
     padding: 15px;
 }
 

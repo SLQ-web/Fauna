@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/just-grids.css">
     <link rel="stylesheet" href="../css/card-flip.css">
+    <link rel="stylesheet" href="../css/card-flip-onesearch.css">
     <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
 
     <!-- Widgets  styles-->
@@ -108,11 +109,24 @@
         <!-- One Search form -->
         <div class="row">
             <div class="grid-item full">
-                <div id="onesearch" class="grid-content" style="background:gold">
-                    <!-- Added id #onesearch to facilitate individual styles - 2016/02/18 SAS -->
-                    <h3>One search catalogue</h3>
-                    <p><img src="../img/One%20Search-formelements.svg"  /></p>
-                    <p>An extended description of the One search catalogue and its various offerings to the people of Queensland.</p>
+                <div class="grid-content">
+                  <div class="flip-onesearch-container">
+                   <div id="onesearch">
+                      <div class="front-search" style="">
+                        <h3>One search catalogue</h3>
+                       <p><img src="../img/One-Search-formelements.svg"  width="850" height="70"/></p>
+                        <p>Meet the One Search catalogue! A record of SLQ's holdings &amp; access to costly databses of scientific, social and cultural literature. </p><p>The key to the library</p>
+                        <p><a id="search-lib" href="javascript: return false();">Search the SLQ  Website</a></p>
+                      </div>
+                      <div class="back-search" style="">
+                        <h3>SLQ Website search</h3>
+                         <p><img src="../img/Website-Search-formelements.svg"  width="850" height="70"/></p>
+                        <p>A set of interconnected webpages, prepared &amp; maintained as a collection of information by SLQ.</p>
+                        <p>The face of the library.</p>
+                        <p><a id="search-web" href="javascript: return false();">Search the One search catalogue</a></p>
+                      </div>
+                   </div>
+                  </div>
                 </div>
             </div>
         </div>
@@ -226,38 +240,40 @@
                <div class="grid-item full">
                 <div class="grid-content otherSites">
                     <h3>Other sites</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <div class="four columns">
                       <ul>
                         <li>
                           <p class="accordion-toggle dormantState">Q ANZAC 100</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Business studio</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">The Edge</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">The Corner</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
-                        </li>
-                        <li>
-                          <p class="accordion-toggle dormantState">Design Online</p>
-                          <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          </div>
+-->
                         </li>
                       </ul>  
                     </div>
@@ -265,67 +281,71 @@
                       <ul>
                         <li>
                           <p class="accordion-toggle dormantState">Public Libraries Connect</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">SLQ Blogs</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Read 4 Life</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Summer Reading Club</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
                         </li>
-                        <li>
-                          <p class="accordion-toggle dormantState">First 5 Forever</p>
-                          <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          </div>
-                        </li>
+-->
                       </ul>  
                     </div>
                     <div class="four columns">
                       <ul>
                         <li>
                           <p class="accordion-toggle dormantState">Shop</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Support us</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Subscribe</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
+-->
                         </li>
                         <li>
                           <p class="accordion-toggle dormantState">Join</p>
+<!--
                           <div class="accordion-content">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                           </div>
-                        </li>
-                        <li>
-                          <p class="accordion-toggle dormantState">Creative Commons</p>
-                          <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                          </div>
+-->
                         </li>
                       </ul>  
                     </div>
@@ -420,6 +440,7 @@
 <!--          <button onclick="window.location.reload();">Reset flow</button>-->
 
         <script type="text/javascript" src="../js/card-flip.js"></script>
+        <script type="text/javascript" src="../js/card-flip-oneSearch.js"></script>
         <script type="text/javascript" src="../js/functions-base.js"></script>
    
     </body>    
