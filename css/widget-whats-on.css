@@ -19,6 +19,9 @@
 
    /* What's on gallery tiles */
 .gallery-cell > div {  height: 100%; margin-right:5px; padding: 15px; }
+.gallery-cell div {
+  padding-top:0;margin-top:0;
+}
 .gallery-cell a:link,  .gallery-cell a:visited {  text-decoration:none;color:#000; }
 #sow { background-image: url('../img/whats-on/a-state-of-war.jpg');background-size:cover;
 text-align:right;
