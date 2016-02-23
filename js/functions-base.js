@@ -48,7 +48,7 @@
               percentage : true,
               animation : true,
               animateTarget : true,
-              barColor : "deeppink",
+              barColor : "black",
          });
 
         // jQuery toggle for other sites buttons

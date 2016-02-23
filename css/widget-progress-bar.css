@@ -1,5 +1,6 @@
 .sonny_progressbar {
-/*	margin-bottom: 20px;*/
+	margin-bottom: 20px;
+
 }
 .sonny_progressbar p.title {
 	font-family: Montserrat, sans-serif;
@@ -87,4 +88,10 @@ p.marker { opacity: 0; }
 
 /*removed from internal stylesheet*/
 /* For foundation donation bar */
-ul.progressBar { margin: 0; padding: 0 }
+ul.progressBar { margin: 0; padding: 0 ;
+
+}
+
+.bar-container .title{
+	color:#fff;
+}
