@@ -14,8 +14,10 @@
     <link rel="stylesheet" href="../css/widget-progress-bar.css">
     <link rel="stylesheet" href="../css/widget-other-sites.css">
     <link rel="stylesheet" href="../css/widget-whats-on.css">
+    <link rel="stylesheet" href="../css/widget-video.css">
     <link rel="stylesheet" href="../css/widget-eresources.css">
     <link rel="stylesheet" href="../css/widget-blogs.css">
+    <link rel="stylesheet" href="../css/widget-social.css">
 
     <!-- Main Prototype styles -->
     <link rel="stylesheet" href="../css/prototype-base.css">
@@ -28,10 +30,6 @@
     <script src="../js/progressbar.js"></script>
     <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
-    
-    <style type="text/css">
-        .black { background: black; }  
-    </style>
 
     </head>
 
@@ -48,56 +46,47 @@
         <div class="row">
             <div class="grid-item twoThirds">
                 <div class="grid-content" style="margin:0;padding:0;">
-                    <div id="whatsOn" style="/* background:cyan; Removed 2016/02/18 SAS */">
-                        <div class="main-gallery" style="/* opacity:0.3; Removed 2016/02/18 SAS  */">
+                    <div id="whatsOn">
+                        <div class="main-gallery">
                             <div class="gallery-cell">
-                                <!--<img src="../img/tiles/state-of-war.png" />-->
                                 <div id="sow">
                                     <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
-                                    <p>Explore Queensland's First World War Stories</p>
-                                    <p style="font-size:0.8em">Interactive display at SLQ</p>
-                                </div> <!-- /#sow -->
+                                    <p>Interactive display at SLQ. To ensure the recommendations are implemented effectively, the Hunter Review Report Action Plan is being run as a significant project using Prince2 methodology. </p>
+                                </div>
                             </div>
-                            <div class="gallery-cell">
-                                <!--<img src="../img/tiles/manuel-hornibrook.png" />-->
-                                <div id="mr">                                     
-                                    <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">The William Jolly Bridge Showcase</a></h3>
-                                    <p>Legacy of Sir Manuel Hornibrook</p>                                    
-                                </div> <!-- /#mr -->
+                            <div class="gallery-cell ">
+                                <div id="iconic">                                     
+                                    <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">Iconic Queensland</a></h3>
+                                    <p>Legacy of Sir Manuel Hornibrook</p>                 
+                                </div>
                             </div>
-                            <div class="gallery-cell">
-                                <!--<img src="../img/tiles/uq-architecture.png" />-->                                
+                            <div class="gallery-cell">                              
                                 <div id="uqarch">
                                     <h3><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/talks/apdl/uq-architecture-lecture-series-2016">UQ Architecture Lecture Series</a></h3>
                                     <p>Free weekly lectures | 1 Mar - 26 Apr</p>
-                                </div> <!-- /#uqarch -->
-                            </div>
-                            <div class="gallery-cell">
-                                <!--<img src="../img/tiles/research-fellowships.png" />-->
-                                <div id="qrf">
-                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/qmawards">Queensland Research Fellowships</a></h2>
-                                    <p>Apply Now!!!!!</p>
                                 </div>
                             </div>
                             <div class="gallery-cell">
-                                <!--<img src="../img/tiles/asia-pacific-architecture.png" />-->
+                                <div id="qrf">
+                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/qmawards">Queensland Research Fellowships</a></h2>
+                                    <p>Lorem ipsum dolor, <a href="#">apply now.</a></p>
+                                </div>
+                            </div>
+                            <div class="gallery-cell">
                                 <div id="aparch">
                                     <h2><a href="http://aparchitectureforum.com/">Asia Pacific Architecture forum</a></h2>
                                     <p>Events, exhibitions &amp; more | 1 -14 Mar</p>
                                 </div>
                             </div>
                             <div class="gallery-cell">
-                                <!--<img src="../img/tiles/black-adn-write.png" />-->
                                 <div id="bw">
                                     <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/blackwrite/fellowships">black&amp;write!</a></h2>
-                                    <p>Indigenous Writing Fellowships</p>
-                                    <p>Applications close Fri 26 Feb</p>
+                                    <p>Indigenous Writing Fellowships | Applications close Fri 26 Feb</p>
                                 </div>
                             </div>
                             <div class="gallery-cell">
-                                <!--<img src="../img/tiles/queenslandfaces.png" />-->
                                 <div id="qldfaces">
-                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/exhibitions/queensland-faces"># queensland faces</a></h2>
+                                    <h2><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/exhibitions/queensland-faces">#queensland faces</a></h2>
                                     <p>Free exhibition | Until 8 May</p>
                                 </div>
                             </div>
@@ -130,11 +119,24 @@
             
         <div class="row">
                 <div class="grid-item third">
-                <div class="grid-content " style="background:url(../img/instagram.png);background-size:cover">
-                    <div class="symmetrical light-elements">
-                      <h3 >&#9825;</h3>
-                      <h4 style="font-weight:bold;">Socialise</h4>
-                  </div>
+                <div class="grid-content social" style="background:url(../img/instagram.png);background-size:cover">
+                      <table>
+                        <tr>
+                            <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-facebook-4-icon.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data"/></td>
+                        </tr> 
+                        <tr>
+                            <td><img src="../img/social/iconmonstr-pinterest-1.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-youtube-4-icon.svg" class="social-icon"/></td>
+                        </tr> 
+                        <tr>
+                            <td><img src="../img/social/iconmonstr-map-icon.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-layer-6-icon.svg" class="social-icon"/></td>
+                            <td><img src="../img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon"/></td>
+                            </tr> 
+                    </table>
                 </div>
             </div>
                 <div class="grid-item twoThirds">
@@ -188,16 +190,16 @@
             </div>
             <div class="grid-item third">
                 <div class="grid-content soldierPortrait">
-                    
+                    <h2>Blogs</h2><p> Charles Edward, a horse-driver in the coal mines around Silkstone, Ipswich, Queensland, was 30 years old when he enlisted in November 1917. He joined the 15th reinforcements ...</p>
                 </div>
             </div>    
             <div class="grid-item third">
                 <div class="grid-content">
-                    <h3>Foundation</h3>
-                    <p>Lorem ipsum something to show that the progress bar is down below this text.</p>
+                    <h3>QLF campaign</h3>
                     <ul class="progressBar">
-                      <li class='donations' data-width='76' data-target='100'>Funding</li>
+                      <li class='donations' data-width='60' data-target='100'>Funding</li>
                     </ul>
+                     <p>All donations received by QLF between 2 February and 29 May 2016 to support SLQ will be matched by Creative Partnerships Australia once the total fundraising target is achieved.</p>
                 </div>
             </div> 
         </div>  
@@ -205,8 +207,8 @@
 
         <div class="row">
             <div class="grid-item twoThirds">
-                <div class="grid-content">
-                    <iframe width="100%" height="270" src="https://www.youtube.com/embed/-X6mRTv8-eY" frameborder="0" allowfullscreen></iframe>
+                <div class="grid-content video">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WJgdGkuUMH8?color=white&showinfo=0&autohide=1&modestbranding=1" frameborder="0" allowfullscreen  volume="0"></iframe>
                 </div>
             </div>
                 <div class="grid-item third">
