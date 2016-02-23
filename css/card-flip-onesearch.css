@@ -2,10 +2,11 @@
 .grid-content { padding: 0; }
 
 .flip-onsearch-container {
-	margin: 0 auto 10px 0;
-	perspective: 900px;
+/*	margin: 0 auto 10px 0;*/
+	perspective:initial;
 	position: relative;
 	width: 100%;
+    height: 285px;
 }
 
 #onesearch {
@@ -13,11 +14,11 @@
 	position: relative;
 	transform-origin: right center;
 	transform-style: preserve-3d;
-	transition: transform 0.4s;
+	transition: transform 0.8s;
 	width: 100%;
 }
 
-#onesearch.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
+#onesearch.flipped { transform: rotateX( 180deg ); }
 
 #onesearch figure, #onesearch div {
 	-webkit-backface-visibility: hidden;
@@ -32,7 +33,7 @@
 	height: 285px;
     padding: 10px;
     background: teal;
-	transform: rotateY( 180deg );
+	transform: rotateX( 180deg );
     color: white;
 }
 
