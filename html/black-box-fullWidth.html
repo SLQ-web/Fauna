@@ -30,6 +30,7 @@
     <script src="../js/progressbar.js"></script>
     <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
+    <script type="application/javascript" src="https://npmcdn.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
 
     </head>
 
@@ -459,6 +460,34 @@
 
         <script type="text/javascript" src="../js/card-flip.js"></script>
         <script type="text/javascript" src="../js/functions-base.js"></script>
+        
+        <script type="text/javascript">
+
+        var $grid = $('.grid').packery({
+          itemSelector: '.grid-item',
+          gutter: 0,
+          columnWidth: '.grid-item.third',
+          rowHeight: '.grid-item.third',
+          percentPosition: true,
+          stamp: '.stamp',
+        });
+
+        console.log('packery init');
+
+        $grid.find('.grid-item').each( function( i, itemElem ) {
+          // make element draggable with Draggabilly
+          var draggie = new Draggabilly( itemElem );
+          // bind Draggabilly events to Packery
+          $grid.packery( 'bindDraggabillyEvents', draggie );
+        });
+
+        $grid.on( 'dragItemPositioned', function( event, draggedItem ) {
+          setTimeout(function(){
+            $grid.packery('layout');
+              console.log('content dragged')
+          },100); 
+        });
+        </script>
    
     </body>    
 
