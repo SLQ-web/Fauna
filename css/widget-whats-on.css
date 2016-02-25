@@ -8,32 +8,28 @@
       padding:0;
        width: 640px;
        height: 300px;
-       height: 285px; /* Added 2016/02/18 SAS */
+       height: 285px; 
                }
    
    #whatsOn .gallery-cell img {
        width: 300px;  
        height: 300px;
-       height: 285px; /* Added 2016/02/18 SAS */
+       height: 285px; 
    }
 
    /* What's on gallery tiles */
 .gallery-cell > div {  height: 100%; margin-right:5px; padding: 15px; }
 .gallery-cell div {
-  padding-top:0;margin-top:0;
+  /*padding-top:0;margin-top:0;  padding:10px;*/
+}
+.galery-cell{
+
 }
 .gallery-cell a:link,  .gallery-cell a:visited {  text-decoration:none;color:#000; }
-#sow { background-image: url('../img/whats-on/a-state-of-war.jpg');background-size:cover;
-text-align:right;
-  padding-left:260px;}
-#sow p{
-  
-}
-#iconic { background-image: url('../img/whats-on/iconic-qld.jpg');background-size:cover;text-align:right;}
-#iconic p{
-  padding-left:260px;
-}
+#sow { background-image: url('../img/whats-on/a-state-of-war.jpg');background-size:cover;}
+#iconic { background-image: url('../img/whats-on/iconic-qld.jpg');background-size:cover;}
 #uqarch { background-image: url('../img/whats-on/UQ_architecture.jpg');background-size:cover;}
+.gallery-cell #uqarch a:visited, .gallery-cell #uqarch a:link, #uqarch p{color:gold;}
 #qrf { background-image: url('../img/whats-on/qm-awards.jpg');background-size:cover;  }
 #qrf h2{font-size:28pt;}
 #aparch {background-image: url('../img/whats-on/asia-pacific-architecture.jpg');background-size:cover;}
