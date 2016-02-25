@@ -27,6 +27,8 @@
 }
 .gallery-cell a:link,  .gallery-cell a:visited {  text-decoration:none;color:#000; }
 #sow { background-image: url('../img/whats-on/a-state-of-war.jpg');background-size:cover;}
+.gallery-cell #sow a:visited, .gallery-cell #sow a:link, #sow p{color:#fff;}
+
 #iconic { background-image: url('../img/whats-on/iconic-qld.jpg');background-size:cover;}
 #uqarch { background-image: url('../img/whats-on/UQ_architecture.jpg');background-size:cover;}
 .gallery-cell #uqarch a:visited, .gallery-cell #uqarch a:link, #uqarch p{color:gold;}
