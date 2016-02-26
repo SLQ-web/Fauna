@@ -1,5 +1,7 @@
 .accordion-toggle { cursor: auto; }
-.row .grid-item .grid-content.tall { height: 580px; }
+.row .grid-item .grid-content.tall { height: 580px; } /* --Making a tall box-- */
+.row .grid-item .grid-content.xtall { height: 875px; } /* --Making a REALLY tall box-- */
+.grid-item.threeThirds { width: 960px; }
 
 .full-width-header {
     background:#000;
