@@ -22,8 +22,8 @@
 .gallery-cell div {
   /*padding-top:0;margin-top:0;  padding:10px;*/
 }
-.galery-cell{
-
+.gallery-cell p{
+padding-right:240px;
 }
 .gallery-cell a:link,  .gallery-cell a:visited {  text-decoration:none;color:#000; }
 #sow { background-image: url('../img/whats-on/a-state-of-war.jpg');background-size:cover;}
