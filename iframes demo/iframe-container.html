@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Iframe container</title>
 	<style>
+		iframe{
+			border:solid gold;
+			background:ivory;
+		}
 		.css-test-static{
 			height:300px;
 			width:400px;
@@ -17,21 +21,6 @@
 		  0%   { width: 400px; }
 		  100% { width: 800px; }
 		}
-		.move{
-			font-family:sans-serif;
-			cursor:move;
-			color:white;
-			font-weight:bold;
-			width:32px;
-			height:32px;
-			position:absolute;
-			background:hotpink;
-			right:0;
-			top:0;
-			text-align:center;
-			line-height:28px;
-			font-size:16px;
-			}
 	</style>
 </head>
 <body>
@@ -41,7 +30,7 @@
 	<iframe src="iframe-content.html" width="300" height="300"/></iframe>
 	<iframe src="iframe-content.html" width="400" height="300"/></iframe>
 	<p>Now let's try something a little fun, this iframe is going to have its width set with CSS</p>
-	<iframe src="iframe-content.html" class="css-test-static move"/></iframe>
+	<iframe src="iframe-content.html" class="css-test-static"/></iframe>
 	<p>and then have that width animated...</p>
 	<iframe src="iframe-content.html" class="css-test-static css-test-animation"/></iframe>
 
