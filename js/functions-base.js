@@ -9,13 +9,14 @@
         $("#countdown").html(timeLeft);
       }
 
-      var countdown;
+      //var countdown;
+      // This function will never work Corin, see edited code below for setInterval
+      // Also check out the clearInterval function in stop-all-animations.js
       function StopTime() {
-      	clearInterval(countdown);
-      	
+      	clearInterval(ShowTime);
       }
 
-      setInterval(ShowTime ,1000);      
+      var countdown = setInterval(ShowTime ,1000);
 
         // initialise the page in packery layout
         var $grid = $('.grid').packery({
