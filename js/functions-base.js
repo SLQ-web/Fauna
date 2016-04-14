@@ -44,8 +44,11 @@
         //Credits to http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html
 
         $('.donations').progressBar({
+              height : "30",
+              backgroundColor : "#E0E0E0",
               shadow : false,
               percentage : true,
+              border : false,
               animation : true,
               animateTarget : true,
               barColor : "black",
