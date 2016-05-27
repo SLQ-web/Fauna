@@ -120,7 +120,7 @@ form.oneSearch select { width: 20%; }
 
 iframe body { margin: 0; padding: 0; }
 
-/*overrides for the skeleteon columns */
+/*overrides for the skeleton columns */
 .set-thirds { min-height: 220px; }
 
 .slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
