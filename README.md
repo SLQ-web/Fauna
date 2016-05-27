@@ -1,5 +1,5 @@
 # Packery-Mockup-SLQ-Homepage
-Repo for initial mockup design for Packery inspired homepage. This Repo will contain short notes and documentation about the elements that makeup the beta SLQ packery homepage. TEST TEST TEST TEST
+Repo for initial mockup design for Packery inspired homepage. This Repo will contain short notes and documentation about the elements that makeup the beta SLQ packery homepage. New branch created by Ryan to resolve responsive display issues.
 
 **External JS library dependencies**
 - jQuery 2.1.3 (CND hosted)
