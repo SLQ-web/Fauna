@@ -1,22 +1,33 @@
-     //countdown timer
+function ShowTime() {
 
-      function ShowTime() {
-        var now = new Date();
-        var hrs = 19-now.getHours();
-        var mins = 60-now.getMinutes();
-        var secs = 60-now.getSeconds();
-            timeLeft = "" +hrs+' hrs '+mins+' min '+secs+' sec';
-        $("#countdown").html(timeLeft);
-      }
+  //access system clock and get the time
+  var aest = new Date();
+  var localTime = aest.getTime();
 
-      //var countdown;
-      // This function will never work Corin, see edited code below for setInterval
-      // Also check out the clearInterval function in stop-all-animations.js
-      function StopTime() {
-      	clearInterval(ShowTime);
-      }
+  //obtain local UTC offset and convert to msec
+  var localOffset = aest.getTimezoneOffset()*60000;
 
-      var countdown = setInterval(ShowTime ,1000);
+  //Get total UTC time in msec
+  var utc = localTime + localOffset;
+  //obtain and add destination UTC time offset (Brisbane, Australia +10)
+  var offset = 10;
+  var brisbane = utc + (3600000*offset);
+
+  //convert msec value (with timezone offset) to datetime string variables
+  consTime = new Date(brisbane);
+  var brisHours = 19-consTime.getHours();
+  var brisMinutes = 60-consTime.getMinutes();
+  var brisSec = 60-consTime.getSeconds();
+
+  //complete string for offset AEST local time
+  var timeLeft = "" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec';
+
+  //output adjusted time into page
+  $("#countdown").html(timeLeft);
+}
+
+//Setup variable to update on setInterval function every 1000 ticks
+var countdown = setInterval(ShowTime ,1000);
 
         // initialise the page in packery layout
         var $grid = $('.grid').packery({
