@@ -20,7 +20,12 @@ function ShowTime() {
   var brisSec = 60-consTime.getSeconds();
 
   //complete string for offset AEST local time
-  var timeLeft = "" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec';
+  //show CLOSED message if past closing time
+  if (brisHours <0) {
+    var timeLeft = "The State Library of Queensland is currently closed."
+  } else {
+    var timeLeft = "SLQ is open for <strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> more today";
+  }
 
   //output adjusted time into page
   $("#countdown").html(timeLeft);
