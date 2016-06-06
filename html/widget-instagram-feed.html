@@ -3,25 +3,13 @@
 <head>
 <meta charset="utf-8">
 <title>Get Instragram pics</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script type="text/javascript" src="../js/instafeed.min.js"></script>
 <!-- External library to dynamically pull instagram images from associated account https://github.com/stevenschobert/instafeed.js (InstaFeed) -->
 <!-- This POC currently pulls in images from RA's own personal Instagram account. For it to be implemented in the official SLQ Instagram account, need to create an app in developer console and also have login access to account to determine user ID. -->
 
-<style type="text/css">
-    #instafeed a img {
-        /* Has limited support for Microsoft Edge and no support for IE11  */
-        filter: brightness(50%);
-        -webkit-filter: brightness(50%);
-        -o-filter: brightness(50%);
-        -ms-filter: brightness(50%);
-        -moz-filter: brightness(50%);
-    }
-</style>
-
-</head>
-
-<body>
 <script type="text/javascript">
+    // Get the most latest instagram post and insert it into the page in the DIV# instafeed
     var feed = new Instafeed({
         get: 'user',
 		userId: '249842490',
@@ -34,8 +22,83 @@
     feed.run();
 </script>
 
-<div id="instafeed"></div>
+<style type="text/css">
+    #instafeed a img {
+        /* Has limited support for Microsoft Edge and no support for IE11  */
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        -o-filter: brightness(50%);
+        -ms-filter: brightness(50%);
+        -moz-filter: brightness(50%);
+    }
+    #instafeed { position: absolute; }
+    .social-buttons { position: relative; padding-top: 0px; }
 
+    .social{
+        margin:0;
+        padding:0;
+    }
+
+/* Specific CSS for rendering social icons over instagram image */
+
+    table { width:320px; }
+
+    tr {
+        height: 100px;
+    }
+
+    td{
+        /*border:solid 1px #fff;*/
+        width:100px;
+        height:90px;
+        text-align:center;
+    }
+
+    .social-icon{
+        width:84px;
+        height:84px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+<div id="instafeed">
+</div>
+
+<div class="social-buttons">
+      <table>
+        <tr>
+            <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-facebook-4-icon.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data"/></td>
+        </tr>
+        <tr>
+            <td><img src="../img/social/iconmonstr-pinterest-1.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-youtube-4-icon.svg" class="social-icon"/></td>
+        </tr>
+        <tr>
+            <td><img src="../img/social/iconmonstr-map-icon.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-layer-6-icon.svg" class="social-icon"/></td>
+            <td><img src="../img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon"/></td>
+            </tr>
+    </table>
+</div>
+<!--
+<div id="randomImage">
+    <img src="../img/tiles/eresources.png" />
+</div>
+-->
+
+<script type="text/javascript">
+    // Create a variable and store the image path that was retrieved via the instafeed function above
+    var instaImageURL = $('#instafeed a img').attr('src');
+//    var getImageSrc = $('#randomImage img').attr('src');
+    console.log(instaImageURL);
+//    console.log(getImageSrc);
+</script>
 </body>
-
 </html>
