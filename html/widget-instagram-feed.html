@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Get Instragram pics</title>
+<script type="text/javascript" src="../js/instafeed.min.js"></script>
+<!-- External library to dynamically pull instagram images from associated account https://github.com/stevenschobert/instafeed.js (InstaFeed) -->
+<!-- This POC currently pulls in images from RA's own personal Instagram account. For it to be implemented in the official SLQ Instagram account, need to create an app in developer console and also have login access to account to determine user ID. -->
+</head>
+
+<body>
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'user',
+		userId: '249842490',
+		accessToken: '249842490.1677ed0.0283e662751a4e369ae856f60a4b6228',
+		sortBy: 'most-recent',
+		resolution: 'low_resolution',
+		limit: 1,
+        clientId: 'dee7958de6a64ed284b95abb1619b790'
+    });
+    feed.run();
+</script>
+
+<div id="instafeed"></div>
+
+</body>
+
+</html>
