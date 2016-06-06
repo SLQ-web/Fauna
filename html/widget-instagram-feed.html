@@ -6,6 +6,18 @@
 <script type="text/javascript" src="../js/instafeed.min.js"></script>
 <!-- External library to dynamically pull instagram images from associated account https://github.com/stevenschobert/instafeed.js (InstaFeed) -->
 <!-- This POC currently pulls in images from RA's own personal Instagram account. For it to be implemented in the official SLQ Instagram account, need to create an app in developer console and also have login access to account to determine user ID. -->
+
+<style type="text/css">
+    #instafeed a img {
+        /* Has limited support for Microsoft Edge and no support for IE11  */
+        filter: brightness(50%);
+        -webkit-filter: brightness(50%);
+        -o-filter: brightness(50%);
+        -ms-filter: brightness(50%);
+        -moz-filter: brightness(50%);
+    }
+</style>
+
 </head>
 
 <body>
