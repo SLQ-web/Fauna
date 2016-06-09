@@ -1,34 +1,47 @@
 function ShowTime() {
 
-  //access system clock and get the time
-  var aest = new Date();
-  var localTime = aest.getTime();
-
-  //obtain local UTC offset and convert to msec
-  var localOffset = aest.getTimezoneOffset()*60000;
-
-  //Get total UTC time in msec
-  var utc = localTime + localOffset;
-  //obtain and add destination UTC time offset (Brisbane, Australia +10)
-  var offset = 10;
-  var brisbane = utc + (3600000*offset);
-
-  //convert msec value (with timezone offset) to datetime string variables
-  consTime = new Date(brisbane);
-  var brisHours = 19-consTime.getHours();
-  var brisMinutes = 60-consTime.getMinutes();
-  var brisSec = 60-consTime.getSeconds();
-
-  //complete string for offset AEST local time
-  //show CLOSED message if past closing time
-  if (brisHours <0) {
-    var timeLeft = "The State Library of Queensland is currently closed."
-  } else {
-    var timeLeft = "SLQ is open for <strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> more today";
-  }
-
-  //output adjusted time into page
-  $("#countdown").html(timeLeft);
+	//access system clock and get the time
+	var aest = new Date();
+	var localTime = aest.getTime();
+	
+	//obtain local UTC offset and convert to msec
+	var localOffset = aest.getTimezoneOffset()*60000;
+	
+	//Get total UTC time in msec
+	var utc = localTime + localOffset;
+	//obtain and add destination UTC time offset (Brisbane, Australia +10)
+	var offset = 10;
+	var brisbane = utc + (3600000*offset);
+	var brisDay = new Date(brisbane);
+	var brisDay = brisDay.getDay();
+	//Set weekend days with different opening hours
+	//Set numbers representing weekend days - 0 for Sunday, 6 for Saturday
+	if (brisDay==0 || brisDay==6) {
+		hoursBase = 16;
+		hoursBefore = 6
+	}
+	else {
+		hoursBase = 19;
+		hoursBefore = 9
+	}
+	
+	//convert msec value (with timezone offset) to datetime string variables
+	consTime = new Date(brisbane);
+	var brisHours = hoursBase-consTime.getHours();
+	var brisMinutes = 60-consTime.getMinutes();
+	var brisSec = 60-consTime.getSeconds();
+	
+	//complete string for offset AEST local time
+	//show CLOSED message if past closing time
+	if (brisHours<0 || brisHours>hoursBefore) {
+	var timeLeft = "<strong>The SLQ building is currently closed.</strong>"
+	} else {
+	var timeLeft = "SLQ will be open for another<br /><strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+	//var timeLeft = brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec';
+	}
+	
+	//output adjusted time into page
+	$("#countdown").html(timeLeft);
 }
 
 //Setup variable to update on setInterval function every 1000 ticks
