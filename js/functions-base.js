@@ -34,11 +34,22 @@ function ShowTime() {
 	//complete string for offset AEST local time
 	//show CLOSED message if past closing time
 	if (brisHours<0 || brisHours>hoursBefore) {
-	var timeLeft = "<strong>The SLQ building is currently closed.</strong>"
-	} else {
+	var timeLeft = "<strong>The SLQ building is currently closed.</strong>";
+        //currently set the first if/else statement to trigger after 12pm for testing. SVG line doesn't want to repeat-x when using inline.
+    } else if (brisHours<3 || brisHours>hoursBefore) {
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url(../img/wavy-underline2.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+    } else if (brisHours<2 || brisHours>hoursBefore) {
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url(../img/wavy-underline3.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+    } else if (brisHours<1 || brisHours>hoursBefore) {
+        var timeLeft = "SLQ will be open for another<br /><strong style='background-image:url(../img/wavy-underline4.svg);background-repeat:repeat-x;background-position:left bottom'>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
+	}
+        else {
 	var timeLeft = "SLQ will be open for another<br /><strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
 	//var timeLeft = brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec';
 	}
+    
+//    console.log(brisHours);
+    
 	
 	//output adjusted time into page
 	$("#countdown").html(timeLeft);
@@ -99,19 +110,28 @@ var countdown = setInterval(ShowTime ,1000);
          });
 
         // jQuery toggle for other sites buttons
+        // RA 2016/06/10 changed the function so that lickable area is isolated and uses ASCCI toggle characters, not bg images
           $(document).ready(function($) {
-            $('.otherSites').find('.accordion-toggle').click(function(){
-
-            $('.accordion-toggle').removeClass('activeState');
-            if($(this).parent().find('.accordion-content').css('display')=='none'){
-               $(this).addClass('activeState');
-            }
-
+            $('.otherSites').find('.accordion-toggle span').click(function(){
+                
               //Expand or collapse this panel
-              $(this).next().slideToggle('fast');
+              $(this.parentNode).next().slideToggle('fast');
+                
+                // Determine if it's open or closed
+                var toggleState = $(this).html();
+                if (toggleState=="+") {
+                    $(this).html("-");
+                } else if (toggleState=="-") {
+                    $(this).html("+")
+                }
 
               //Hide the other panels
-              $(".accordion-content").not($(this).next()).slideUp('fast');
-
+              $(".accordion-content").not($(this.parentNode).next()).slideUp('fast');
+                
+                //Find change the icon of any open panels back to closed
+                if($('.otherSites').find('.accordion-content span').html("-")){
+                    console.log("make all other toggles go to +");
+                    $(".toggleIcon").not($(this)).html("+")
+                }
             });
           });

@@ -111,7 +111,7 @@ body { margin:0;padding:0;}
 .aRight { float: right; }
 img.clock { }
 .tile-title-icon{width: 30px; margin-right: 10px;  }
-#countdown strong { color: #4f94e2; background-image: url(../img/wavy-underline.svg); background-repeat: repeat-x; background-position: bottom; padding-bottom: 10px;  }
+
 #info, #resolveInfo, #slide1-info, #resolve-slide1 { text-align: right; cursor: pointer; }
 #info img, #resolveInfo img, #slide1-info img, #resolve-slide1 img { width: 3.5%; margin-right: 5px; vertical-align: text-top; }
 form.oneSearch input[type=text] { width: 60%; }

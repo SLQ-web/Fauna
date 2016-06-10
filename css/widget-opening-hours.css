@@ -1,0 +1,12 @@
+/* Opening hours timer styles */
+
+#countdown strong { 
+    color: #4f94e2; 
+    background: url(../img/wavy-underline.svg) repeat-x left bottom;
+/*
+    background-image: url(../img/wavy-underline.svg); 
+    background-repeat: repeat-x; 
+    background-position: bottom; 
+*/
+    padding-bottom: 10px;  
+}
