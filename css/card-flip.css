@@ -6,7 +6,7 @@ figure { margin: 0; }
 	width: 100%;
 }
 
-#card, #slideCard1 {
+#card {
 	height: 100%;
 	position: absolute;
 	transform-origin: right center;
@@ -15,7 +15,7 @@ figure { margin: 0; }
 	width: 100%;
 }
 
-#card.flipped, #onesearch.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
+#card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
 #card figure, #slideCard1 figure, #card div, #slideCard1 div {
 	-webkit-backface-visibility: hidden;
@@ -33,7 +33,7 @@ figure { margin: 0; }
 
 #slideCard1 .front { }
 
-#card .back, #onesearch .back-search {
+#card .back {
 	height: 285px;
 	transform: rotateY( 180deg );
 }

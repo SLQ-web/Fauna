@@ -29,8 +29,23 @@
     
     <!-- Modified the card flip script -->
     <!-- PERHAPS THIS SHOULD BE EXTERNAL TOO? -->
-    <script type="text/javascript">
 
+    <script type="text/javascript" src="../js/instafeed.min.js"></script>
+    <!-- External library to dynamically pull instagram images from associated account https://github.com/stevenschobert/instafeed.js (InstaFeed) -->
+    <!-- This POC currently pulls in images from RA's own personal Instagram account. For it to be implemented in the official SLQ Instagram account, need to create an app in developer console and also have login access to account to determine user ID. -->
+
+    <script type="text/javascript">
+        // Get the most latest instagram post and insert it into the page in the DIV# instafeed
+        var feed = new Instafeed({
+            get: 'user',
+            userId: '249842490',
+            accessToken: '249842490.1677ed0.0283e662751a4e369ae856f60a4b6228',
+            sortBy: 'most-recent',
+            resolution: 'low_resolution',
+            limit: 1,
+            clientId: 'dee7958de6a64ed284b95abb1619b790'
+        });
+        feed.run();
     </script>
 
     </head>
@@ -45,13 +60,11 @@
             </div>
         </div>
         <div class="grid">
-        <div class="row">
-                <div class="grid-item third">
-                <div class="grid-content social" style="background:url(../img/instagram.png);background-size:cover">
-<!--                     <div class="symmetrical light-elements">
-                      <h3 >&#9825;</h3>
-                      <h4 style="font-weight:bold;">Socialise</h4> -->
-                      <table>
+            <div class="row">
+                    <div class="grid-item third">
+                      <div id="instafeed" class="grid-content social"></div>
+                        <div class="social-buttons">
+                          <table>
                             <tr>
                                 <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon"/></td>
                                 <td><img src="../img/social/iconmonstr-facebook-4-icon.svg" class="social-icon"/></td>
@@ -66,9 +79,9 @@
                                 <td><img src="../img/social/iconmonstr-map-icon.svg" class="social-icon"/></td>
                                 <td><img src="../img/social/iconmonstr-layer-6-icon.svg" class="social-icon"/></td>
                                 <td><img src="../img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon"/></td>
-                            </tr> 
-                    </table>
-                  </div>
+                                </tr>
+                          </table>
+                        </div>
                 </div>
             </div>
 
