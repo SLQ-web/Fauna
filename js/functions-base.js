@@ -69,6 +69,21 @@ var countdown = setInterval(ShowTime ,1000);
           percentPosition: true,
           stamp: '.stamp',
         })
+        
+        // initialise Packery Dragabillity (allow panels to be repositioned within flow)
+//        $grid.find('.grid-item').each( function( i, itemElem ) {
+//          // make element draggable with Draggabilly
+//          var draggie = new Draggabilly( itemElem );
+//          // bind Draggabilly events to Packery
+//          $grid.packery( 'bindDraggabillyEvents', draggie );
+//        });
+//
+//        $grid.on( 'dragItemPositioned', function( event, draggedItem ) {
+//          setTimeout(function(){
+//            $grid.packery('layout');
+//              console.log('content dragged')
+//          },100); 
+//        });
 
         // initialise the flickity sliders on page
         $('.main-gallery').flickity({

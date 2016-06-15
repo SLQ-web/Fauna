@@ -1,4 +1,3 @@
-.grid-item.full { width: 960px; }
 .grid-content { padding: 0; }
 
 .flip-onesearch-container {
@@ -37,7 +36,7 @@
 }
 
 
-#onesearch .front-search { 
+#onesearch .front-search {
     height: 285px;
     background:#FFF8B9;
     padding: 10px;

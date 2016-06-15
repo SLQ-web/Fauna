@@ -17,7 +17,7 @@ figure { margin: 0; }
 
 #card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
-#card figure, #slideCard1 figure, #card div, #slideCard1 div {
+#card figure, #card div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -29,9 +29,7 @@ figure { margin: 0; }
 #card figure h3, #card div h3 { line-height: 1; }
 #card figure p, #card div p { font-weight: normal; }
 
-#card .front, #slideCard1 .front { }
-
-#slideCard1 .front { }
+#card .front { }
 
 #card .back {
 	height: 285px;
@@ -62,7 +60,6 @@ figure { margin: 0; }
 	background-repeat:no-repeat;
 	background-size:80%;
 	background-position:30px 90px;
-
 }
 
 .back-search{  }

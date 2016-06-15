@@ -1,11 +1,11 @@
 #slideCard1{
-	width:630px;
-	height:170px;
+/*	width:630px;*/
+/*	height:170px;*/
 }
 
   .eresources-description {
-      height:110px;
-}  
+/*      height:110px;*/
+}
 
 .eresources-description p{
       /*padding-left:15px;*/
@@ -14,12 +14,13 @@
 /* eresources slider styles with Flickity lib */
 #slideCard1 .main-gallery {
     overflow: hidden;
-    height:174px;
+/*    height:173px;*/
 }
 
 #slideCard1 .gallery-cell {
-  height: 174px;
+  height: 173px;
     padding: 15px;
+    width: 100%;
 }
 
 #slideCard1 .gallery-cell img {

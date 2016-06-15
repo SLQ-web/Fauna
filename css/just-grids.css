@@ -4,8 +4,7 @@
 html { overflow-y: scroll; }
 
 body { margin:0;padding:0;}
-/*.container-wrapper { max-width: 970px; margin: 0 auto;}*/
-.content { width: 960px; /*background: #ff1*/ }
+.content { width: 960px; }
 
 
 /*----  typography ---- */
@@ -48,39 +47,19 @@ body { margin:0;padding:0;}
 
 /* ---- .grid-item ---- */
 
-/* 12 columns, percentage width */
-/*.grid-item {
-  width: 8.33333%;
-}*/
-
 .stamp {  border-color: aquamarine; }
 .stamp1 { left: 0%; top: 0; }
 .stamp2 { right: 0%; top: 200; }
 
 .grid-item {
   float: left;
-/*  min-height: 290px;*/
   padding: 5px;
+/*  border: 1px solid red;*/
 }
-
-.grid-item.third { width: 320px; }
-.grid-item.half { width: 480px; }
-.grid-item.twoThirds { width: 640px; }
-.grid-item.twoThirds .grid-content, .grid-item.half .grid-content { min-height: 237px; }
-
-.grid-content.blue { background: #008fb7; }
-.grid-content.pink { background: #c0416e; }
-.grid-content.purple { background: #6c62ab; }
-.grid-content.watermelon { background: #e0003f; }
-.grid-content.lime { background: #81cd24; }
-.grid-content.yellow { background: #f9a900; }
-.grid-content.turquoise { background: #00a4a1; }
-.grid-content.orange { background: #ec6915; }
 
 .grid-content {
     padding: 15px 30px 15px 0;
     background: #fff;
-    /*border-top:solid 1px #eee;*/
 }
 .grid-item:hover { background: #ccc; }
 
@@ -120,28 +99,8 @@ form.oneSearch select { width: 20%; }
 
 iframe body { margin: 0; padding: 0; }
 
-/*overrides for the skeleton columns */
-.set-thirds { min-height: 220px; }
-
 .slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
-.slq-logo { display: inline-block; float: left; margin-left: -40px; margin-top:5px;} /*offset the slq logo so its out of the page flow*/ 
+.slq-logo { display: inline-block; float: left; margin-left: -40px; margin-top:5px;} /*offset the slq logo so its out of the page flow*/
 .slq-logo img{width:35px;}
 .slq-footer { min-height: 250px; width: 100%; background: #333; padding-top: 0; color: #333;  }
 .slq-footer img { width: 100%; }
-
-
-/* Breakpoints for mobile devices */
-
-/* Smartphones style adjustments (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .grid-item.twoThirds { width: 100%; }
-    .grid-item.third, .grid-item.half { width: 50%; }
-    .row .grid-item .grid-content.otherSites {min-height: 500px;}
-}
-
-/* Tablet style adjustments (portrait) ----------- */
-@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
-    .grid-item.twoThirds { width: 100%; }
-    .grid-item.third, .grid-item.half { width: 50%; }
-    .row .grid-item .grid-content.otherSites {min-height: 340px;}
-}

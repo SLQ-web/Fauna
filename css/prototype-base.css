@@ -1,5 +1,4 @@
-.row .grid-item .grid-content { height: 285px; }
-.twelve.columns { padding: 5px; }
+.grid-item .grid-content { height: 285px; }
 .grid-item:hover { background: none; }
 h3 { margin-bottom: 1rem; }
 a:link, a:visited { color: navy; }
@@ -7,9 +6,11 @@ a:link, a:visited { color: navy; }
 /*checking borders*/
 
 .container{
-	/*box-shadow: 0 0 0px rgba(100,0,255,0.2)*/
+/*    background: pink;*/
 }
 
 .grid-content{
-	/*border:solid 1px cyan;*/
+	border:solid 1px cyan;
 }
+/*CE this is lame*/
+h3{font-size:200%} 
