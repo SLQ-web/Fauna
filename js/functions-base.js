@@ -110,7 +110,7 @@ var countdown = setInterval(ShowTime ,1000);
          });
 
         // jQuery toggle for other sites buttons
-        // RA 2016/06/10 changed the function so that lickable area is isolated and uses ASCCI toggle characters, not bg images
+        // RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
           $(document).ready(function($) {
             $('.otherSites').find('.accordion-toggle span').click(function(){
                 
