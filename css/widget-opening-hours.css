@@ -2,7 +2,9 @@
 
 #countdown strong { 
     color: #4f94e2; 
-    background: url(../img/wavy-underline.svg) repeat-x left bottom;
+    background: url(../img/wavy-underline.svg)repeat-x; 
+    background-position:left 15px;
+    background-size:10px 15px;
 /*
     background-image: url(../img/wavy-underline.svg); 
     background-repeat: repeat-x; 
