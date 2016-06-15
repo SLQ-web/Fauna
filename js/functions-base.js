@@ -16,7 +16,7 @@ function ShowTime() {
 	var brisDay = brisDay.getDay();
 	//Set weekend days with different opening hours
 	//Set numbers representing weekend days - 0 for Sunday, 6 for Saturday
-	if (brisDay==0 || brisDay==6) {
+	if (brisDay==0 || brisDay==5 || brisDay==6) {
 		hoursBase = 16;
 		hoursBefore = 6
 	}
