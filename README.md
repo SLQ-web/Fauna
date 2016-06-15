@@ -4,7 +4,7 @@ Repo for initial mockup design for Packery inspired homepage. This Repo will con
 **External JS library dependencies**
 - jQuery 2.1.3 (CND hosted)
 - jQuery Easing 1.3 (http://gsgd.co.uk/sandbox/jquery/easing/) for easing jQuery animation
-- Packery 2.0.0 (http://packery.metafizzy.co)
+- Packery 2.0.0 (http://packery.metafizzy.co) - DOES NOT SUPPORT IE8/9
 - Flickity v1.1.1 (http://flickity.metafizzy.co/)
 - Card Flip (https://desandro.github.io/3dtransforms/docs/card-flip.html)
 - Draggabilly 2.1.0 (http://draggabilly.desandro.com)
