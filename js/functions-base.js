@@ -106,7 +106,9 @@ var countdown = setInterval(ShowTime ,1000);
             sortBy: 'most-recent',
             resolution: 'low_resolution',
             limit: 1,
-            clientId: 'dee7958de6a64ed284b95abb1619b790'
+            clientId: 'dee7958de6a64ed284b95abb1619b790',
+            template: '<div class="insta-image" style="background-image: url({{image}});background-size: cover;height:285px;"><div class="social-buttons"> <table> <tr> <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-facebook-4-icon.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data"/></td></tr><tr> <td><img src="../img/social/iconmonstr-pinterest-1.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-vimeo-4-icon.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-youtube-4-icon.svg" class="social-icon"/></td></tr><tr> <td><img src="../img/social/iconmonstr-map-icon.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-layer-6-icon.svg" class="social-icon"/></td><td><img src="../img/social/iconmonstr-light-bulb-3-icon.svg" class="social-icon"/></td></tr></table> </div></div>'
+            //make this content above into a JS variable. Looks real nasty inserted straight into the function.
         });
         feed.run();
             
