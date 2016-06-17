@@ -16,6 +16,8 @@ figure { margin: 0; }
 }
 
 #card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
+/* fallback behaviour for IE browsers that do not support 3D transform */
+.no-csstransforms3d #card.flipped { display: none }
 
 #card figure, #card div {
 	-webkit-backface-visibility: hidden;
