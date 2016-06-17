@@ -19,7 +19,27 @@
 
 #onesearch.flipped { transform: rotateX( 180deg ); }
 
-#onesearch figure, #onesearch div {
+/* fallback behaviour for IE browsers that do not support 3D transform */
+.no-preserve3d #onesearch.flipped, 
+.no-transforms3d #onesearch.flipped, 
+.no-preserve3d #onesearch.flipped .back-search,
+.no-transforms3d #onesearch.flipped back-search {
+    transform: none;
+}
+
+.no-preserve3d #onesearch.flipped .front-search,
+.no-transforms3d #onesearch.flipped .front-search { 
+    display: none 
+}
+
+/*
+.no-transforms3d #onesearch div { 
+    position: relative!important;
+    border: 5px solid gold;
+}
+*/
+
+#onesearch div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
