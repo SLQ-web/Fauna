@@ -6,6 +6,7 @@
     <!-- Frameworks styles-->
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/just-grids.css">
+    <link rel="stylesheet" href="../css/card-flip.css">
     <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
 
     <!-- Widgets  styles-->
@@ -21,7 +22,8 @@
 
     <script type="application/javascript" src="../js/jquery-1.12.4.min.js"></script>
     <script type="application/javascript" src="../js/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="../js/packery.pkgd.min-OLD.js"></script>
+    <script src="../js/progressbar.js"></script>
+    <script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
     <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
     
     <!-- Modified the card flip script -->
@@ -38,7 +40,7 @@
         <div class="row">
            <a class="slq-logo"><img src="../img/Prototype%20device.svg" /></a>
             <div class="twelve columns" style="margin-top:0;padding-top:0;">
-<!--                <img src="../img/Prototype%20header.svg" width="100%" />-->
+                <img src="../img/Prototype%20header.svg" width="100%" />
             </div>
         </div>
         <div class="grid">  
@@ -46,7 +48,7 @@
             <div class="grid-item twoThirds">
                 <div class="grid-content" style="margin:0;padding:0;">
                     <div id="whatsOn" >
-                        <div class="main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "autoplay": 2000, "wrapAround": true }'>
+                        <div class="main-gallery"  data-flickity-options='{ "pauseAutoPlayOnHover": flase }'>
                             <div class="gallery-cell">
                                 <div id="sow">
                                     <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
@@ -95,23 +97,12 @@
             </div>
         </div>
     </div>
-</div>
 
-<!--
-<script type="text/javascript">
-$('.main-gallery').flickity({
-      // options
-      cellAlign: 'left',
-      contain: true,
-      autoPlay: 2000,
-      prevNextButtons: false,
-      pageDots: false,
-      wrapAround: true
-    });        
-</script>
--->
 
-<!--        <script type="text/javascript" src="../js/functions-base.js"></script>-->
+
+        <script type="text/javascript" src="../js/card-flip.js"></script>
+        <script type="text/javascript" src="../js/functions-base.js"></script>
+
 
    
     </body>    
