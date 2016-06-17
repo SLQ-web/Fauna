@@ -24,21 +24,19 @@
 }
 
 /* ensure the back card shows in IE8/9 when toggle clicked */
-.no-csstransforms3d #onesearch.flipped .back {
+.no-csstransforms3d #card.flipped .back {
     display: block;
 }
 
-.no-csstransforms3d #onesearch .front {
+/* make the front car visible when page loads in IE8/9 */
+.no-csstransforms3d #card .front {
     display: block;
 }
 
+/* Swap out visiblity of front card so back card is visible in IE8/9 */
 .no-preserve3d #card.flipped .front,
 .no-csstransforms3d #card.flipped .front { 
-    display: none 
-}
-
-.no-csstransforms3d #card div { 
-    backface-visibility: hidden;
+    display: none;
 }
 
 #card div {
@@ -56,6 +54,11 @@
 #card .back {
 	height: 285px;
 	transform: rotateY( 180deg );
+    z-index: 0;
+}
+
+#card .front {
+    z-index: 10;
 }
 
 .front, .back{
@@ -74,8 +77,6 @@
 	background:teal; /*change the css */
 	}
 
-.front-search{  }
-
 .back{
 	background-color:teal;
 	background-image:url(../img/cuneiform-tablet.png);
@@ -83,8 +84,6 @@
 	background-size:80%;
 	background-position:30px 90px;
 }
-
-.back-search{  }
 
 #info{
 	padding:0;
