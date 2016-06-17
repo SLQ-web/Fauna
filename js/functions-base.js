@@ -47,12 +47,9 @@ function ShowTime() {
 	var timeLeft = "SLQ will be open for another<br /><strong>" +brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec'+ "</strong> today";
 	//var timeLeft = brisHours+' hrs '+brisMinutes+' min '+brisSec+' sec';
 	}
-    
-//    console.log(brisHours);
-    
 	
 	//output adjusted time into page
-	$("#countdown").html(timeLeft);
+    document.getElementById("countdown").innerHTML = timeLeft;
 }
 
 //Setup variable to update on setInterval function every 1000 ticks
