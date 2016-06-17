@@ -6,7 +6,6 @@
     <!-- Frameworks styles-->
     <link rel="stylesheet" href="../css/skeleton.css">
     <link rel="stylesheet" href="../css/just-grids.css">
-    <link rel="stylesheet" href="../css/card-flip.css">
     <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
 
     <!-- Widgets  styles-->
@@ -47,7 +46,7 @@
             <div class="grid-item twoThirds">
                 <div class="grid-content" style="margin:0;padding:0;">
                     <div id="whatsOn" >
-                        <div class="main-gallery"  data-flickity-options='{ "pauseAutoPlayOnHover": flase }'>
+                        <div class="main-gallery">
                             <div class="gallery-cell">
                                 <div id="sow">
                                     <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
@@ -98,7 +97,20 @@
     </div>
 </div>
 
-        <script type="text/javascript" src="../js/functions-base.js"></script>
+<script type="text/javascript">
+    var elem = document.querySelector('.main-gallery');
+    var flkty = new Flickity( elem, {
+      // options
+      cellAlign: 'left',
+      contain: true,
+      autoPlay: 2000,
+      prevNextButtons: false,
+      pageDots: false,
+      wrapAround: true
+    });        
+</script>
+
+<!--        <script type="text/javascript" src="../js/functions-base.js"></script>-->
 
    
     </body>    
