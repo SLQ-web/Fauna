@@ -1,5 +1,3 @@
-figure { margin: 0; }
-
 .flip-container {
 	perspective: 900px;
 	position: relative;
@@ -30,11 +28,11 @@ figure { margin: 0; }
     display: none 
 }
 
-.no-transforms3d #card div { 
-    position: relative;
+.no-transforms3d #card .back { 
+    position: relative!important;
 }
 
-#card figure, #card div {
+#card div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -43,8 +41,8 @@ figure { margin: 0; }
 	width: 100%;
 }
 
-#card figure h3, #card div h3 { line-height: 1; }
-#card figure p, #card div p { font-weight: normal; }
+#card div h3 { line-height: 1; }
+#card div p { font-weight: normal; }
 
 #card .back {
 	height: 285px;
