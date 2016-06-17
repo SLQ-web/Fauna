@@ -17,20 +17,19 @@
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
 .no-preserve3d #card.flipped, 
-.no-transforms3d #card.flipped, 
+.no-csstransforms3d #card.flipped, 
 .no-preserve3d #card.flipped .back,
-.no-transforms3d #card.flipped .back {
+.no-csstransforms3d #card.flipped .back {
     transform: none;
 }
 
 .no-preserve3d #card.flipped .front,
-.no-transforms3d #card.flipped .front { 
+.no-csstransforms3d #card.flipped .front { 
     display: none 
 }
 
-.no-transforms3d #card div, .no-textshadow #card div { 
+.no-csstransforms3d #card div { 
     position: relative!important;
-    border: 5px solid gold;
 }
 
 #card div {
