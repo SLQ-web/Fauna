@@ -28,6 +28,10 @@
     display: block;
 }
 
+.no-csstransforms3d #onesearch .front {
+    display: block;
+}
+
 .no-preserve3d #card.flipped .front,
 .no-csstransforms3d #card.flipped .front { 
     display: none 
