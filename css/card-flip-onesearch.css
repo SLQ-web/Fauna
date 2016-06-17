@@ -23,17 +23,21 @@
 .no-preserve3d #onesearch.flipped, 
 .no-csstransforms3d #onesearch.flipped, 
 .no-preserve3d #onesearch.flipped .back-search,
-.no-csstransforms3d #onesearch.flipped back-search {
+.no-csstransforms3d #onesearch.flipped .back-search {
     transform: none;
+}
+
+.no-csstransforms3d #onesearch.flipped .back-search {
+    display: block;
 }
 
 .no-preserve3d #onesearch.flipped .front-search,
 .no-csstransforms3d #onesearch.flipped .front-search { 
-    display: none 
+    display: none;
 }
 
 .no-csstransforms3d #onesearch div { 
-    position: relative!important;
+    backface-visibility: visible;
 }
 
 #onesearch div {
