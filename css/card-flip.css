@@ -18,11 +18,15 @@ figure { margin: 0; }
 #card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
-.no-preserve3d #card.flipped, .no-preserve3d #card.flipped .back {
+.no-preserve3d #card.flipped, 
+.no-transforms3d #card.flipped, 
+.no-preserve3d #card.flipped .back,
+.no-transforms3d #card.flipped .back {
     transform: none;
 }
 
-.no-preserve3d #card.flipped .front { 
+.no-preserve3d #card.flipped .front,
+.no-transforms3d #card.flipped .front { 
     display: none 
 }
 
