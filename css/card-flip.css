@@ -30,6 +30,10 @@ figure { margin: 0; }
     display: none 
 }
 
+.no-transforms3d #card div { 
+    position: relative;
+}
+
 #card figure, #card div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
