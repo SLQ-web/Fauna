@@ -28,7 +28,7 @@
     display: none 
 }
 
-.no-transforms3d #card div { 
+.no-transforms3d #card div, .no-textshadow #card div { 
     position: relative!important;
     border: 5px solid gold;
 }

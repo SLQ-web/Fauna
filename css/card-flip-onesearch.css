@@ -32,12 +32,10 @@
     display: none 
 }
 
-/*
-.no-transforms3d #onesearch div { 
+.no-transforms3d #onesearch div, .no-textshadow #onesearch div { 
     position: relative!important;
     border: 5px solid gold;
 }
-*/
 
 #onesearch div {
 	-webkit-backface-visibility: hidden;
