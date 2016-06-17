@@ -17,6 +17,9 @@
 	width: 100%;
 }
 
+/* CSS target for switching search panel behaviour */
+#search-web, #search-lib { cursor: pointer; color: blue; }
+
 #onesearch.flipped { transform: rotateX( 180deg ); }
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
