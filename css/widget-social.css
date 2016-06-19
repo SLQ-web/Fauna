@@ -1,3 +1,7 @@
+.insta-image {
+    background-color: black;
+}
+
 #instafeed a img {
     /* Has limited support for Microsoft Edge and no support for IE11  */
     filter: brightness(50%);
