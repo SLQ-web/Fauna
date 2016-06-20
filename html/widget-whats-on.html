@@ -7,12 +7,17 @@
 <script type="application/javascript" src="../js/modernizr-custom.js"></script>  <!--development build to catch unsupported functionality in browsers -->
 
 <!-- Frameworks styles-->
-<link rel="stylesheet" href="../css/flickity.min.css" media="screen">
+<script type="text/javascript" src="../js/packery.pkgd.min.js"></script>
+<!--
+<link rel="stylesheet" href="../css/bootstrap.css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css">
+-->
 <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
 
-<!-- Widgets  styles-->
+<!-- Widgets and Flickity  styles-->
 <link rel="stylesheet" href="../css/widget-whats-on.css">
+<link rel="stylesheet" href="../css/flickity.min.css" media="screen">
 
 <!-- Main Prototype styles -->
 <link rel="stylesheet" href="../css/prototype-base.css">
@@ -30,38 +35,45 @@
     #sow {
         background-image: url('../img/whats-on/a-state-of-war.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
     }
     #iconic {
         background-image: url('../img/whats-on/iconic-qld.jpg');
         background-size: cover;
+        background-repeat: no-repeat;
     }
 </style>
 
 </head>
     
 <body>
-   
-<div class="main-gallery">
-    <div class="gallery-cell">
-        <div id="sow">
-            <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
-            <p>Interactive display at SLQ. To ensure the recommendations are implemented effectively, the Hunter Review Report Action Plan is being run as a significant project using Prince2 methodology.</p>
+<div class="container">
+   <div class="grid"> 
+       <div class="grid-item">
+           <div class="main-gallery">
+                <div class="gallery-cell">
+                    <div id="sow">
+                        <h3><a href="http://qanzac100.slq.qld.gov.au/showcase/a-state-of-war">A State of War</a></h3>
+                        <p>Interactive display at SLQ. To ensure the recommendations are implemented effectively, the Hunter Review Report Action Plan is being run as a significant project using Prince2 methodology.</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <div id="iconic">
+                        <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">Iconic Queensland</a></h3>
+                        <p>Legacy of Sir Manuel Hornibrook</p>
+                    </div>
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/whats-on/black-and-write.jpg" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/whats-on/queenslandfaces.jpg" />
+                </div>
+                <div class="gallery-cell">
+                    <img src="../img/whats-on/qm-awards.jpg" />
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="gallery-cell">
-        <div id="iconic">
-            <h3><a href="http://www.slq.qld.gov.au/showcase/the-william-jolly-bridge">Iconic Queensland</a></h3>
-            <p>Legacy of Sir Manuel Hornibrook</p>
-        </div>
-    </div>
-    <div class="gallery-cell">
-        <img src="../img/whats-on/black-and-write.jpg" />
-    </div>
-    <div class="gallery-cell">
-        <img src="../img/whats-on/queenslandfaces.jpg" />
-    </div>
-    <div class="gallery-cell">
-        <img src="../img/whats-on/qm-awards.jpg" />
     </div>
 </div>
 <script type="text/javascript">
