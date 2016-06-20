@@ -41,14 +41,38 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    #uqarch {
+        background-image: url('../img/whats-on/UQ_architecture.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #qrf {
+        background-image: url('../img/whats-on/qm-awards.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #bw {
+        background-image: url('../img/whats-on/black-and-write.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #qldfaces {
+        background-image: url('../img/whats-on/queenslandfaces.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 </style>
 
 </head>
     
 <body>
 <div class="container">
+  
+<a class="slq-logo"><img src="../img/Prototype%20device.svg" /></a>
+    <img src="../img/Prototype%20header.svg" width="100%" />
+  
    <div class="grid"> 
-       <div class="grid-item">
+       <div class="grid-item col-xs-12 col-sm-6 col-md-8">
            <div class="grid-content">
                <div class="main-gallery">
                     <div class="gallery-cell">
@@ -64,17 +88,37 @@
                         </div>
                     </div>
                     <div class="gallery-cell">
-                        <img src="../img/whats-on/black-and-write.jpg" />
+                        <div id="uqarch">
+                            <h3><a href="http://www.slq.qld.gov.au/whats-on/calevents/general/talks/apdl/uq-architecture-lecture-series-2016">UQ Architecture Lecture Series</a></h3>
+                            <p>Free weekly lectures | 1 Mar - 26 Apr</p>
+                        </div>
                     </div>
                     <div class="gallery-cell">
-                        <img src="../img/whats-on/queenslandfaces.jpg" />
+                        <div id="qrf">
+                            <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/qmawards">Queensland Research Fellowships</a></h2>
+                            <p>Lorem ipsum dolor, <a href="#">apply now.</a></p>
+                        </div>
                     </div>
                     <div class="gallery-cell">
-                        <img src="../img/whats-on/qm-awards.jpg" />
+                        <div id="bw">
+                            <h2><a href="http://www.slq.qld.gov.au/whats-on/awards/blackwrite/fellowships">black&amp;write!</a></h2>
+                            <p>Indigenous Writing Fellowships | Applications close Fri 26 Feb</p> 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+          <div class="grid-content">
+            <h3><img src="../img/time-icon.svg" class="clock tile-title-icon" />Opening hours</h3>
+            <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
+              Fri-Sun <strong>10am - 5pm</strong></p>
+            <p id="countdown"></p>
+            <p><a href="#">Special areas &amp; public holidays</a></p>
+          </div>
+        </div>
+        
     </div>
 </div>
 <script type="text/javascript">
