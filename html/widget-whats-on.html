@@ -24,7 +24,6 @@
     <link rel="stylesheet" href="../css/widget-whats-on.css">
     <link rel="stylesheet" href="../css/widget-eresources.css">
     <link rel="stylesheet" href="../css/widget-blogs.css">
-    <link rel="stylesheet" href="../css/card-flip-onesearch.css">
 
 <!-- Main Prototype styles -->
 <link rel="stylesheet" href="../css/prototype-base.css">
@@ -141,69 +140,6 @@
           </div>
         </div>
         
-        <div class="grid-item col-xs-12">
-          <div class="grid-content">
-            <div class="flip-onesearch-container">
-              <div id="onesearch">
-                <div class="front-search" style="">
-                  <h3>One search catalogue</h3>
-                    <script type="text/javascript">// <![CDATA[
-                        // SLQ One Search Search Box
-                        // 2013-12-06 NE. With scopes 2016-06-09 SAS
-
-                            function searchPrimo() {
-                                var tempQueryValue = document.getElementById("primoQueryTemp").value;
-                                var tempQueryScopeValue = document.getElementById("primoQueryScope").value;
-                                var searchURL = "http://onesearch.slq.qld.gov.au/primo_library/libweb/action/dlSearch.do?dscnt=1&onCampus=false&group=Guest&vid=SLQ&institution=SLQ";
-                                var searchQuery = "&query=any,contains," + tempQueryValue.replace(/\,/g,"");
-                                var searchQueryScope = "&search_scope=" +tempQueryScopeValue.replace(/\,/g,"");
-                                location.href = searchURL + searchQuery + searchQueryScope;
-                                return false;
-                            }
-
-                            function searchPrimoEvent(event) {
-                                var tempQueryValue = document.getElementById("primoQueryTemp").value;
-                                document.getElementById("primoQuery").value = "any,contains," + tempQueryValue.replace(/\,/g,"");
-                            }
-
-                        // ]]></script>
-
-                      <form action="http://onesearch.slq.qld.gov.au/primo_library/libweb/action/dlSearch.do" method="get" name="searchForm" id="SLQOS">
-                        <input name="dscnt" value="1" type="hidden">  
-                        <input name="onCampus" value="false" type="hidden">
-                        <input name="group" value="Guest" type="hidden">
-                        <input name="vid" value="SLQ" type="hidden">
-                        <input name="institution" value="SLQ" type="hidden">
-                        <input id="primoQuery" name="query" type="hidden">
-                        <input id="primoQueryTemp" onKeyPress="return searchPrimoEvent(event)" name="queryTemp" value="" type="text">
-                        <select id="primoQueryScope">
-                            <option value="SLQ_PCI_EBSCO">SLQ collections + eresources</option>
-                            <option value="SLQ">SLQ Collections</option>
-                            <option value="SRL">Information collections</option>
-                            <option value="OAC">Open Access Collections</option>
-                            <option value="ALA">Australian Library of Art</option>
-                            <option value="JOL">John Oxley Library</option>
-                            <option value="DT">SLQ digitised collections</option>
-                            <option value="OM">Original Materials</option>
-                            <option value="FHCOMBINED">SLQ Family History Indexes</option>
-                        </select>
-                        <button id="go" class="searchbutton" type="button" onClick="searchPrimo()">Search</button>
-                      </form>
-                  <p>Meet the One Search catalogue! A record of SLQ's holdings and access to costly databses of scientific, social and cultural literature. </p>
-                  <p><b>The key to the library</b></p>
-                  <p id="search-lib">Search the SLQ  Website</p>
-                </div>
-                <div class="back-search" style="">
-                  <h3>SLQ Website search</h3>
-                  <p>A set of interconnected webpages, prepared and maintained as a collection of information by SLQ.</p>
-                  <p><b>The face of the library</b></p>
-                  <p id="search-web">Search the One search catalogue</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
         <div class="grid-item col-xs-12 col-sm-6 col-md-4">
           <div class="grid-content">
             <h3>kuril dhagun</h3>
@@ -233,7 +169,6 @@
     }); 
 </script>
 -->
-<!--<script type="text/javascript" src="../js/card-flip.js"></script>-->
 <script type="text/javascript" src="../js/functions-base.js"></script>
 </body>
 </html>
