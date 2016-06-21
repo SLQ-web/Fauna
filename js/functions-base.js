@@ -55,8 +55,19 @@ function ShowTime() {
 //Setup variable to update on setInterval function every 1000 ticks
 var countdown = setInterval(ShowTime ,1000);
 
-// initialise the flickity sliders on page with jQuery
+// initialise the WHATSON flickity slider with jQuery
 $('.main-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: 2000,
+  prevNextButtons: false,
+  pageDots: false,
+  wrapAround: true
+});
+
+// initialise the ERESOURCES flickity slider with jQuery
+$('.main-eresources').flickity({
   // options
   cellAlign: 'left',
   contain: true,
