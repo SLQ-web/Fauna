@@ -67,15 +67,15 @@ $('.main-gallery').flickity({
 });
 
 // initialise the ERESOURCES flickity slider with jQuery
-$('.main-eresources').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  autoPlay: 2000,
-  prevNextButtons: false,
-  pageDots: false,
-  wrapAround: true
-});
+//$('.main-eresources').flickity({
+//  // options
+//  cellAlign: 'left',
+//  contain: true,
+//  autoPlay: 2000,
+//  prevNextButtons: false,
+//  pageDots: false,
+//  wrapAround: true
+//});
 
     // initialise the page in packery layout with jQuery
 //    var $grid = $('.grid').packery({
