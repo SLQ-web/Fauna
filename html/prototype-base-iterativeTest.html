@@ -33,7 +33,8 @@
 </head>
 
 <body> 
-
+  <div class="container">
+   <div class="grid"> <!-- start of the packery grid -->
     <div class="grid-item col-xs-12 col-sm-6 col-md-8">
       <div class="grid-content">
         <div id="whatsOn">
@@ -88,10 +89,21 @@
         </div>
       </div>
     </div>
+    
+    <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+      <div class="grid-content">
+        <h3><img src="../img/time-icon.svg" class="clock tile-title-icon" />Opening hours</h3>
+        <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
+          Fri-Sun <strong>10am - 5pm</strong></p>
+        <p id="countdown"></p>
+        <p><a href="#">Special areas &amp; public holidays</a></p>
+      </div>
+    </div>
 
 <script type="text/javascript" src="../js/functions-base-IE8test.js"></script>
 <script type="text/javascript" src="../js/card-flip.js"></script>
 <script type="text/javascript" src="../js/card-flip-oneSearch.js"></script> 
-
+      </div> <!-- end of the packery grid -->
+    </div>
 </body>
 </html>
