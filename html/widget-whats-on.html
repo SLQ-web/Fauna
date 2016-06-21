@@ -1,6 +1,6 @@
 <html>
 <head>
-  <title>Whats on widget (v2.3)</title>
+  <title>Whats on widget (v2.4)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -13,6 +13,7 @@
 <script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
 <script type="text/javascript" src="../js/instafeed.min.js"></script>
+<script type="text/javascript" src="../js/progressbar.js"></script>
 <script src="../js/respond.min.1.4.2.js"></script> <!-- loads respond JS for old browser support for media queries -->
 
 <!-- Widgets and Flickity  styles-->
@@ -156,6 +157,16 @@
           </div>
         </div>
         
+        <div class="grid-item col-xs-12 col-sm-6 col-md-4">
+          <div class="grid-content">
+            <h3>QLF campaign</h3>
+            <ul class="progressBar">
+              <li class='donations' data-width='60' data-target='100'>Funding</li>
+            </ul>
+            <p>All donations received by QLF between 2 February and 29 May 2016 to support SLQ will be matched by Creative Partnerships Australia once the total fundraising target is achieved.</p>
+          </div>
+        </div>
+        
     </div>
 </div>
 
@@ -258,6 +269,20 @@ var countdown = setInterval(ShowTime ,1000);
         //make this content above into a JS variable. Looks real nasty inserted straight into the function.
     });
 feed.run();
+    
+    // attach progress bar animation to object
+    //Credits to http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html
+
+    $('.donations').progressBar({
+          height : "30",
+          backgroundColor : "#E0E0E0",
+          shadow : false,
+          percentage : true,
+          border : false,
+          animation : true,
+          animateTarget : true,
+          barColor : "black",
+     });
     
 // jQuery toggle for other sites buttons
 // RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
