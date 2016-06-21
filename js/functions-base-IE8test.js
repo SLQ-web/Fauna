@@ -112,3 +112,30 @@ $('.donations').progressBar({
       animateTarget : true,
       barColor : "black",
  });
+
+// jQuery toggle for other sites buttons
+// RA 2016/06/10 changed the function so that clickable area is isolated and uses ASCCI toggle characters, not bg images
+  $(document).ready(function($) {
+    $('.otherSites').find('.accordion-toggle span').click(function(){
+
+      //Expand or collapse this panel
+      $(this.parentNode).next().slideToggle('fast');
+
+        // Determine if it's open or closed
+        var toggleState = $(this).html();
+        if (toggleState=="+") {
+            $(this).html("-");
+        } else if (toggleState=="-") {
+            $(this).html("+")
+        }
+
+      //Hide the other panels
+      $(".accordion-content").not($(this.parentNode).next()).slideUp('fast');
+
+        //Find change the icon of any open panels back to closed
+        if($('.otherSites').find('.accordion-content span').html("-")){
+            console.log("make all other toggles go to +");
+            $(".toggleIcon").not($(this)).html("+")
+        }
+    });
+  });
