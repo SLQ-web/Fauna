@@ -97,3 +97,18 @@ var feed = new Instafeed({
     //make this content above into a JS variable. Looks real nasty inserted straight into the function.
 });
 feed.run();
+
+
+// attach progress bar animation to object
+//Credits to http://www.jqueryscript.net/loading/Custom-Viewport-Based-jQuery-Progress-Bar-Plugin-Progressbar-js.html
+
+$('.donations').progressBar({
+      height : "30",
+      backgroundColor : "#E0E0E0",
+      shadow : false,
+      percentage : true,
+      border : false,
+      animation : true,
+      animateTarget : true,
+      barColor : "black",
+ });
