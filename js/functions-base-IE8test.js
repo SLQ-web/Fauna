@@ -9,3 +9,17 @@ var flkty = new Flickity( elem, {
   pageDots: false,
   wrapAround: true
 });
+
+// initialise the page in packery layout with vanilla js
+var elem = document.querySelector('.grid');
+var pckry = new Packery( elem, {
+  // options
+  itemSelector: '.grid-item',
+  gutter: 0,
+  columnWidth: 0,
+  rowHeight: 0,
+  isOriginTop: true,
+  isHorizontal: false,
+  percentPosition: true,
+  stamp: '.stamp',
+});
