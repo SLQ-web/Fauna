@@ -54,18 +54,6 @@ function ShowTime() {
 
 //Setup variable to update on setInterval function every 1000 ticks
 var countdown = setInterval(ShowTime ,1000);
-
-    // initialise the page in packery layout with jQuery
-    var $grid = $('.grid').packery({
-      itemSelector: '.grid-item',
-      gutter: 0,
-      columnWidth: 0,
-      rowHeight: 0,
-      isOriginTop: true,
-      isHorizontal: false,
-      percentPosition: true,
-      stamp: '.stamp',
-    })
     
 // initialise the page in packery layout with vanilla js
 var elem = document.querySelector('.grid');
