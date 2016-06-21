@@ -55,6 +55,17 @@ function ShowTime() {
 //Setup variable to update on setInterval function every 1000 ticks
 var countdown = setInterval(ShowTime ,1000);
 
+// initialise the flickity sliders on page with jQuery
+$('.main-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+  autoPlay: 2000,
+  prevNextButtons: false,
+  pageDots: false,
+  wrapAround: true
+});
+
     // initialise the page in packery layout with jQuery
 //    var $grid = $('.grid').packery({
 //      itemSelector: '.grid-item',
@@ -95,17 +106,6 @@ var pckry = new Packery( elem, {
 //              console.log('content dragged')
 //          },100); 
 //        });
-
-// initialise the flickity sliders on page with jQuery
-$('.main-gallery').flickity({
-  // options
-  cellAlign: 'left',
-  contain: true,
-  autoPlay: 2000,
-  prevNextButtons: false,
-  pageDots: false,
-  wrapAround: true
-});
 
 //initialise flickity sliders with vanilla js
 //var elem = document.querySelector('.main-gallery');
