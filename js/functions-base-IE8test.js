@@ -1,6 +1,17 @@
 //initialise flickity sliders with vanilla js
-var elem = document.querySelector('.main-gallery');
-var flkty = new Flickity( elem, {
+//var elem = document.querySelector('.main-gallery');
+//var flkty = new Flickity( elem, {
+//  // options
+//  cellAlign: 'left',
+//  contain: true,
+//  autoPlay: 2000,
+//  prevNextButtons: false,
+//  pageDots: false,
+//  wrapAround: true
+//});
+
+// initialise the flickity sliders on page with jQuery
+$('.main-gallery').flickity({
   // options
   cellAlign: 'left',
   contain: true,
