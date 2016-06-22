@@ -35,6 +35,11 @@ var card = document.getElementById("card");
 document.getElementById("info").onclick = function() {
   card.toggleClassName("flipped");
 }
+
+//IE8 specific card flip action (because using IMG not SVG code)
+//document.getElementById("IE8info").onclick = function() {
+//  card.toggleClassName("flipped");
+//}
 //};
 
 
