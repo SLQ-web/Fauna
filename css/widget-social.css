@@ -43,7 +43,7 @@ td{
 .no-csstransforms3d #instafeed .instafallback { 
     display: block; 
     height: 285px;
-    background-color: navy;
-    background-image: url(../img/instagram.png);
+    background-color: purple;
+/*    background-image: url(../img/instagram.png);*/
     background-repeat: no-repeat;
 }
