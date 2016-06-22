@@ -38,6 +38,42 @@
 <script type="text/javascript" src="../js/packery.pkgd.min.js"></script> <!-- old packery lib supports <IE10 better but munges draggability -->
 <script type="text/javascript" src="../js/flickity.pkgd.js"></script>
 <script type="text/javascript" src="../js/instafeed.min.js"></script>
+
+<!-- Code for SVG rollovers, make the svg code appear inline -->
+<script>
+    jQuery(document).ready(function() {
+        /*
+         * Replace all SVG images with inline SVG
+         */
+            jQuery('img.openSvgLogo').each(function(){
+                var $img = jQuery(this);
+                var imgID = $img.attr('id');
+                var imgClass = $img.attr('class');
+                var imgURL = $img.attr('src');
+
+                jQuery.get(imgURL, function(data) {
+                    // Get the SVG tag, ignore the rest
+                    var $svg = jQuery(data).find('svg');
+
+                    // Add replaced image's ID to the new SVG
+                    if(typeof imgID !== 'undefined') {
+                        $svg = $svg.attr('id', imgID);
+                    }
+                    // Add replaced image's classes to the new SVG
+                    if(typeof imgClass !== 'undefined') {
+                        $svg = $svg.attr('class', imgClass+' replaced-svg');
+                    }
+
+                    // Remove any invalid XML tags as per http://validator.w3.org
+                    $svg = $svg.removeAttr('xmlns:a');
+
+                    // Replace image with new SVG
+                    $img.replaceWith($svg);
+                });
+            });
+    });
+</script>
+
 </head>
 
 <body>
@@ -179,7 +215,7 @@
             <div class="instafallback">
                 <table>
                   <tr>
-                    <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon"/></td>
+                    <td><img src="../img/social/iconmonstr-twitter-4-icon.svg" class="social-icon" onerror="this.src='../img/social/iconmonstr-twitter-4-icon.png'; this.onerror=null;"/></td>
                     <td><img src="../img/social/iconmonstr-facebook-4-icon.svg" class="social-icon"/></td>
                     <td><img src="../img/social/iconmonstr-instagram-9-icon.svg" class="social-icon active-social-data"/></td>
                   </tr>
