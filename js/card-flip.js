@@ -32,7 +32,7 @@ Element.prototype.toggleClassName = function (a) {
 
 // ======================= Card Flip =============================== //
 // Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
-var init = function() {
+//var init = function() {
 var card = document.getElementById("card");
 
 // Assign click action to flip card question
@@ -42,7 +42,7 @@ var card = document.getElementById("card");
 document.getElementById("info").onclick = function() {
   card.toggleClassName("flipped");
 }
-};
+//};
 
 
 //Addition of function to remove flipped class
@@ -53,4 +53,5 @@ document.getElementById("resolveInfo").onclick = function() {
   $(" #card ").removeClass("flipped")
 }
 
-window.addEventListener('DOMContentLoaded', init, false);
+//window.addEventListener('DOMContentLoaded', init, false);
+ // Old browsers
