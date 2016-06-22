@@ -88,9 +88,11 @@
 #info{
 	padding:0;
 	margin:2em 0 0 0;
+    cursor: pointer;
 }
 
 #resolveInfo{
 	padding:0;
 	margin:4em 0 0 0;
+    cursor: pointer;
 }

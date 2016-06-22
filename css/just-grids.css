@@ -57,10 +57,7 @@ body { margin:0;padding:0;}
 /*  border: 1px solid red;*/
 }
 
-.grid-content {
-    padding: 15px 30px 15px 0;
-    background: #fff;
-}
+.grid-content { padding: 0; }
 .grid-item:hover { background: #ccc; }
 
 .grid-item.is-dragging,
