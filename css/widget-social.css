@@ -1,5 +1,5 @@
 .insta-image {
-    background-color: black;
+    background-color: grey;
 }
 
 #instafeed a img {
@@ -36,7 +36,14 @@ td{
 	height:84px;
 }
 
-.active-social-data{
-	
+/* IE8 Fix for the Instagram feed */
+#instafeed .instafallback { display: none; }
 
+/* Show this div block only for IE8 */
+.no-csstransforms3d #instafeed .instafallback { 
+    display: block; 
+    height: 285px;
+    background-color: navy;
+    background-image: url(../img/instagram.png);
+    background-repeat: no-repeat;
 }
