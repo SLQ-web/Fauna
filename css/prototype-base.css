@@ -14,3 +14,10 @@ a:link, a:visited { color: navy; }
 }
 /*CE this is lame*/
 h3{font-size:200%} 
+
+
+/* IE8 Fix for the Instagram feed */
+#instafeed .instafallback { display: none; }
+
+/* Show this div block only for IE8 */
+.no-csstransforms3d #instafeed .instafallback { display: block; }
