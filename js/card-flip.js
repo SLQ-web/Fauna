@@ -1,5 +1,5 @@
 // ======================= DOM Utility Functions from PastryKit =============================== //
-// Source: https://desandro.github.io/3dtransforms/docs/card-flip.html //
+// Branched from: https://desandro.github.io/3dtransforms/docs/card-flip.html //
 
 // Sure, we could use jQuery or XUI for these, 
 // but these are concise and will work with plain vanilla JS
@@ -29,27 +29,11 @@ Element.prototype.toggleClassName = function (a) {
 var card = document.getElementById("card");
 
 // Assign click action to flip card question
-//document.getElementById("info").addEventListener( "click", function(){
-//    card.toggleClassName("flipped");
-//    }, false);
 document.getElementById("info").onclick = function() {
   card.toggleClassName("flipped");
 }
 
-//IE8 specific card flip action (because using IMG not SVG code)
-//document.getElementById("IE8info").onclick = function() {
-//  card.toggleClassName("flipped");
-//}
-//};
-
-
-//Addition of function to remove flipped class
-//document.getElementById("resolveInfo").addEventListener( "click", function(){
-//    $(" #card ").removeClass("flipped")
-//});
+// Assign click reverse the flip card action
 document.getElementById("resolveInfo").onclick = function() {
   $(" #card ").removeClass("flipped")
 }
-
-//window.addEventListener('DOMContentLoaded', init, false);
- // Old browsers
