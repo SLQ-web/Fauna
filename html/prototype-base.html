@@ -12,6 +12,7 @@
 <!-- using bootstrap as grid framework to support packery -->
 <link rel="stylesheet" href="../css/bootstrap-theme.css">
 <link rel="stylesheet" href="../css/just-grids.css">
+<link rel="stylesheet" href="../css/timer-flip.css">
 <link rel="stylesheet" href="../css/card-flip.css">
 <link rel="stylesheet" href="../css/card-flip-onesearch.css">
 <link rel="stylesheet" href="../css/flickity.min.css" media="screen">
@@ -138,11 +139,21 @@
     
     <div class="grid-item col-xs-12 col-sm-6 col-md-4">
       <div class="grid-content">
-        <h3><img src="../img/time-icon.svg" class="clock tile-title-icon" />Opening hours</h3>
-        <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
-          Fri-Sun <strong>10am - 5pm</strong></p>
-        <p id="countdown"></p>
-        <p><a href="#">Special areas &amp; public holidays</a></p>
+        <div class="flip-container">
+          <div id="timerCard">
+            <div class="timerFront">
+              <h3><img src="../img/time-icon.svg" class="clock tile-title-icon" />Opening hours</h3>
+              <p class="text-lge">Mon-Thu <strong>10am - 8pm</strong><br />
+              Fri-Sun <strong>10am - 5pm</strong></p>
+              <p id="countdown"></p>
+              <p><a href="#" id="otherTimes">Special areas &amp; public holidays</a></p>
+            </div>
+            <div class="timerBack">
+                <p>information for the back of the card</p>
+                <p id="mainTimes">Click to turn back</p>
+            </div>
+         </div>
+      </div>
       </div>
     </div>
     
@@ -453,7 +464,8 @@
 <!-- Removed inline packery declaration -->
 
 <script type="text/javascript" src="../js/card-flip.js"></script>
-<script type="text/javascript" src="../js/card-flip-oneSearch.js"></script> 
+<script type="text/javascript" src="../js/card-flip-oneSearch.js"></script>
+<script type="text/javascript" src="../js/timer-flip.js"></script>
 <!--<script type="text/javascript" src="../js/dragabilly.min.js"></script>--> <!-- Currently deactivated -->
 <!-- insert the main branch of functions-base.js back in page -->
 <script type="text/javascript" src="../js/functions-base.js"></script> 
