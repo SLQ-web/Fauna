@@ -36,15 +36,21 @@ var init = function() {
 var card = document.getElementById("card");
 
 // Assign click action to flip card question
-document.getElementById("info").addEventListener( "click", function(){
-    card.toggleClassName("flipped");
-    }, false);
+//document.getElementById("info").addEventListener( "click", function(){
+//    card.toggleClassName("flipped");
+//    }, false);
+document.getElementById("info").onclick = function() {
+  card.toggleClassName("flipped");
+}
 };
 
 
 //Addition of function to remove flipped class
-document.getElementById("resolveInfo").addEventListener( "click", function(){
-    $(" #card ").removeClass("flipped")
-});
+//document.getElementById("resolveInfo").addEventListener( "click", function(){
+//    $(" #card ").removeClass("flipped")
+//});
+document.getElementById("resolveInfo").onclick = function() {
+  $(" #card ").removeClass("flipped")
+}
 
 window.addEventListener('DOMContentLoaded', init, false);
