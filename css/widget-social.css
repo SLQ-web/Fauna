@@ -4,13 +4,11 @@
 }
 
 table{
-	/*border:solid 1px #555;*/
 	width:100%;
 	width:100%;
 }
 
 td{
-	/*border:solid 1px #fff;*/
 	width:100px;
 	height:90px;
 	text-align:center;

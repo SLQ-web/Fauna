@@ -71,11 +71,7 @@
 
 }
 
-#otherTimes{
-    cursor: pointer;
-}
-
-#mainTimes {
+#mainTimes, #otherTimes {
     cursor: pointer;
     color: blue;
 }
