@@ -1,0 +1,104 @@
+/* ======================================= */
+/* Combine all custom homepage CSS */
+/* ======================================= */
+
+/* FOOTER AND HEADER STUFF */
+/* ////////////////////////////////// */
+
+.slq-header {
+    background-image: url(../img/Prototype%20header.svg);
+    min-height: 190px;
+    background-size: cover;
+    width: 100%;
+}
+.slq-logo {
+    display: inline-block;
+    float: left;
+    margin-left: -40px; /*offset the slq logo so its out of the page flow*/
+    margin-top:5px;
+}
+.slq-logo img {
+    width:35px;
+}
+.slq-footer {
+    min-height: 250px;
+    width: 100%;
+    background: #333;
+    padding-top: 0;
+    color: #333;
+}
+.slq-footer img { width: 100%; }
+
+/* GRID FRAMEWORK */
+/* ///////////////////////////////// */
+
+/* force scroll bar */
+html { overflow-y: scroll; }
+
+/* ---- grid ---- */
+
+.grid-item .grid-content {
+    height: 285px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* stamps remove packery elements from flow */
+.stamp {  border-color: aquamarine; }
+.stamp1 { left: 0%; top: 0; }
+.stamp2 { right: 0%; top: 200; }
+
+.grid-item {
+  padding: 5px;
+}
+
+.grid-content{
+	border:solid 1px cyan; /* showing bounds of grid elements */
+}
+
+/* styles for draggabilly function (related to Packery) */
+.grid-item.is-dragging,
+.grid-item.is-positioning-post-drag {
+  background: #C90;
+  z-index: 2;
+}
+
+.packery-drop-placeholder {
+  outline: 3px dashed #444;
+  outline-offset: -6px;
+  /* transition position changing */
+  -webkit-transition: -webkit-transform 0.2s;
+          transition: transform 0.2s;
+}
+
+/* TYPOGRAPHY STYLES */
+/* ////////////////////////////////// */
+
+/*Various custom text sizes */
+.text-xs { font-size: 1rem }
+.text-sm { font-size: 1.2rem }
+.text-md { font-size: 1.3rem; }
+.text-lge { font-size: 2rem; }
+
+h3 { margin-bottom: 1rem; }
+a:link, a:visited { color: navy; }
+
+/*CE this is lame*/
+h3{font-size:200%}
+
+
+
+/* RANDOM CUSTOM STYLES (YET TO BE SORTED) */
+/* ////////////////////////////////// */
+
+.aRight { float: right; }
+.tile-title-icon { width: 30px; margin-right: 10px;  }
+
+iframe body { margin: 0; padding: 0; }
+
+

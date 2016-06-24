@@ -1,3 +1,8 @@
+/* CARD FLIP STYLES (INCLUDING IE FALLBACKS) */
+/* ////////////////////////////////// */
+
+/* ==== STYLES FOR QUESTION CARD ==== */
+
 .flip-container {
 	perspective: 900px;
 	position: relative;
@@ -13,33 +18,11 @@
 	width: 100%;
 }
 
-#card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
-
-/* fallback behaviour for IE browsers that do not support 3D transform */
-.no-preserve3d #card.flipped, 
-.no-csstransforms3d #card.flipped, 
-.no-preserve3d #card.flipped .back,
-.no-csstransforms3d #card.flipped .back {
-    transform: none;
+#card.flipped {
+    transform: translateX( -100% ) rotateY( -180deg );
 }
 
-/* ensure the back card shows in IE8/9 when toggle clicked */
-.no-csstransforms3d #card.flipped .back {
-    display: block;
-}
-
-/* make the front car visible when page loads in IE8/9 */
-.no-csstransforms3d #card .front {
-    display: block;
-}
-
-/* Swap out visiblity of front card so back card is visible in IE8/9 */
-.no-preserve3d #card.flipped .front,
-.no-csstransforms3d #card.flipped .front { 
-    display: none;
-}
-
-#card div {
+#card div, #onesearch div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -72,9 +55,9 @@
 .back a:link, .back a:visited{
 	color:#fff;	
 }
-.front{
+.front {
 	background:teal; /*change the css */
-	}
+}
 
 .back{
 	background-color:teal;
@@ -84,14 +67,89 @@
 	background-position:30px 90px;
 }
 
-#info{
+#info {
 	padding:0;
 	margin:2em 0 0 0;
     cursor: pointer;
 }
 
-#resolveInfo{
+#resolveInfo {
 	padding:0;
 	margin:4em 0 0 0;
     cursor: pointer;
+}
+
+/* === STYLES FOR ONESEARCH FORM === */
+
+.flip-onesearch-container {
+	perspective: 1200px;
+	position: relative;
+	width: 100%;
+    height: 285px;
+}
+
+#onesearch {
+	height: 100%;
+	position: relative;
+	transform-origin: center center;
+	transform-style: preserve-3d;
+	transition: transform 0.6s;
+	width: 100%;
+}
+
+/* CSS target for switching search panel behaviour */
+#search-web, #search-lib {
+    cursor: pointer;
+    color: blue;
+}
+
+#onesearch.flipped {
+    transform: rotateX( 180deg );
+}
+#onesearch .back-search {
+	height: 285px;
+    padding: 10px;
+    background: #C7FFF9;
+	transform: rotateX( 180deg );
+    z-index: 0;
+}
+#onesearch .front-search {
+    height: 285px;
+    background:#FFF8B9;
+    padding: 10px;
+    z-index: 10;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+/* fallback behaviour for IE browsers that do not support 3D transform */
+.no-preserve3d #card.flipped,
+.no-csstransforms3d #card.flipped,
+.no-preserve3d #card.flipped .back,
+.no-csstransforms3d #card.flipped .back,
+.no-preserve3d #onesearch.flipped,
+.no-csstransforms3d #onesearch.flipped,
+.no-preserve3d #onesearch.flipped .back-search,
+.no-csstransforms3d #onesearch.flipped .back-search {
+    transform: none;
+}
+
+/* ensure the back card shows in IE8/9 when toggle clicked */
+.no-csstransforms3d #card.flipped .back,
+.no-csstransforms3d #onesearch.flipped .back-search {
+    display: block;
+}
+
+/* make the front car visible when page loads in IE8/9 */
+.no-csstransforms3d #card .front,
+.no-csstransforms3d #onesearch .front-search {
+    display: block;
+}
+
+/* Swap out visiblity of front card so back card is visible in IE8/9 */
+.no-preserve3d #card.flipped .front,
+.no-csstransforms3d #card.flipped .front,
+.no-preserve3d #onesearch.flipped .front-search,
+.no-csstransforms3d #onesearch.flipped .front-search {
+    display: none;
 }

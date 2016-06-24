@@ -1,3 +1,6 @@
+/* DYNAMIC INSTAGRAM PANEL */
+/* ////////////////////////////////// */
+
 .social{
 	margin:0;
 	padding:0;
@@ -20,10 +23,13 @@ td{
 }
 
 /* IE8 Fix for the Instagram feed */
-#instafeed .instafallback { display: none; }
+#instafeed .instafallback {
+    display: none;
+}
 
 /* Show this div block only for IE8 */
 /*Problem is that it shows in IE9 when it shoud not!*/
+/* An IE conditional tag has been used in main HTML page instead (consider removing this style) */
 /*
 .no-csstransforms3d.no-preserve3d #instafeed .instafallback {
     display: block; 

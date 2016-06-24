@@ -1,7 +1,6 @@
-.sonny_progressbar {
-	margin-bottom: 20px;
+/* ANIMATED DYNAMIC PROGRESS BAR */
+/* ////////////////////////////////// */
 
-}
 .sonny_progressbar p.title {
 	font-family: Montserrat, sans-serif;
 	font-size: 16px;
@@ -13,11 +12,7 @@
 	position: relative;
 	height: 40px;
 }
-.sonny_progressbar .bar-container.shadow {
-	-moz-box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
-	-webkit-box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
-	box-shadow: 0px 5px 7px -3px rgba(0,0,0,.5);
-}
+
 .sonny_progressbar .backgroundBar {
 	position: absolute;
 	bottom: 0;
@@ -85,13 +80,5 @@
 /* Because the core JS has been edited, need to add this bug fix css */
 p.marker { opacity: 0; }
 
-
-/*removed from internal stylesheet*/
 /* For foundation donation bar */
-ul.progressBar { margin: 0; padding: 0 ;
-
-}
-
-.bar-container .title{
-	color:#fff;
-}
+ul.progressBar { margin: 0; padding: 0 }
