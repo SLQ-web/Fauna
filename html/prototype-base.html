@@ -30,6 +30,17 @@
 <!-- Main Prototype styles -->
 <link rel="stylesheet" href="../css/prototype-base.css">
 
+<!-- Conditional IE handlers for all the stuff that can't be handled by modernizr or code optimisation to work on older IE browsers -->
+<!--Fix to show static instagram panel only for IE8!-->
+<!--[if lte IE 8]>
+#instafeed .instafallback {
+    display: block;
+    height: 285px;
+    background-color: purple;
+    background-repeat: no-repeat;
+}
+<![endif]-->
+
 <!-- Load JS scripts -->
 <script src="../js/respond.min.1.4.2.js"></script> <!-- loads respond JS for old browser support for media queries -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>

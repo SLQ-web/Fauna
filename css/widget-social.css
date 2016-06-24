@@ -23,10 +23,12 @@ td{
 #instafeed .instafallback { display: none; }
 
 /* Show this div block only for IE8 */
-/*.no-csstransforms3d.no-preserve3d #instafeed .instafallback {*/
-.no-canvas #instafeed .instafallback {
+/*Problem is that it shows in IE9 when it shoud not!*/
+/*
+.no-csstransforms3d.no-preserve3d #instafeed .instafallback {
     display: block; 
     height: 285px;
     background-color: purple;
     background-repeat: no-repeat;
 }
+*/
