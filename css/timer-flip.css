@@ -67,10 +67,6 @@
     background: #ccc;
 }
 
-.timerBack a:link, .timerBack a:visited{
-
-}
-
 #mainTimes, #otherTimes {
     cursor: pointer;
     color: blue;

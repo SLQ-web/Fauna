@@ -9,7 +9,7 @@
 	width: 100%;
 }
 
-#card {
+#card, #timerCard {
 	height: 100%;
 	position: absolute;
 	transform-origin: right center;
@@ -18,11 +18,11 @@
 	width: 100%;
 }
 
-#card.flipped {
+#card.flipped, #timerCard.flipped {
     transform: translateX( -100% ) rotateY( -180deg );
 }
 
-#card div, #onesearch div {
+#card div, #timerCard div, #onesearch div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -31,10 +31,10 @@
 	width: 100%;
 }
 
-#card div h3 { line-height: 1; }
-#card div p { font-weight: normal; }
+#card div h3, #timerCard div h3 { line-height: 1; }
+#card div p, #timerCard div p { font-weight: normal; }
 
-#card .back {
+#card .back, #timerCard .timerBack {
 	height: 285px;
 	transform: rotateY( 180deg );
     z-index: 0;
@@ -79,6 +79,18 @@
     cursor: pointer;
 }
 
+/* === STYLES FOR TIMER PANEL === */
+
+#timerCard .timerFront {
+    z-index: 10;
+    background: #eee;
+}
+
+.timerFront, .timerBack{
+	height: 285px;
+    background: #ccc;
+}
+
 /* === STYLES FOR ONESEARCH FORM === */
 
 .flip-onesearch-container {
@@ -95,12 +107,6 @@
 	transform-style: preserve-3d;
 	transition: transform 0.6s;
 	width: 100%;
-}
-
-/* CSS target for switching search panel behaviour */
-#search-web, #search-lib {
-    cursor: pointer;
-    color: blue;
 }
 
 #onesearch.flipped {
@@ -122,6 +128,12 @@
 
 /* ///////////////////////////////////////////////////////////////////////////// */
 
+/* CSS target for switching search panel behaviour */
+#mainTimes, #otherTimes, #search-web, #search-lib {
+    cursor: pointer;
+    color: blue;
+}
+
 /* fallback behaviour for IE browsers that do not support 3D transform */
 .no-preserve3d #card.flipped,
 .no-csstransforms3d #card.flipped,
@@ -130,19 +142,25 @@
 .no-preserve3d #onesearch.flipped,
 .no-csstransforms3d #onesearch.flipped,
 .no-preserve3d #onesearch.flipped .back-search,
-.no-csstransforms3d #onesearch.flipped .back-search {
+.no-csstransforms3d #onesearch.flipped .back-search,
+.no-preserve3d #timerCard.flipped,
+.no-csstransforms3d #timerCard.flipped,
+.no-preserve3d #timerCard.flipped .timerBack,
+.no-csstransforms3d #timerCard.flipped .timerBack {
     transform: none;
 }
 
 /* ensure the back card shows in IE8/9 when toggle clicked */
 .no-csstransforms3d #card.flipped .back,
-.no-csstransforms3d #onesearch.flipped .back-search {
+.no-csstransforms3d #onesearch.flipped .back-search,
+.no-csstransforms3d #timerCard.flipped .timerBack {
     display: block;
 }
 
 /* make the front car visible when page loads in IE8/9 */
 .no-csstransforms3d #card .front,
-.no-csstransforms3d #onesearch .front-search {
+.no-csstransforms3d #onesearch .front-search,
+.no-csstransforms3d #timerCard .timerFront  {
     display: block;
 }
 
@@ -150,6 +168,8 @@
 .no-preserve3d #card.flipped .front,
 .no-csstransforms3d #card.flipped .front,
 .no-preserve3d #onesearch.flipped .front-search,
-.no-csstransforms3d #onesearch.flipped .front-search {
+.no-csstransforms3d #onesearch.flipped .front-search,
+.no-preserve3d #timerCard.flipped .timerFront,
+.no-csstransforms3d #timerCard.flipped .timerFront {
     display: none;
 }
