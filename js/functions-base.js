@@ -90,18 +90,18 @@ $('.main-gallery').flickity({
 //    })
     
 // initialise the page in packery layout with vanilla js
-//var elem = document.querySelector('.grid');
-//var pckry = new Packery( elem, {
-//  // options
-//  itemSelector: '.grid-item',
-//  gutter: 0,
-//  columnWidth: 0,
-//  rowHeight: 0,
-//  isOriginTop: true,
-//  isHorizontal: false,
-//  percentPosition: true,
-//  stamp: '.stamp',
-//});
+var elem = document.querySelector('.grid');
+var pckry = new Packery( elem, {
+  // options
+  itemSelector: '.grid-item',
+  gutter: 0,
+  columnWidth: 0,
+  rowHeight: 0,
+  isOriginTop: true,
+  isHorizontal: false,
+  percentPosition: true,
+  stamp: '.stamp',
+});
         
 // initialise Packery Dragabillity (allow panels to be repositioned within flow)
 //        $grid.find('.grid-item').each( function( i, itemElem ) {
