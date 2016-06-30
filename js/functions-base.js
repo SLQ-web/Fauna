@@ -90,8 +90,7 @@ $('.main-gallery').flickity({
 //    })
     
 // initialise the page in packery layout with vanilla js
-var elem = document.querySelector('.grid');
-var pckry = new Packery( elem, {
+var pckry = new Packery( '.grid', {
   // options
   itemSelector: '.grid-item',
   gutter: 0,
@@ -101,6 +100,7 @@ var pckry = new Packery( elem, {
   isHorizontal: false,
   percentPosition: true,
   stamp: '.stamp',
+  isInitLayout: false,
 });
         
 // initialise Packery Dragabillity (allow panels to be repositioned within flow)
