@@ -2,42 +2,23 @@
 
 * { box-sizing: border-box; }
 
+/* GRID FRAMEWORK */
+/* ///////////////////////////////// */
+
 /* force scroll bar */
 html { overflow-y: scroll; }
 
 body { margin:0;padding:0;}
 .content { width: 960px; }
 
-
-/*----  typography ---- */
-
-
-/* ---- composition ---- */
-
-.symmetrical{
-  text-align:center;
-  position: relative;
-  top: 50%;
-  transform:      translateY(-50%);
-}
-.symmetrical:first-child{
-  /*margin-top:100px;*/
-
-}
-
-/*---- colour ----*/
-
-.dark-elements{}
-
-.light-elements{
-  color:#fff;
-}
-
-
 /* ---- grid ---- */
 
 .grid {
 /*  background: #DDD;*/
+}
+
+.grid-item .grid-content {
+    height: 285px;
 }
 
 /* clear fix */
@@ -59,8 +40,10 @@ body { margin:0;padding:0;}
 /*  border: 1px solid red;*/
 }
 
-.grid-content { padding: 0; }
-.grid-item:hover { background: #ccc; }
+.grid-content {
+    padding: 0;
+    border:solid 1px cyan;
+}
 
 .grid-item.is-dragging,
 .grid-item.is-positioning-post-drag {
@@ -73,33 +56,7 @@ body { margin:0;padding:0;}
   outline-offset: -6px;
   /* transition position changing */
   -webkit-transition: -webkit-transform 0.2s;
-          transition: transform 0.2s;
+  transition: transform 0.2s;
 }
 
 .gutter-sizer { width: 1%; }
-
-.padding10 { padding: 10px }
-
-/*Various text sizes */
-.text-xs { font-size: 1rem }
-.text-sm { font-size: 1.2rem }
-.text-md { font-size: 1.3rem; }
-.text-lge { font-size: 2rem; }
-
-.aRight { float: right; }
-img.clock { }
-.tile-title-icon{width: 30px; margin-right: 10px;  }
-
-#info, #resolveInfo, #slide1-info, #resolve-slide1 { text-align: right; cursor: pointer; }
-#info img, #resolveInfo img, #slide1-info img, #resolve-slide1 img { width: 3.5%; margin-right: 5px; vertical-align: text-top; }
-form.oneSearch input[type=text] { width: 60%; }
-form.oneSearch select { width: 20%; }
-.searchBtn { background: pink; vertical-align: middle; }
-
-iframe body { margin: 0; padding: 0; }
-
-.slq-header { background-image: url(../img/Prototype%20header.svg); min-height: 190px; background-size: cover; width: 100%; }
-.slq-logo { display: inline-block; float: left; margin-left: -40px; margin-top:5px;} /*offset the slq logo so its out of the page flow*/
-.slq-logo img{width:35px;}
-.slq-footer { min-height: 250px; width: 100%; background: #333; padding-top: 0; color: #333;  }
-.slq-footer img { width: 100%; }

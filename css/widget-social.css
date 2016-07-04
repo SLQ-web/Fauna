@@ -26,15 +26,3 @@ td{
 #instafeed .instafallback {
     display: none;
 }
-
-/* Show this div block only for IE8 */
-/*Problem is that it shows in IE9 when it shoud not!*/
-/* An IE conditional tag has been used in main HTML page instead (consider removing this style) */
-/*
-.no-csstransforms3d.no-preserve3d #instafeed .instafallback {
-    display: block; 
-    height: 285px;
-    background-color: purple;
-    background-repeat: no-repeat;
-}
-*/
