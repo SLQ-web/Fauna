@@ -1,5 +1,7 @@
 //function to stop all animations because I get confused/overwhelmed easily
 
+console.log('stop all animations script is loaded');
+
 $('.stopBtn').click(function() {
     //Hides the animated closing time info
     //$("#countdown").hide();
