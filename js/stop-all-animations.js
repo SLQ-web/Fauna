@@ -3,6 +3,7 @@
 $('.stopBtn').click(function() {
     //Hides the animated closing time info
     //$("#countdown").hide();
+    console.log("stop all animations")
     clearInterval(countdown);
     
     //Pauses all flickity stuff from autoplaying
