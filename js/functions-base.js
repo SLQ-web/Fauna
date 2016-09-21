@@ -66,16 +66,17 @@ $('.main-gallery').flickity({
   wrapAround: true
 });
 
-// initialise the ERESOURCES flickity slider with jQuery
-//$('.main-eresources').flickity({
-//  // options
-//  cellAlign: 'left',
-//  contain: true,
-//  autoPlay: 2000,
-//  prevNextButtons: false,
-//  pageDots: false,
-//  wrapAround: true
-//});
+// initialise the eResources flickity slider with jQuery
+$('.eresources-gallery').flickity({
+  // options
+  cellAlign: 'left',
+  contain: true,
+//   setGallerySize: false,
+  autoPlay: 10000,
+  prevNextButtons: false,
+  pageDots: true,
+  wrapAround: true
+});
 
     // initialise the page in packery layout with jQuery
 //    var $grid = $('.grid').packery({
