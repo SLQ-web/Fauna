@@ -84,12 +84,12 @@
 	background-position:30px 90px;
 }
 
-#homepage-flipcard-2 .front {
+#card2 .front {
     background-image:url(http://www.slq.qld.gov.au/__data/assets/image/0008/346166/snakeDog-front.jpg);
     background-repeat:no-repeat;
     background-size: cover;
 }
-#homepage-flipcard-2 .back{
+#card2 .back{
 	background-image:url(http://www.slq.qld.gov.au/__data/assets/image/0009/346167/snakeDog-back.jpg);
 	background-repeat:no-repeat;
 	background-size: cover;
