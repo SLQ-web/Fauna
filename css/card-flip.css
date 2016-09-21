@@ -72,11 +72,11 @@
 .back a:link, .back a:visited{
 	color:#fff;	
 }
-.front{
+#card .front{
 	background:teal; /*change the css */
 	}
 
-.back{
+#card .back{
 	background-color:teal;
 	background-image:url(../img/cuneiform-tablet.png);
 	background-repeat:no-repeat;
