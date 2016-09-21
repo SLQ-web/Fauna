@@ -4,7 +4,7 @@
 	width: 100%;
 }
 
-#card {
+#card, #card2 {
 	height: 100%;
 	position: absolute;
 	transform-origin: right center;
@@ -13,7 +13,7 @@
 	width: 100%;
 }
 
-#card.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
+#card.flipped, #card2.flipped { transform: translateX( -100% ) rotateY( -180deg ); }
 
 /* fallback behaviour for IE browsers that do not support 3D transform */
 .no-preserve3d #card.flipped, 
@@ -39,7 +39,7 @@
     display: none;
 }
 
-#card div {
+#card div, #card2 div {
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	display: block;
@@ -48,16 +48,16 @@
 	width: 100%;
 }
 
-#card div h3 { line-height: 1; }
-#card div p { font-weight: normal; }
+#card div h3, #card2 div h3 { line-height: 1; }
+#card div p, #card2 div p { font-weight: normal; }
 
-#card .back {
+#card .back, #card2 .back {
 	height: 285px;
 	transform: rotateY( 180deg );
-    z-index: 0;
+        z-index: 0;
 }
 
-#card .front {
+#card .front, #card2 .front {
     z-index: 10;
 }
 
@@ -84,14 +84,14 @@
 	background-position:30px 90px;
 }
 
-#info{
+#info, #info2 {
 	padding:0;
 	margin:2em 0 0 0;
-    cursor: pointer;
+        cursor: pointer;
 }
 
-#resolveInfo{
+#resolveInfo, #resolveInfo2 {
 	padding:0;
 	margin:4em 0 0 0;
-    cursor: pointer;
+    	cursor: pointer;
 }
