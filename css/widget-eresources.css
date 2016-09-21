@@ -1,8 +1,3 @@
-#slideCard1{
-/*	width:630px;*/
-/*	height:170px;*/
-}
-
   .eresources-description {
 /*      height:110px;*/
 }
@@ -12,24 +7,19 @@
 }
 
 /* eresources slider styles with Flickity lib */
-#slideCard1 .main-gallery {
+.eresources-gallery {
     overflow: hidden;
-/*    height:173px;*/
 }
 
-#slideCard1 .gallery-cell {
+.eresources-gallery .gallery-cell {
   height: 173px;
     padding: 15px;
     width: 100%;
 }
 
-#slideCard1 .gallery-cell img {
+.eresources-gallery .gallery-cell img {
 	float:right;
-	/*padding-top:20px;*/
-	/*border:solid 1px rgba(0,0,0,0.2);*/
 }
-
-#slideCard1 .front .main-gallery .gallery-cell, #slideCard1 .back { padding: 10px; }
 
 .gallery-cell.lynda{
 	background:gold;
