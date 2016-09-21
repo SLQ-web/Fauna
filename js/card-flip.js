@@ -37,3 +37,16 @@ document.getElementById("info").onclick = function() {
 document.getElementById("resolveInfo").onclick = function() {
   $(" #card ").removeClass("flipped")
 }
+
+//Card 2 flip script
+var card2 = document.getElementById("card2");
+
+// Assign click action to flip card question
+document.getElementById("info2").onclick = function() {
+  card2.toggleClassName("flipped");
+}
+
+// Assign click reverse the flip card action
+document.getElementById("resolveInfo2").onclick = function() {
+  $(" #card2 ").removeClass("flipped")
+}
